@@ -1,0 +1,12 @@
+{
+  "request_id": "EX-002",
+  "submitted_at": "2026-09-29T11:30:00",
+  "requester_id": "E-401",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Deccan Bearings",
+  "amount_raw": "Rs 1,35,000",
+  "quotes_attached": 1,
+  "justification": "Routine purchase of bearing housings from Deccan Bearings for cost centre CC-ASSY. The vendor's ISO 9001 certificate has just expired and we are awaiting the renewed version after the audit.",
+  "email_thread": "From: ram.kumar@kaveri.com\nTo: procurement@kaveri.com\nSubject: Purchase request for Deccan Bearings\n\nPlease raise Rs 1,35,000 for bearing housings from Deccan Bearings. Cost centre CC-ASSY. Quote attached.\n---\nFrom: procurement@kaveri.com\nTo: ram.kumar@kaveri.com\nSubject: RE: Purchase request for Deccan Bearings\n\nGot it. Noted that the ISO 9001 certificate expired last week, audit done, awaiting new copy. Will process once received.",
+  "attachment_text": "ISO 9 0 1   Certi ficate\nNo: 12345\nIssued: 15-08-2022\nExpir ed: 28-09-2026\nRenewal audit completed 27-09-2026\nNew certi ficate pending"
+}

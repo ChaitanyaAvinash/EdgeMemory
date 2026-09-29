@@ -1,0 +1,192 @@
+{
+  "run_id": "dev4ovr",
+  "arm": "C",
+  "dataset": "bench",
+  "split": "dev",
+  "rows": [
+    {
+      "run_id": "dev4ovr",
+      "arm": "C",
+      "split": "dev",
+      "case_id": "DEV-005",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "ROUTE_DELEGATE",
+        "LINK_MASTER_PO",
+        "ALLOW_SPLIT_DELIVERY"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "novel_combination": true,
+      "tokens": 5236,
+      "latency_ms": 12565,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "E",
+      "split": "dev",
+      "case_id": "DEV-005",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "ROUTE_DELEGATE",
+        "LINK_MASTER_PO",
+        "ALLOW_SPLIT_DELIVERY"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "union_only"
+      ],
+      "novel_combination": true,
+      "tokens": 5236,
+      "latency_ms": 12565,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "C",
+      "split": "dev",
+      "case_id": "DEV-014",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "dropped_uncited_step:COLLECT_QUOTES",
+        "restored_removed_step:SOLE_SOURCE_FORM",
+        "restored_removed_step:CATEGORY_HEAD_SIGNOFF"
+      ],
+      "novel_combination": true,
+      "tokens": 5829,
+      "latency_ms": 17275,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "E",
+      "split": "dev",
+      "case_id": "DEV-014",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "union_only"
+      ],
+      "novel_combination": true,
+      "tokens": 5829,
+      "latency_ms": 17275,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "C",
+      "split": "dev",
+      "case_id": "DEV-015",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "review_mode": "one_click",
+      "flags": [
+        "dropped_uncited_step:COLLECT_QUOTES",
+        "dropped_uncited_step:HOLD_PAYMENT",
+        "dropped_uncited_step:VERIFY_BANK_CALLBACK"
+      ],
+      "novel_combination": false,
+      "tokens": 4528,
+      "latency_ms": 43776,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "E",
+      "split": "dev",
+      "case_id": "DEV-015",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "union_only"
+      ],
+      "novel_combination": false,
+      "tokens": 4528,
+      "latency_ms": 43776,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "C",
+      "split": "dev",
+      "case_id": "DEV-018",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO",
+        "LINK_MASTER_PO",
+        "ALLOW_SPLIT_DELIVERY"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [],
+      "novel_combination": true,
+      "tokens": 4440,
+      "latency_ms": 24890,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "dev4ovr",
+      "arm": "E",
+      "split": "dev",
+      "case_id": "DEV-018",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO",
+        "LINK_MASTER_PO",
+        "ALLOW_SPLIT_DELIVERY"
+      ],
+      "review_mode": "step_by_step",
+      "flags": [
+        "union_only"
+      ],
+      "novel_combination": true,
+      "tokens": 4440,
+      "latency_ms": 24890,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

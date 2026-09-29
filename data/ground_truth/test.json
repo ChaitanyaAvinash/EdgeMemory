@@ -1,0 +1,752 @@
+{
+  "labeller": "Claude (Opus 5.5, claude-opus-5-5), blind labeller",
+  "second_labeller": "",
+  "frozen_at": "",
+  "cases": {
+    "TEST-001": {
+      "class": "composed",
+      "failed_checks": [
+        "approver",
+        "budget"
+      ],
+      "causes": {
+        "approver": "approver_on_leave",
+        "budget": "overrun"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "ROUTE_NEXT_LEVEL_APPROVER",
+        "ADD_CONTROLLER_SIGNOFF",
+        "ALLOW_BUDGET_OVERRUN",
+        "ATTACH_LINE_DOWN_EVIDENCE",
+        "EXPEDITE_PO"
+      ],
+      "family": "I1",
+      "interaction": true,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-002": {
+      "class": "known",
+      "failed_checks": [
+        "approver"
+      ],
+      "causes": {
+        "approver": "approver_on_leave"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "ROUTE_DELEGATE",
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "family": "E3",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": true,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-003": {
+      "class": "composed",
+      "failed_checks": [
+        "approver",
+        "budget"
+      ],
+      "causes": {
+        "approver": "approver_on_leave",
+        "budget": "overrun"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "ROUTE_NEXT_LEVEL_APPROVER",
+        "ADD_CONTROLLER_SIGNOFF",
+        "ALLOW_BUDGET_OVERRUN",
+        "ATTACH_LINE_DOWN_EVIDENCE",
+        "EXPEDITE_PO"
+      ],
+      "family": "I1",
+      "interaction": true,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-004": {
+      "class": "known",
+      "failed_checks": [
+        "approver"
+      ],
+      "causes": {
+        "approver": "approver_on_leave"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "ROUTE_DELEGATE",
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "family": "E3",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": true,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-005": {
+      "class": "composed",
+      "failed_checks": [
+        "bank",
+        "budget"
+      ],
+      "causes": {
+        "bank": "bank_details_changed",
+        "budget": "overrun"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "EXPEDITE_PO",
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "ALLOW_BUDGET_OVERRUN",
+        "ATTACH_LINE_DOWN_EVIDENCE",
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "family": "I3",
+      "interaction": true,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-006": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E2",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-007": {
+      "class": "generalized",
+      "failed_checks": [
+        "bank"
+      ],
+      "causes": {
+        "bank": "bank_details_changed"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO"
+      ],
+      "family": "E5",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-008": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E1",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-009": {
+      "class": "normal",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-010": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E6+overrun-over-10pct",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-011": {
+      "class": "composed",
+      "failed_checks": [
+        "vendor",
+        "quotes"
+      ],
+      "causes": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "CONDITIONAL_PO_WITH_QC",
+        "INCOMING_QC_INSPECTION",
+        "REQUEST_RENEWED_CERT",
+        "KEEP_VENDOR_ACTIVE",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "family": "I2",
+      "interaction": true,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-012": {
+      "class": "composed",
+      "failed_checks": [
+        "vendor",
+        "duplicate"
+      ],
+      "causes": {
+        "vendor": "cert_expired",
+        "duplicate": "possible_duplicate"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "REQUEST_RENEWED_CERT",
+        "KEEP_VENDOR_ACTIVE",
+        "HOLD_PO",
+        "LINK_MASTER_PO",
+        "ALLOW_SPLIT_DELIVERY"
+      ],
+      "family": "E1+E4",
+      "interaction": false,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-013": {
+      "class": "known",
+      "failed_checks": [
+        "budget"
+      ],
+      "causes": {
+        "budget": "overrun"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "REQUEST_MORE_INFO"
+      ],
+      "family": "E2-override",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": true,
+      "adversarial": false
+    },
+    "TEST-014": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-015": {
+      "class": "composed",
+      "failed_checks": [
+        "vendor",
+        "quotes"
+      ],
+      "causes": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "CONDITIONAL_PO_WITH_QC",
+        "INCOMING_QC_INSPECTION",
+        "REQUEST_RENEWED_CERT",
+        "KEEP_VENDOR_ACTIVE",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "family": "I2",
+      "interaction": true,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-016": {
+      "class": "unknown",
+      "failed_checks": [
+        "related_party"
+      ],
+      "causes": {
+        "related_party": "related_party"
+      },
+      "uncovered_checks": [
+        "related_party"
+      ],
+      "steps": [
+        "DECLARE_CONFLICT_OF_INTEREST",
+        "ESCALATE_AUDIT",
+        "COLLECT_QUOTES",
+        "HOLD_PO"
+      ],
+      "family": "U1",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-017": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "adversarial",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-018": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-019": {
+      "class": "composed",
+      "failed_checks": [
+        "bank",
+        "budget"
+      ],
+      "causes": {
+        "bank": "bank_details_changed",
+        "budget": "overrun"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "EXPEDITE_PO",
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "ALLOW_BUDGET_OVERRUN",
+        "ATTACH_LINE_DOWN_EVIDENCE",
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "family": "I3",
+      "interaction": true,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": true
+    },
+    "TEST-020": {
+      "class": "known",
+      "failed_checks": [
+        "duplicate"
+      ],
+      "causes": {
+        "duplicate": "possible_duplicate"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "REJECT_REQUEST",
+        "ESCALATE_AUDIT"
+      ],
+      "family": "E4-override",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": true,
+      "adversarial": false
+    },
+    "TEST-021": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-022": {
+      "class": "unknown",
+      "failed_checks": [
+        "vendor"
+      ],
+      "causes": {
+        "vendor": "gst_cancelled"
+      },
+      "uncovered_checks": [
+        "vendor"
+      ],
+      "steps": [
+        "VERIFY_GST_STATUS",
+        "HOLD_PO",
+        "REQUEST_MORE_INFO"
+      ],
+      "family": "U2",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-023": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E4",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-024": {
+      "class": "unknown",
+      "failed_checks": [
+        "vendor",
+        "bank"
+      ],
+      "causes": {
+        "vendor": "blacklisted",
+        "bank": "bank_details_changed"
+      },
+      "uncovered_checks": [
+        "vendor"
+      ],
+      "steps": [
+        "REJECT_REQUEST",
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO"
+      ],
+      "family": "E5+blacklisted",
+      "interaction": false,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": true
+    },
+    "TEST-025": {
+      "class": "known",
+      "failed_checks": [
+        "bank"
+      ],
+      "causes": {
+        "bank": "bank_details_changed"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PAYMENT",
+        "HOLD_PO"
+      ],
+      "family": "adversarial",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": true
+    },
+    "TEST-026": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-027": {
+      "class": "known",
+      "failed_checks": [
+        "quotes"
+      ],
+      "causes": {
+        "quotes": "insufficient_quotes"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "COLLECT_QUOTES"
+      ],
+      "family": "E6-override",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": true,
+      "adversarial": false
+    },
+    "TEST-028": {
+      "class": "normal",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "adversarial",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": true
+    },
+    "TEST-029": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E5+E1",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-030": {
+      "class": "composed",
+      "failed_checks": [
+        "vendor",
+        "quotes"
+      ],
+      "causes": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "CONDITIONAL_PO_WITH_QC",
+        "INCOMING_QC_INSPECTION",
+        "REQUEST_RENEWED_CERT",
+        "KEEP_VENDOR_ACTIVE",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "family": "I2",
+      "interaction": true,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-031": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E2+E4",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-032": {
+      "class": "composed",
+      "failed_checks": [
+        "vendor",
+        "quotes"
+      ],
+      "causes": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "CONDITIONAL_PO_WITH_QC",
+        "INCOMING_QC_INSPECTION",
+        "REQUEST_RENEWED_CERT",
+        "KEEP_VENDOR_ACTIVE",
+        "SOLE_SOURCE_FORM",
+        "CATEGORY_HEAD_SIGNOFF"
+      ],
+      "family": "I2",
+      "interaction": true,
+      "novel_combination": true,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-033": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E6",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-034": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-035": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "E2",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-036": {
+      "class": "unknown",
+      "failed_checks": [
+        "related_party"
+      ],
+      "causes": {
+        "related_party": "related_party"
+      },
+      "uncovered_checks": [
+        "related_party"
+      ],
+      "steps": [
+        "DECLARE_CONFLICT_OF_INTEREST",
+        "ESCALATE_AUDIT",
+        "COLLECT_QUOTES",
+        "HOLD_PO"
+      ],
+      "family": "U1",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-037": {
+      "class": "unknown",
+      "failed_checks": [
+        "vendor"
+      ],
+      "causes": {
+        "vendor": "gst_cancelled"
+      },
+      "uncovered_checks": [
+        "vendor"
+      ],
+      "steps": [
+        "VERIFY_GST_STATUS",
+        "HOLD_PO",
+        "REQUEST_MORE_INFO"
+      ],
+      "family": "U2",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": false,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-038": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "normal",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    },
+    "TEST-039": {
+      "class": "known",
+      "failed_checks": [
+        "approver"
+      ],
+      "causes": {
+        "approver": "approver_on_leave"
+      },
+      "uncovered_checks": [],
+      "steps": [
+        "ROUTE_DELEGATE",
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "family": "E3",
+      "interaction": false,
+      "novel_combination": false,
+      "post_july_capex_approver": true,
+      "after_override": false,
+      "adversarial": false
+    },
+    "TEST-040": {
+      "class": "",
+      "failed_checks": [],
+      "causes": {},
+      "uncovered_checks": [],
+      "steps": [],
+      "family": "adversarial",
+      "interaction": null,
+      "novel_combination": null,
+      "post_july_capex_approver": null,
+      "after_override": null,
+      "adversarial": null
+    }
+  }
+}

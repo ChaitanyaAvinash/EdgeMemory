@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "id": "9747aef7-1058-4085-8bac-7de3eac13235",
+      "bank_id": "kaveri-spike-verbose-fafd9d",
+      "name": "cite-cases",
+      "content": "Cite the case ID behind every step.",
+      "priority": 10,
+      "is_active": true,
+      "tags": [],
+      "created_at": "2026-09-28T10:06:26.064006+00:00",
+      "updated_at": "2026-09-28T10:06:26.064006+00:00"
+    },
+    {
+      "id": "07b02329-9953-43ad-817b-d15455949642",
+      "bank_id": "kaveri-spike-verbose-fafd9d",
+      "name": "no-payment-release",
+      "content": "Never recommend releasing a payment. Propose only steps for a human to approve.",
+      "priority": 9,
+      "is_active": true,
+      "tags": [],
+      "created_at": "2026-09-28T10:06:27.262079+00:00",
+      "updated_at": "2026-09-28T10:06:27.262079+00:00"
+    },
+    {
+      "id": "80962b57-ec85-4f61-87a8-c3b20675c5af",
+      "bank_id": "kaveri-spike-verbose-fafd9d",
+      "name": "bank-change-floor",
+      "content": "Whenever vendor bank details changed recently or are claimed to have changed, include VERIFY_BANK_CALLBACK and HOLD_PAYMENT.",
+      "priority": 8,
+      "is_active": true,
+      "tags": [],
+      "created_at": "2026-09-28T10:06:27.600082+00:00",
+      "updated_at": "2026-09-28T10:06:27.600082+00:00"
+    },
+    {
+      "id": "e3a13b36-a749-4949-b5aa-0a28512a4275",
+      "bank_id": "kaveri-spike-verbose-fafd9d",
+      "name": "say-unknown",
+      "content": "If no experience covers a condition, say so explicitly.",
+      "priority": 7,
+      "is_active": true,
+      "tags": [],
+      "created_at": "2026-09-28T10:06:27.926038+00:00",
+      "updated_at": "2026-09-28T10:06:27.926038+00:00"
+    },
+    {
+      "id": "fb5ed1df-7394-45d1-90ae-32840762eca5",
+      "bank_id": "kaveri-spike-verbose-fafd9d",
+      "name": "prefer-post-policy",
+      "content": "Prefer lessons dated after any relevant policy change; flag any lesson that predates one.",
+      "priority": 6,
+      "is_active": true,
+      "tags": [],
+      "created_at": "2026-09-28T10:06:28.255973+00:00",
+      "updated_at": "2026-09-28T10:06:28.255973+00:00"
+    }
+  ],
+  "total": 5,
+  "limit": 100,
+  "offset": 0
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-018",
+  "submitted_at": "2026-10-20T08:40:00",
+  "requester_id": "E-411",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Hyderabad Tooling Works",
+  "amount_raw": "72,000",
+  "quotes_attached": 1,
+  "justification": "Need to purchase carbide inserts and boring bars for the maintenance tool crib. The items are required ahead of the upcoming customer audit. Cost centre CC-MAINT is allocated for this spend.",
+  "email_thread": "From: Rajesh Kumar (Shop Floor) <rkumar@kaveriprecision.com>\nSubject: Request for purchase - carbide inserts\n\nNeed to order carbide inserts and boring bars for the maintenance tool crib. Please process.\n---\nFrom: Priya Nair (Purchasing) <pnair@kaveriprecision.com>\nSubject: Re: Request for purchase - carbide inserts\n\nGot it, Rajesh. I will raise the PO. Can you confirm the cost centre?\n---\nFrom: Rajesh Kumar (Shop Floor) <rkumar@kaveriprecision.com>\nSubject: Re: Request for purchase - carbide inserts\n\nYes, cost centre is CC-MAINT. Thanks. Looking forward to get them before the customer audit.\n",
+  "attachment_text": ""
+}

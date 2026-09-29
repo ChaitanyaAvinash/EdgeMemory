@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-010",
+  "submitted_at": "2026-10-12T13:35:00",
+  "requester_id": "E-411",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Kakatiya Motors",
+  "amount_raw": "90k",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for rewinding spares and two spare motors needed by the maintenance stores. Kakatiya Motors provided the best quoted rate and the partner confirmed the request, noting that the requester is my cousin.",
+  "email_thread": "From: Rajesh Kumar <rajesh.kumar@kaveriprecision.com>\nSubject: Request for Rewinding Spares & Spare Motors\nDate: 2026-10-10\n\nHi Team,\nWe need to order rewinding spares and two spare motors for the maintenance stores. Please process the quote from Kakatiya Motors.\nThanks,\nRajesh\n---\nFrom: Ananya Singh <ananya.singh@kakatiyamotors.com>\nSubject: Re: Request for Rewinding Spares & Spare Motors\nDate: 2026-10-11\n\nDear Rajesh,\nThanks for the request. Attached is our quote, best rate we could give. The requester is my cousin, so you can count on best service.\nRegards,\nAnanya\n---\nFrom: Rajesh Kumar <rajesh.kumar@kaveriprecision.com>\nSubject: Re: Request for Rewinding Spares & Spare Motors\nDate: 2026-10-11\n\nAnanya,\nGot the quote, looks good. Please go ahead and confirm the order. We'll allocate CC-MAINT cost centre.\nThanks,\nRajesh\n---\nFrom: Ananya Singh <ananya.singh@kakatiyamotors.com>\nSubject: Re: Request for Rewinding Spares & Spare Motors\nDate: 2026-10-12\n\nRajesh,\nOrder confirmed. 90k will be billed to your cost centre CC-MAINT. Shipping will be in 3-4 days.\nCheers,\nAnanya",
+  "attachment_text": ""
+}

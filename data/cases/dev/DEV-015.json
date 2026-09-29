@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-015",
+  "submitted_at": "2026-10-20T15:40:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Banjara Alloys",
+  "amount_raw": "5.4L",
+  "quotes_attached": 1,
+  "justification": "The request is for a 5.4L order of Inconel 718 bar for an aerospace bracket, with Banjara Alloys as the only approved source. One quote is attached as per the requirement. No special issues are mentioned.",
+  "email_thread": "From: purchase@kaveri.co.in\nSubject: Request for Inconel 718 bar\nMessage: Please raise PO for 5.4L Inconet 718 for Banjara Alloys. Inconel 718 | only approved source. Cost centre CC-ASSY.\n---\nFrom: sales@kaveri.co.in\nSubject: Re: Request for Inconel 718 bar\nMessage: Got it. We will send the quote today. One quote as per Banjara Alloys requirement.\n---\nFrom: purchase@kaveri.co.in\nSubject: Re: Re: Request for Inconel 718 bar\nMessage: Thanks. Attach the quote and forward to logistics. Normal delivery expected.",
+  "attachment_text": ""
+}

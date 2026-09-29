@@ -1,0 +1,23 @@
+{
+  "raw": "{\n  \"verdicts\": [\n    {\n      \"candidate_id\": \"C1\",\n      \"verdict\": \"partial\",\n      \"differences\": [\n        \"Procurement category is direct material instead of indirect MRO\"\n      ],\n      \"reason\": \"Same failed check (vendor), cause (cert_expired), and amount band (up to 2L), but category differs (direct material vs indirect MRO).\"\n    },\n    {\n      \"candidate_id\": \"C2\",\n      \"verdict\": \"no\",\n      \"differences\": [\n        \"Different failed check/cause (bank details changed vs ISO certificate expired)\"\n      ],\n      \"reason\": \"Candidate C2 pertains to bank detail updates rather than expired ISO certification.\"\n    }\n  ]\n}",
+  "parsed": {
+    "verdicts": [
+      {
+        "candidate_id": "C1",
+        "verdict": "partial",
+        "differences": [
+          "Procurement category is direct material instead of indirect MRO"
+        ],
+        "reason": "Same failed check (vendor), cause (cert_expired), and amount band (up to 2L), but category differs (direct material vs indirect MRO)."
+      },
+      {
+        "candidate_id": "C2",
+        "verdict": "no",
+        "differences": [
+          "Different failed check/cause (bank details changed vs ISO certificate expired)"
+        ],
+        "reason": "Candidate C2 pertains to bank detail updates rather than expired ISO certification."
+      }
+    ]
+  }
+}

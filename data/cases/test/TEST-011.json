@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-011",
+  "submitted_at": "2026-10-12T11:10:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "M/s Sultanpur Precision Castings",
+  "amount_raw": "4.4L",
+  "quotes_attached": 1,
+  "justification": "We need to purchase 4.4L of investment-cast impeller blanks for a customer order. Sultanpur Precision Castings is the only approved source and their IATF 16949 certification is being renewed, so we must proceed with the attached quote.",
+  "email_thread": "From: Rajesh Kumar (Purchasing)\nTo: Procurement Team\nSubject: Request for 4.4L to M/s Sultanpur Precision Castings\nWe need 4.4L of impeller blanks. Cost centre CC-ASSY. Only approved source is Sultanpur. Please see attached quote.\n---\nFrom: Ananya Rao (Procurement Lead)\nTo: Rajesh Kumar\nSubject: Re: Request for 4.4L to M/s Sultanpur Precision Castings\nThanks Rajesh. Noted that no other supplier can make these. Their IATF 16949 certificate expired on 6 Oct but recertification audit is done. Expect new cert in ~10 days.\n---\nFrom: Sunil Patel (Quality)\nTo: Procurement Team\nSubject: Re: Request for 4.4L to M/s Sultanpur Precision Castings\nSultanpur has clean quality record. Since they are the only approved source, we can proceed once the new certificate arrives.\n---\nFrom: Priya Menon (Finance)\nTo: Procurement Team\nSubject: Re: Request for 4.4L to M/s Sultanpur Precision Castings\nAll good. Please raise the PO under CC-ASSY. Let me know if any change.",
+  "attachment_text": "IATF 16949 CERTIFICATE\nCompany: Sultanpur Precision Castings\nCertificate No: 2023-XYZ-09\nValid From: 07 Oct 2023   Valid To: 06 Oct 2026\nAudit Status: recertification audit is done\n\n( OCR mis‑read: 1 9 6 6 may appear as 1 9 6 8 )"
+}

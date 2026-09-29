@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-004",
+  "submitted_at": "2026-09-29T10:05:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Shamshabad Hydraulics",
+  "amount_raw": "85,000",
+  "quotes_attached": 1,
+  "justification": "The maintenance store needs to restock hydraulic seals and hoses. Current stock is low but no failure has occurred yet. The request seeks approval while the cost-centre head is on leave.",
+  "email_thread": "From: R. Kumar (Procurement)\nTo: S. Fathima (Cost Centre Head)\nCc: A. Rao (Deputy Manager)\nDate: 2026-09-28\nSubject: Purchase request for hydraulic seals and hoses\n\nSir, we need to order hydraulic seals and hoses for maintenance stores. Stock is low. Please advise who can approve while you are on leave.\n---\nFrom: A. Rao (Deputy Manager)\nTo: R. Kumar (Procurement)\nDate: 2026-09-28\nSubject: Re: Purchase request for hydraulic seals and hoses\n\nHi Ramesh, I can sign off for you. Just forward the quote and cost centre CC-MAINT details.\n---\nFrom: R. Kumar (Procurement)\nTo: A. Rao (Deputy Manager)\nDate: 2026-09-28\nSubject: Re: Purchase request for hydraulic seals and hoses\n\nThanks Aunty Rao, sending the quote now. Please confirm after signing.\n",
+  "attachment_text": ""
+}

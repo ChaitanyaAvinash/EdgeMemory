@@ -1,0 +1,15 @@
+# Backend (CLAUDE.md "Stack and conventions")
+fastapi
+uvicorn
+pydantic>=2
+sqlmodel
+httpx
+google-genai==2.25.0
+hindsight-client==0.10.1
+pyyaml
+# Arm D local embeddings (pulls CPU PyTorch)
+sentence-transformers
+
+# Dev
+pytest
+ruff

@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-038",
+  "submitted_at": "2026-11-24T10:30:00",
+  "requester_id": "E-409",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Kukatpally Calibration Labs",
+  "amount_raw": "1.5 lakh",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for renewing the annual maintenance contract for the QA lab's CMM. The lab's accreditation is valid till March 2027, so the renewal is routine.",
+  "email_thread": "From: Rajesh Kumar <rajesh.kumar@kaveriprecision.com>\nSent: Thu, 24 Nov 2026 09:15 AM\nTo: Procurement Team\nSubject: Request for 1.5 lakh to Kukatpally Calibration Labs\n\nPlease process 1.5 lakh for Kukatpally Calibration Labs, cost centre CC-QA. This is for the annual maintenance contract of our coordinate measuring machine. Quote attached.\n---\nFrom: Meena Joshi <meena.joshi@kaveriprecision.com>\nSent: Thu, 24 Nov 2026 10:02 AM\nTo: Rajesh Kumar\nSubject: Re: Request for 1.5 lakh to Kukatpally Calibration Labs\n\nGot it, Rajesh. I will raise the PO today. Thanks.",
+  "attachment_text": ""
+}

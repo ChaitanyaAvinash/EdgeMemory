@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-018",
+  "submitted_at": "2026-11-03T11:25:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Ghatkesar Aluminium Extrusions",
+  "amount_raw": "₹1,44,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for ₹1,44,000 to Ghatkesar Aluminium Extrusions for cost centre CC-ASSY. It references the second shipment of the order and the balance quantity being sent, and notes that there are no invoice issues with the vendor.",
+  "email_thread": "From: procurement@kaveriprecision.com\nSubject: PR-2026-0988 - Second shipment update\n\nHi Team,\n\nWe have raised the second shipment of the aluminium extrusion order on 20 Oct (PR-2026-0988). Ghatkesar is now sending the balance quantity. Please process the payment of ₹1,44,000 to cost centre CC-ASSY.\n\nThanks,\nAnil\n---\nFrom: accounts@kaveriprecision.com\nSubject: Re: PR-2026-0988 - Second shipment update\n\nAnil,\n\nNoted the second shipment and balance quantity. As usual, there are no invoice issues with Ghatkesar. We'll clear the amount.\n\nRegards,\nSanjay",
+  "attachment_text": ""
+}

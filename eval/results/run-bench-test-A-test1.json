@@ -1,0 +1,457 @@
+{
+  "run_id": "test1",
+  "arm": "A",
+  "dataset": "bench",
+  "split": "test",
+  "rows": [
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-001",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "HOLD_PO",
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2464,
+      "latency_ms": 2442,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-002",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2201,
+      "latency_ms": 2071,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-003",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2236,
+      "latency_ms": 2060,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-004",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "ADD_CONTROLLER_SIGNOFF"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2183,
+      "latency_ms": 12350,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-005",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT",
+        "HOLD_PO"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2374,
+      "latency_ms": 16638,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-007",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2542,
+      "latency_ms": 17991,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-009",
+      "predicted_class": "normal",
+      "predicted_steps": [
+        "STANDARD_APPROVAL"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1665,
+      "latency_ms": 16782,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-011",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "REQUEST_RENEWED_CERT",
+        "COLLECT_QUOTES",
+        "SOLE_SOURCE_FORM"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2503,
+      "latency_ms": 17452,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-012",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2491,
+      "latency_ms": 18153,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-013",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2135,
+      "latency_ms": 17881,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-015",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "REQUEST_RENEWED_CERT",
+        "COLLECT_QUOTES",
+        "HOLD_PO"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2501,
+      "latency_ms": 16805,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-016",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "DECLARE_CONFLICT_OF_INTEREST",
+        "HOLD_PO"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1935,
+      "latency_ms": 16978,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-019",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "HOLD_PO",
+        "REQUEST_MORE_INFO"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2749,
+      "latency_ms": 18419,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-020",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2350,
+      "latency_ms": 18820,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-022",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "VERIFY_GST_STATUS"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2115,
+      "latency_ms": 16809,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-024",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "REJECT_REQUEST",
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2360,
+      "latency_ms": 16630,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-025",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2340,
+      "latency_ms": 17791,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-027",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "COLLECT_QUOTES"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2295,
+      "latency_ms": 16750,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-028",
+      "predicted_class": "normal",
+      "predicted_steps": [
+        "STANDARD_APPROVAL"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1902,
+      "latency_ms": 16922,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-030",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "REQUEST_RENEWED_CERT",
+        "COLLECT_QUOTES"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2233,
+      "latency_ms": 15052,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-032",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "SOLE_SOURCE_FORM",
+        "ROUTE_NEXT_LEVEL_APPROVER"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2690,
+      "latency_ms": 17533,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-036",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "DECLARE_CONFLICT_OF_INTEREST",
+        "ESCALATE_AUDIT"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2202,
+      "latency_ms": 18865,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-037",
+      "predicted_class": "composed",
+      "predicted_steps": [
+        "VERIFY_GST_STATUS",
+        "REQUEST_RENEWED_CERT"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2521,
+      "latency_ms": 17170,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "test1",
+      "arm": "A",
+      "split": "test",
+      "case_id": "TEST-039",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "ROUTE_DELEGATE",
+        "ADD_CONTROLLER_SIGNOFF",
+        "STANDARD_APPROVAL"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2221,
+      "latency_ms": 18504,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

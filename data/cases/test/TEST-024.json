@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-024",
+  "submitted_at": "2026-10-29T14:15:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Secunderabad Steel Traders",
+  "amount_raw": "Rs 1,15,000",
+  "quotes_attached": 1,
+  "justification": "The maintenance workshop needs steel channels and angles for new machine guards. The purchase request selects Secunderabad Steel Traders as they offered the lowest rate. The vendor has indicated a new bank account for payment.",
+  "email_thread": "From: Rajesh Kumar <rkumar@kaveriprecision.com>\nSent: Thu, 29 Oct 2026 09:15 AM\nSubject: Purchase Request for Steel Channels\n\nPlease process Rs 1,15,000 to Secunderabad Steel Traders, cost centre CC-MAINT. Quote attached.\n---\nFrom: Sales Secunderabad Steel Traders <sales@sst.com>\nSent: Thu, 29 Oct 2026 10:45 AM\nSubject: Re: Purchase Request for Steel Channels\n\nDear Rajesh,\nThanks for the PO. Kindly note our new bank account details for the transfer.\n---\nFrom: Anjali Mehta <amehta@kaveriprecision.com>\nSent: Thu, 29 Oct 2026 11:20 AM\nSubject: Re: Purchase Request for Steel Channels\n\nAnjali here, confirming the vendor’s new bank account. Will update our payment system accordingly.",
+  "attachment_text": ""
+}

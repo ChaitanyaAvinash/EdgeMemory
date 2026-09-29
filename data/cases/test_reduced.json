@@ -1,0 +1,12 @@
+{
+  "_note": "Reduced test set (SPEC §14.6): 24 of 40 cases, chosen from the case specs' families before any test ground truth existed. Keeps all 8 interaction cases, the 3 post-July capex approver-away cases (M6), the 3 override cases (M7) and all 4 unknowns (M1).",
+  "groups": {
+    "interaction (I1, I2, I3)": ["TEST-001", "TEST-003", "TEST-005", "TEST-011", "TEST-015", "TEST-019", "TEST-030", "TEST-032"],
+    "post-July capex approver away, M6 (E3)": ["TEST-002", "TEST-004", "TEST-039"],
+    "override context, M7": ["TEST-013", "TEST-020", "TEST-027"],
+    "unknown (U1, U2)": ["TEST-016", "TEST-022", "TEST-036", "TEST-037"],
+    "composed without interaction precedent": ["TEST-012", "TEST-024"],
+    "known single check": ["TEST-007"],
+    "normal and adversarial": ["TEST-009", "TEST-025", "TEST-028"]
+  }
+}

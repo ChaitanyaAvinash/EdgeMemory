@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-001",
+  "submitted_at": "2026-09-22T09:50:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Patancheru Electricals",
+  "amount_raw": "1.1 lakh",
+  "quotes_attached": 1,
+  "justification": "The request is for a routine restock of motor starters, contactors and cable for the maintenance stores. The amount of 1.1 lakh is to be paid to Patancheru Electricals and charged to cost centre CC-MAINT. The purchase order will be processed with the attached quote dated 2026-09-22. The cost-centre head is on leave until 2 Oct.",
+  "email_thread": "",
+  "attachment_text": ""
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-004",
+  "submitted_at": "2026-10-01T15:15:00",
+  "requester_id": "E-411",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Golconda Electricals",
+  "amount_raw": "₹1,48,000",
+  "quotes_attached": 1,
+  "justification": "The workshop needs a new 30 kVA UPS for the test bench and it will be capitalised as a fixed asset. The cost centre head is on leave, so the request is routed through the shop floor manager.",
+  "email_thread": "From: Rajesh Kumar <rkumar@kaveriprecision.com>\nDate: 2026-09-28\nSubject: Request for UPS purchase\n\nSir, need a 30 kVA UPS for the maintenance workshop test bench. It will be capitalised as a fixed asset. Please approve the ₹1,48,000 spend to Golconda Electricals, cost centre CC-MAINT.\n---\nFrom: Meena Patel <mpatel@kaveriprecision.com>\nDate: 2026-09-28\nSubject: Re: Request for UPS purchase\n\nGot it, Rajesh. I will forward to finance. As head is on leave till 2 Oct, I’ll sign off for now. Thanks.",
+  "attachment_text": ""
+}

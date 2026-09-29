@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-014",
+  "submitted_at": "2026-10-19T16:05:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Zaheerabad Special Alloys",
+  "amount_raw": "2.8L",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for a 2.8L titanium grade 5 bar needed for a medical-device part. Zaheerabad Special Alloys is the only approved source per the drawing, and we have one vendor quote attached.",
+  "email_thread": "From: Ramesh Kumar <r.kumar@kaveriprecision.com>\nSubject: Re: 2.8L Titanium Bar Request\n\nPlease see the attached quote from Zaheerabad Special Alloys. They are the only approved source for this grade.\n---\nFrom: Anil Patel <a.patel@zaheerabadalloys.com>\nSubject: Re: 2.8L Titanium Bar Request\n\nWe have a new bank account for payments. Kindly use the details in the invoice once it is raised.\n---\nFrom: Meena Singh <m.singh@kaveriprecision.com>\nSubject: Re: 2.8L Titanium Bar Request\n\nNoted the new bank account. We will update our payment system.\n---\nFrom: Ramesh Kumar <r.kumar@kaveriprecision.com>\nSubject: Re: 2.8L Titanium Bar Request\n\nProceed with the order. Cost centre CC-ASSY, submitted 2026-10-19.",
+  "attachment_text": ""
+}

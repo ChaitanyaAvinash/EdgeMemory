@@ -1,0 +1,1010 @@
+{
+  "bank": "kaveri-gate1-7a98a25e",
+  "started": "2026-09-28T11:06:40.708895+00:00",
+  "passed": true,
+  "summary": {
+    "false_confidence": 0,
+    "classes_correct": 12,
+    "cases": 15,
+    "citations_resolved": 47,
+    "citations_total": 47,
+    "checks_exact": 14,
+    "novel_flag_correct": 3,
+    "composed_cases": 4,
+    "tokens": 34519
+  },
+  "cases": [
+    {
+      "case": "GATE-K1",
+      "expected": "known",
+      "predicted": "known",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "vendor"
+      ],
+      "checks_found": [
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cert_expired cause, vendor active, amount ≤2L, direct_material matches PR-2026-0417.",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cert_expired cause, vendor active, amount ≤2L, direct_material matches PR-2026-0417.",
+          "differences": []
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "direct_material",
+      "amount": 120000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1351
+      ]
+    },
+    {
+      "case": "GATE-K2",
+      "expected": "known",
+      "predicted": "known",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "bank"
+      ],
+      "checks_found": [
+        "bank"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "bank",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0233",
+            "PR-2026-0455"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Identical bank change cause, amount band, category; vendor in good standing",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Identical bank change cause, amount band, category; vendor in good standing",
+          "differences": []
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "direct_material",
+      "amount": 340000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1292
+      ]
+    },
+    {
+      "case": "GATE-K3",
+      "expected": "known",
+      "predicted": "known",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver"
+      ],
+      "checks_found": [
+        "approver"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "approver",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cause, amount within delegate limit, same category; policy change irrelevant for indirect_mro.",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cause, amount within delegate limit, same category; policy change irrelevant for indirect_mro.",
+          "differences": []
+        },
+        "V1-C2": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Cause matches but category differs; policy requirement for capex does not apply.",
+          "differences": [
+            "category indirect_mro vs capex",
+            "Finance Controller signoff not required"
+          ]
+        }
+      },
+      "citations_total": 4,
+      "citations_resolved": 4,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 105000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        712
+      ]
+    },
+    {
+      "case": "GATE-K4",
+      "expected": "known",
+      "predicted": "generalized",
+      "correct": false,
+      "false_confidence": false,
+      "checks_expected": [
+        "budget"
+      ],
+      "checks_found": [
+        "budget"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [
+            "different category (indirect_mro vs direct_material)",
+            "required procedural steps not confirmed"
+          ],
+          "reason": "Same overrun cause, amount band matches, but category differs and steps cannot be verified",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Same overrun cause, amount band matches, but category differs and steps cannot be verified",
+          "differences": [
+            "different category (indirect_mro vs direct_material)",
+            "required procedural steps not confirmed"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "line_down",
+      "category": "indirect_mro",
+      "amount": 150000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        4164
+      ]
+    },
+    {
+      "case": "GATE-K5",
+      "expected": "known",
+      "predicted": "generalized",
+      "correct": false,
+      "false_confidence": false,
+      "checks_expected": [
+        "quotes"
+      ],
+      "checks_found": [
+        "quotes"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "quotes",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0288",
+            "PR-2026-0470"
+          ],
+          "strength": 2,
+          "differences": [
+            "Category differs: indirect_mro vs direct_material"
+          ],
+          "reason": "Same sole‑source waiver applies but category mismatch limits applicability",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Same sole‑source waiver applies but category mismatch limits applicability",
+          "differences": [
+            "Category differs: indirect_mro vs direct_material"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 520000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1480
+      ]
+    },
+    {
+      "case": "GATE-C1",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver",
+        "budget"
+      ],
+      "checks_found": [
+        "approver",
+        "budget"
+      ],
+      "checks_match": true,
+      "novel_expected": false,
+      "novel_predicted": true,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [
+            "Required steps not shown in request"
+          ],
+          "reason": "Same budget overrun cause; amount, category match, but required steps unverified",
+          "flags": []
+        },
+        {
+          "check": "approver",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [
+            "Category differs (indirect_mro/services vs direct_material)"
+          ],
+          "reason": "Approver-on-leave cause matches; amount OK; category mismatch",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        }
+      ],
+      "interaction": {
+        "status": "partial",
+        "combo": "approver+budget",
+        "cases": [
+          "PR-2026-0360"
+        ],
+        "reason": "Both budget and approver failures align; steps required not evidenced"
+      },
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Same budget overrun cause; amount, category match, but required steps unverified",
+          "differences": [
+            "Required steps not shown in request"
+          ]
+        },
+        "V2-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Approver-on-leave cause matches; amount OK; category mismatch",
+          "differences": [
+            "Category differs (indirect_mro/services vs direct_material)"
+          ]
+        },
+        "V2-C2": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Approver-on-leave cause matches; but category and amount band differ",
+          "differences": [
+            "Category capex vs direct_material; amount band higher"
+          ]
+        },
+        "I-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Both budget and approver failures align; steps required not evidenced",
+          "differences": [
+            "Procedural steps not confirmed"
+          ]
+        }
+      },
+      "citations_total": 7,
+      "citations_resolved": 7,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "line_down",
+      "category": "direct_material",
+      "amount": 180000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1760,
+        1667,
+        1439
+      ]
+    },
+    {
+      "case": "GATE-C2",
+      "expected": "composed",
+      "predicted": "unknown",
+      "correct": false,
+      "false_confidence": false,
+      "checks_expected": [
+        "bank",
+        "budget"
+      ],
+      "checks_found": [],
+      "checks_match": false,
+      "novel_expected": false,
+      "novel_predicted": null,
+      "coverage": [],
+      "interaction": null,
+      "verdicts": {},
+      "citations_total": 0,
+      "citations_resolved": 0,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "",
+      "category": "",
+      "amount": null,
+      "flags": [],
+      "escalated": "extraction failed: openai/gpt-oss-120b#1: ProviderHTTPError 429; gemini-3.8-flash#1: KeyError None; gemini-3.7-flash#1: KeyError None",
+      "verifier_model": "",
+      "recall_ms": []
+    },
+    {
+      "case": "GATE-C3",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver",
+        "vendor"
+      ],
+      "checks_found": [
+        "approver",
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": true,
+      "novel_predicted": true,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cert_expired cause, same band and category, vendor good standing.",
+          "flags": []
+        },
+        {
+          "check": "approver",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same approver_on_leave cause, amount within delegate limit, same category, policy unchanged.",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cert_expired cause, same band and category, vendor good standing.",
+          "differences": []
+        },
+        "V2-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same approver_on_leave cause, amount within delegate limit, same category, policy unchanged.",
+          "differences": []
+        },
+        "V2-C2": {
+          "verdict": "no",
+          "guard": "",
+          "reason": "Precedent limited to capex; request is indirect_mro, so condition fails.",
+          "differences": [
+            "Category capex required but request indirect_mro"
+          ]
+        }
+      },
+      "citations_total": 6,
+      "citations_resolved": 6,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 95000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1525,
+        1794,
+        1386
+      ]
+    },
+    {
+      "case": "GATE-C4",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "bank",
+        "quotes"
+      ],
+      "checks_found": [
+        "bank",
+        "quotes"
+      ],
+      "checks_match": true,
+      "novel_expected": true,
+      "novel_predicted": true,
+      "coverage": [
+        {
+          "check": "bank",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0233",
+            "PR-2026-0455"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cause, band, category; conditions met, no policy change.",
+          "flags": []
+        },
+        {
+          "check": "quotes",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0288",
+            "PR-2026-0470"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cause, band, category; conditions met, no policy change.",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cause, band, category; conditions met, no policy change.",
+          "differences": []
+        },
+        "V2-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cause, band, category; conditions met, no policy change.",
+          "differences": []
+        }
+      },
+      "citations_total": 4,
+      "citations_resolved": 4,
+      "unresolved": [],
+      "signals": [
+        "bank_change_claimed"
+      ],
+      "urgency": "normal",
+      "category": "direct_material",
+      "amount": 480000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        567,
+        845,
+        3496
+      ]
+    },
+    {
+      "case": "GATE-C5",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver",
+        "duplicate"
+      ],
+      "checks_found": [
+        "approver",
+        "duplicate"
+      ],
+      "checks_match": true,
+      "novel_expected": true,
+      "novel_predicted": true,
+      "coverage": [
+        {
+          "check": "approver",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "same approver_on_leave cause, amount band and category match; no conflicting policy",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        },
+        {
+          "check": "duplicate",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0266",
+            "PR-2026-0402"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "same duplicate cause, category and amount band; steps align",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "same approver_on_leave cause, amount band and category match; no conflicting policy",
+          "differences": []
+        },
+        "V1-C2": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "cause matches but category and amount band differ",
+          "differences": [
+            "different category (capex vs indirect_mro)",
+            "different amount band (2-10L vs up to 2L)"
+          ]
+        },
+        "V2-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "same duplicate cause, category and amount band; steps align",
+          "differences": []
+        }
+      },
+      "citations_total": 6,
+      "citations_resolved": 6,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 82000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1641,
+        682,
+        1386
+      ]
+    },
+    {
+      "case": "GATE-U1",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "vendor"
+      ],
+      "checks_found": [
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "no",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [
+            "cause differs: gst_cancelled vs cert_expired"
+          ],
+          "reason": "Precedent addresses certificate expiry, not GST cancellation",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "no",
+          "guard": "",
+          "reason": "Precedent addresses certificate expiry, not GST cancellation",
+          "differences": [
+            "cause differs: gst_cancelled vs cert_expired"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 70000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        599
+      ]
+    },
+    {
+      "case": "GATE-U2",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "related_party"
+      ],
+      "checks_found": [
+        "related_party"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "related_party",
+          "status": "no",
+          "cases": [],
+          "strength": 0,
+          "differences": [],
+          "reason": "no precedent recalled for this check",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {},
+      "citations_total": 0,
+      "citations_resolved": 0,
+      "unresolved": [],
+      "signals": [
+        "related_party"
+      ],
+      "urgency": "normal",
+      "category": "services",
+      "amount": 140000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "",
+      "recall_ms": [
+        442
+      ]
+    },
+    {
+      "case": "GATE-U3",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver",
+        "vendor"
+      ],
+      "checks_found": [
+        "approver",
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "no",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "different cause; blacklisted vs certificate expired",
+          "flags": []
+        },
+        {
+          "check": "approver",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "same cause, amount band, category; policy unchanged",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "no",
+          "guard": "",
+          "reason": "different cause; blacklisted vs certificate expired",
+          "differences": []
+        },
+        "V2-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "same cause, amount band, category; policy unchanged",
+          "differences": []
+        },
+        "V2-C2": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "same cause but different category and amount band",
+          "differences": [
+            "category indirect_mro vs capex",
+            "amount band up to 2L vs 2-10L",
+            "controller signoff not required"
+          ]
+        }
+      },
+      "citations_total": 6,
+      "citations_resolved": 6,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "indirect_mro",
+      "amount": 60000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1388,
+        1747,
+        520
+      ]
+    },
+    {
+      "case": "GATE-U4",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "budget",
+        "related_party"
+      ],
+      "checks_found": [
+        "budget",
+        "related_party"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [
+            "category indirect_mro vs direct_material",
+            "required steps not confirmed"
+          ],
+          "reason": "Same budget overrun cause; category differs and steps missing",
+          "flags": []
+        },
+        {
+          "check": "related_party",
+          "status": "no",
+          "cases": [],
+          "strength": 0,
+          "differences": [],
+          "reason": "no precedent recalled for this check",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Same budget overrun cause; category differs and steps missing",
+          "differences": [
+            "category indirect_mro vs direct_material",
+            "required steps not confirmed"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [
+        "related_party",
+        "related_party"
+      ],
+      "urgency": "line_down",
+      "category": "indirect_mro",
+      "amount": 160000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        3865,
+        3899,
+        3701
+      ]
+    },
+    {
+      "case": "GATE-U5",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "budget"
+      ],
+      "checks_found": [
+        "budget"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "no",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [
+            "urgency not line_down",
+            "category services vs direct_material",
+            "overrun 25% exceeds 10% limit"
+          ],
+          "reason": "conditions differ; urgency, category, and overrun exceed allowed",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "no",
+          "guard": "",
+          "reason": "conditions differ; urgency, category, and overrun exceed allowed",
+          "differences": [
+            "urgency not line_down",
+            "category services vs direct_material",
+            "overrun 25% exceeds 10% limit"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "urgent",
+      "category": "services",
+      "amount": 110000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        678
+      ]
+    }
+  ]
+}

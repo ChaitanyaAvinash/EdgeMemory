@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-005",
+  "submitted_at": "2026-09-30T14:10:00",
+  "requester_id": "E-407",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Jeedimetla Packaging",
+  "amount_raw": "64,000/-",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for the second shipment of the wooden crates as per PR-2026-0812. The vendor will deliver the balance quantity and there have been no invoice issues with Jeedimetla Packaging.",
+  "email_thread": "From: Aravind Kumar (procurement@kaveri.com)\nSent: 2026-09-29\nSubject: PR-2026-0812 – Second shipment request\n\nHi Team,\nPlease note we need to raise a PR for the second shipment of wooden crates. Vendor will send balance quantity separately. No invoice issues so far. Cost centre CC-MAINT. Amount: 64,000/-. Thanks.\n---\nFrom: Sunita Reddy (store@kaveri.com)\nSent: 2026-09-30\nSubject: Re: PR-2026-0812 – Second shipment request\n\nGot it. I will forward to finance. Cost centre head is on leave till 2 Oct, so will get his sign later. Let me know if any doc needed.\n---\nFrom: Ravi Patel (finance@kaveri.com)\nSent: 2026-09-30\nSubject: Re: PR-2026-0812 – Second shipment request\n\nOkay, will hold the entry until approval returns. Meanwhile, we have the quote attached. No issues.\n",
+  "attachment_text": ""
+}

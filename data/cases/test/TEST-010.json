@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-010",
+  "submitted_at": "2026-10-12T07:40:00",
+  "requester_id": "E-408",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Banjara Alloys",
+  "amount_raw": "9.6L",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for a 9.6L special alloy bar needed for Line 5. Banjari Alloys is the only approved source and a single quote is attached. The cost centre CC-MACH budget is already allocated.",
+  "email_thread": "From: Ravi Kumar <ravi.kumar@kaveriprecision.com>\nSubject: Request for 9.6L alloy bar\nHi Team,\nWe need to place an order for a 9.6L special alloy bar for line 5. line 5 is down and we need the material ASAP.\n---\nFrom: Anjali Singh <anjali.singh@kaveriprecision.com>\nSubject: Re: Request for 9.6L alloy bar\nRavi,\nGot it. I see that Banjara Alloys is the only approved source. Please forward the quote.\n---\nFrom: Ravi Kumar <ravi.kumar@kaveriprecision.com>\nSubject: Re: Request for 9.6L alloy bar\nHere is the quote from Banjara Alloys (attached). production log confirms line 5 has been stopped since morning.\n---\nFrom: Suresh Patel <suresh.patel@kaveriprecision.com>\nSubject: Re: Request for 9.6L alloy bar\nThanks Ravi. I will raise the PO under cost centre CC-MACH and get it processed.",
+  "attachment_text": ""
+}

@@ -1,0 +1,980 @@
+{
+  "ran_at": "2026-09-28T10:35:45.312652+00:00",
+  "hindsight_version": {
+    "api_version": "0.10.1",
+    "features": {
+      "observations": true,
+      "mcp": true,
+      "worker": false,
+      "bank_config_api": true,
+      "bank_llm_health": false,
+      "file_upload_api": true,
+      "document_export_api": true,
+      "document_import_api": true,
+      "audit_log": true,
+      "llm_trace": true,
+      "store_document_text": true
+    }
+  },
+  "bank_setup_ms": {
+    "concise": 2495,
+    "verbose": 2299
+  },
+  "bank_config_checks": {
+    "concise": {
+      "retain_extraction_mode": "concise",
+      "disposition_skepticism": 5,
+      "disposition_literalism": 4,
+      "disposition_empathy": 2,
+      "enable_auto_consolidation": true,
+      "enable_observations": true
+    },
+    "verbose": {
+      "retain_extraction_mode": "verbose",
+      "disposition_skepticism": 5,
+      "disposition_literalism": 4,
+      "disposition_empathy": 2,
+      "enable_auto_consolidation": true,
+      "enable_observations": true
+    }
+  },
+  "bank_config_llm_keys": [
+    "consolidation_llm_batch_size",
+    "consolidation_llm_parallelism",
+    "llm_gemini_safety_settings",
+    "mental_model_min_refresh_interval_seconds"
+  ],
+  "bank_config_all_keys": [
+    "audit_log_enabled",
+    "consolidation_llm_batch_size",
+    "consolidation_llm_parallelism",
+    "consolidation_max_memories_per_round",
+    "consolidation_source_facts_max_tokens",
+    "consolidation_source_facts_max_tokens_per_observation",
+    "disposition_empathy",
+    "disposition_literalism",
+    "disposition_skepticism",
+    "enable_auto_consolidation",
+    "enable_graph_retrieval",
+    "enable_observations",
+    "enable_reranking",
+    "enable_temporal_retrieval",
+    "enable_text_search",
+    "entities_allow_free_form",
+    "entity_labels",
+    "knowledge_page_default_trigger",
+    "llm_gemini_safety_settings",
+    "max_observations_per_scope",
+    "mcp_enabled_tools",
+    "memory_defense",
+    "mental_model_min_refresh_interval_seconds",
+    "observation_scope_limits",
+    "observations_mission",
+    "recall_budget_adaptive_high",
+    "recall_budget_adaptive_low",
+    "recall_budget_adaptive_mid",
+    "recall_budget_fixed_high",
+    "recall_budget_fixed_low",
+    "recall_budget_fixed_mid",
+    "recall_budget_function",
+    "recall_budget_max",
+    "recall_budget_min",
+    "recall_chunks_max_tokens",
+    "recall_include_chunks",
+    "recall_max_tokens",
+    "reflect_default_options",
+    "reflect_mission",
+    "reflect_source_facts_max_tokens",
+    "retain_chunk_batch_size",
+    "retain_chunk_size",
+    "retain_custom_instructions",
+    "retain_default_strategy",
+    "retain_extraction_mode",
+    "retain_max_attachments_per_chunk",
+    "retain_mission",
+    "retain_strategies",
+    "retain_structured_chunk_size",
+    "store_document_text"
+  ],
+  "retain": {
+    "concise": [
+      {
+        "case_id": "PR-2026-0233",
+        "ms": 3068,
+        "usage": {
+          "input_tokens": 2378,
+          "output_tokens": 811,
+          "total_tokens": 3189,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0301",
+        "ms": 3083,
+        "usage": {
+          "input_tokens": 2370,
+          "output_tokens": 742,
+          "total_tokens": 3112,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0312",
+        "ms": 4056,
+        "usage": {
+          "input_tokens": 2514,
+          "output_tokens": 1220,
+          "total_tokens": 3734,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0417",
+        "ms": 5007,
+        "usage": {
+          "input_tokens": 2370,
+          "output_tokens": 1006,
+          "total_tokens": 3376,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0488",
+        "ms": 3489,
+        "usage": {
+          "input_tokens": 2375,
+          "output_tokens": 1113,
+          "total_tokens": 3488,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      }
+    ],
+    "verbose": [
+      {
+        "case_id": "PR-2026-0233",
+        "ms": 4679,
+        "usage": {
+          "input_tokens": 2461,
+          "output_tokens": 1316,
+          "total_tokens": 3777,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0301",
+        "ms": 2291,
+        "usage": {
+          "input_tokens": 2453,
+          "output_tokens": 513,
+          "total_tokens": 2966,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0312",
+        "ms": 5305,
+        "usage": {
+          "input_tokens": 2597,
+          "output_tokens": 1688,
+          "total_tokens": 4285,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0417",
+        "ms": 5053,
+        "usage": {
+          "input_tokens": 2453,
+          "output_tokens": 1394,
+          "total_tokens": 3847,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      },
+      {
+        "case_id": "PR-2026-0488",
+        "ms": 8195,
+        "usage": {
+          "input_tokens": 2458,
+          "output_tokens": 524,
+          "total_tokens": 2982,
+          "cached_tokens": 0,
+          "thoughts_tokens": 0
+        }
+      }
+    ]
+  },
+  "consolidation": {
+    "concise": {
+      "settled_s": 25.5,
+      "first_observation_s": 25.526073499999256,
+      "polls": [
+        {
+          "t": 25.5,
+          "consolidation_ops": 5,
+          "pending": 0,
+          "observations": 5
+        }
+      ]
+    },
+    "verbose": {
+      "settled_s": 3.3,
+      "first_observation_s": 0.6747804999995424,
+      "polls": [
+        {
+          "t": 0.7,
+          "consolidation_ops": 5,
+          "pending": 1,
+          "observations": 5
+        },
+        {
+          "t": 3.3,
+          "consolidation_ops": 5,
+          "pending": 0,
+          "observations": 5
+        }
+      ]
+    }
+  },
+  "extraction_mode": {
+    "concise": {
+      "PR-2026-0233": {
+        "facts": 4,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "3 of 7",
+        "fact_texts": [
+          "Lesson learned: a recent bank change requires a callback on a known number and a payment hold before proceeding.",
+          "The callback confirmed the new account and the PO was released after 2 days. | When: 2026-02-20 | Involving: R. Menon",
+          "R. Menon approved step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO to resolve the procurement exception. | When: 2026-02-20 | Involving: R. Menon",
+          "Case PR-2026-0233 for ₹3,20,000 involving vendor V-031 failed the bank check because the vendor changed their bank account 9 days prior. | When: 2026-02-20 | Involving: R. Menon (Procurement Ops), vendor V-031 | The standard bank check flags account changes as a potential payment-fraud risk without verifying authenticity."
+        ]
+      },
+      "PR-2026-0301": {
+        "facts": 3,
+        "codes_kept": "1 of 1",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "5 of 6",
+        "fact_texts": [
+          "Lesson learned: when the approver is away and the amount is within the delegate's limit, route the request to the delegate.",
+          "R. Menon approved the use of step code ROUTE_DELEGATE, allowing delegate E-112 to approve the request on the same day. | When: 2026-03-05 | Involving: R. Menon, E-112 | The request amount was within the delegate's ₹2,00,000 limit.",
+          "Case PR-2026-0301 for ₹1,10,000 indirect MRO spindle bearings from vendor V-008 failed the 'approver' check because approver E-104 was on leave until March 13, 2026. | When: 2026-03-05 | Involving: R. Menon (Procurement Ops), E-104 (approver), E-112 (delegate) | The standard process would have caused an eight-day delay."
+        ]
+      },
+      "PR-2026-0312": {
+        "facts": 5,
+        "codes_kept": "6 of 6",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "4 of 4",
+        "fact_texts": [
+          "The lesson learned is that when a bank change coincides with a line-down budget overrun, the PO should be released while the payment is held until the callback is confirmed.",
+          "The line restarted after parts arrived on March 12, 2026, and payment was released following the bank callback and controller sign-off. | When: 2026-03-12",
+          "R. Menon approved the following step codes: EXPEDITE_PO, VERIFY_BANK_CALLBACK, HOLD_PAYMENT, ALLOW_BUDGET_OVERRUN, ATTACH_LINE_DOWN_EVIDENCE, and ADD_CONTROLLER_SIGNOFF, while removing HOLD_PO. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | To release the PO immediately while keeping the payment held until the bank callback.",
+          "The standard process was bypassed because holding the PO for a bank callback would have kept line 3 down, and a PO is not a payment. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops)",
+          "Case PR-2026-0312 involved a procurement exception for ₹4,10,000 for coolant pump assemblies from vendor V-031 due to a recent bank change and a 7% budget overrun in cost centre CC-MACH. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | Line 3 was stopped due to a lack of parts."
+        ]
+      },
+      "PR-2026-0417": {
+        "facts": 4,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "4 of 6",
+        "fact_texts": [
+          "A recently expired certificate should be treated as a hold rather than a rejection when the vendor is in good standing. | Lesson learned from case PR-2026-0417.",
+          "The vendor provided a renewed certificate within 3 days, allowing the purchase order to be released. | When: 2026-03-17 | Involving: V-017 (vendor)",
+          "R. Menon approved step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO to resolve the procurement exception. | When: 2026-03-14 | Involving: R. Menon (Procurement Ops)",
+          "Procurement case PR-2026-0417 for ₹1,40,000 worth of bearing housings from vendor V-017 was blocked due to an expired ISO 9001 certificate. | When: 2026-03-14 | Involving: R. Menon (Procurement Ops), V-017 (vendor) | The standard vendor check blocks vendors with expired certifications, but V-017 had a 2-year history of on-time delivery and was in the process of renewing."
+        ]
+      },
+      "PR-2026-0488": {
+        "facts": 5,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "6 of 7",
+        "fact_texts": [
+          "A recently expired certificate is a hold, not a rejection, when the vendor is in good standing. | Lesson learned from case PR-2026-0488.",
+          "The renewed certificate was received in 5 days and the purchase order for ₹85,000 was released. | When: 2026-04-07 | Involving: V-023",
+          "R. Menon approved step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO for case PR-2026-0488. | When: 2026-04-02 | Involving: R. Menon",
+          "The standard procurement process was bypassed because blocking vendor V-023 would have cut off the only local calibrated gauge supplier for an administrative lapse. | When: 2026-04-02 | Involving: R. Menon",
+          "Procurement case PR-2026-0488 failed the vendor check due to an expired ISO/IEC 17025 calibration certificate for vendor V-023. | When: 2026-04-02 | Involving: R. Menon (Procurement Ops), V-023 (vendor) | The certificate expired 3 days before the request, but the renewal audit was already booked."
+        ]
+      }
+    },
+    "verbose": {
+      "PR-2026-0233": {
+        "facts": 5,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "3 of 7",
+        "fact_texts": [
+          "The lesson learned is that a recent bank change requires a callback on a known number and a payment hold before any other actions are taken. | When: Friday, February 20, 2026 | Involving: Procurement Ops team | To establish a standard protocol for preventing payment fraud when vendor banking details are modified.",
+          "The callback to the number on file confirmed the new account, and the Purchase Order (PO) was released after 2 days. | When: Friday, February 20, 2026 | Involving: R. Menon | The verification process successfully validated the vendor's account change, allowing the procurement to proceed.",
+          "R. Menon approved step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO to resolve the exception. | When: Friday, February 20, 2026 | Involving: R. Menon (Procurement Ops) | These steps were necessary to mitigate the risk of payment fraud identified by the bank account change.",
+          "The standard 'bank' check failed because vendor V-031 changed its bank account 9 days prior to the request via email. | When: Friday, February 20, 2026 | Involving: vendor V-031 | The bank check only flags the change without verifying authenticity, and a changed account is a classic payment-fraud route, making the standard process insufficient.",
+          "Procurement exception for case PR-2026-0233 involving a ₹3,20,000 purchase of direct material (forged steel blanks) from vendor V-031 was processed. | When: Friday, February 20, 2026 | Involving: R. Menon (Procurement Ops reviewer), vendor V-031 (supplier for 4 years) | The user requested extraction of procurement exception resolution details for Kaveri, specifically regarding failed standard checks, process limitations, approved step codes, outcomes, and lessons learned."
+        ]
+      },
+      "PR-2026-0301": {
+        "facts": 1,
+        "codes_kept": "1 of 1",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "5 of 6",
+        "fact_texts": [
+          "Procurement exception resolution for case PR-2026-0301 involving a request for ₹1,10,000 for indirect MRO spindle bearings from vendor V-008 for cost centre CC-MACH. The standard 'approver' check failed because the primary approver E-104 was on leave until March 13, 2026. The standard process did not fit because the request would have been delayed for eight days. The human reviewer R. Menon approved the step code ROUTE_DELEGATE, allowing delegate E-112 to approve the request on the same day. The lesson learned is that when an approver is away and the amount is within the delegate's limit, the request should be routed to the delegate. | When: Thursday, March 5, 2026 | Involving: R. Menon (Procurement Ops reviewer), E-104 (primary approver on leave), E-112 (delegate approver), V-008 (vendor) | The user requested an extraction of how procurement exceptions at Kaveri were resolved, specifically focusing on failed checks, process fit, approved step codes, outcomes, and lessons learned for case PR-2026-0301."
+        ]
+      },
+      "PR-2026-0312": {
+        "facts": 6,
+        "codes_kept": "6 of 6",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "4 of 4",
+        "fact_texts": [
+          "The lesson learned is that when a bank change meets a line-down overrun, the PO should be released, but the payment must be held until the bank callback is completed. | When: Wednesday, March 11, 2026 | Involving: R. Menon | To establish a best practice for handling similar future procurement exceptions.",
+          "The parts arrived the next day, the bank account was confirmed via callback, and payment was released after controller sign-off. | When: Thursday, March 12, 2026 | Involving: R. Menon, vendor V-031 | Successful resolution of the procurement exception allowed the line to restart.",
+          "R. Menon approved the following step codes: EXPEDITE_PO, VERIFY_BANK_CALLBACK, HOLD_PAYMENT, ALLOW_BUDGET_OVERRUN, ATTACH_LINE_DOWN_EVIDENCE, ADD_CONTROLLER_SIGNOFF. The step HOLD_PO was removed from the plain combination. | When: Wednesday, March 11, 2026 | Involving: R. Menon | To allow the PO to be released immediately while keeping the payment held until the bank callback was completed.",
+          "The standard process was bypassed because holding the PO until a bank callback would have kept line 3 down, and a PO is not a payment. | When: Wednesday, March 11, 2026 | Involving: R. Menon | To prevent production stoppage on line 3 while maintaining financial control.",
+          "Standard checks for bank (cause: bank_changed_recently) and budget (cause: 7% overrun in cost centre CC-MACH) failed for case PR-2026-0312. | When: Wednesday, March 11, 2026 | Involving: vendor V-031 | The vendor changed bank details 12 days prior to the event, and the cost centre CC-MACH exceeded its budget by 7%.",
+          "Procurement exception case PR-2026-0312 was resolved for a ₹4,10,000 purchase of coolant pump assemblies from vendor V-031 due to a line_down urgency on line 3. | When: Wednesday, March 11, 2026 | Involving: R. Menon (Procurement Ops reviewer), vendor V-031 | The user requested extraction of procurement exception resolution details including failed checks, process deviations, approved steps, outcomes, and lessons learned."
+        ]
+      },
+      "PR-2026-0417": {
+        "facts": 5,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "5 of 6",
+        "fact_texts": [
+          "The lesson learned is that a recently expired certificate should be treated as a hold rather than a rejection when the vendor is otherwise in good standing. | When: Saturday, March 14, 2026 | Involving: Procurement Ops team | To improve future procurement exception handling and prevent unnecessary vendor rejections.",
+          "The vendor provided a renewed certificate within 3 days, and the purchase order (PO) was subsequently released. | When: Tuesday, March 17, 2026 | Involving: vendor V-017 | The resolution successfully enabled the procurement of the required bearing housings.",
+          "R. Menon approved the step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO to resolve the exception. | When: Saturday, March 14, 2026 | Involving: R. Menon (Procurement Ops reviewer) | To allow the procurement process to continue while waiting for the vendor's certificate renewal, acknowledging the vendor's otherwise positive standing.",
+          "The standard vendor check failed because the vendor's ISO 9001 certificate had expired 6 days prior to the request. | When: Saturday, March 14, 2026 | Involving: vendor V-017 | The standard process did not fit because the system automatically blocks vendors with expired certificates, even though vendor V-017 was in good standing and the renewal process was already underway.",
+          "Procurement case PR-2026-0417 was resolved by R. Menon from Procurement Ops, involving a request for ₹1,40,000 worth of direct material (bearing housings) from vendor V-017. | When: Saturday, March 14, 2026 | Involving: R. Menon (Procurement Ops reviewer), vendor V-017 (vendor in good standing with 2 years of on-time delivery history) | The user requested an extraction of how procurement exceptions at Kaveri were resolved, specifically regarding case PR-2026-0417, including failed checks, process mismatches, approved step codes, outcomes, and lessons learned."
+        ]
+      },
+      "PR-2026-0488": {
+        "facts": 1,
+        "codes_kept": "3 of 3",
+        "all_codes_kept": true,
+        "why_keyword_overlap": "6 of 7",
+        "fact_texts": [
+          "Procurement exception case PR-2026-0488 was resolved by R. Menon regarding a request for ₹85,000 for indirect MRO calibrated bore gauges from vendor V-023. The standard vendor check failed because the ISO/IEC 17025 calibration certificate had expired 3 days prior to the request. The standard process did not fit because blocking the vendor would have cut off the only local supplier of calibrated gauges, and the certificate lapse was purely administrative. R. Menon approved step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO. The outcome was that the renewed certificate was received in 5 days and the purchase order was released. The lesson learned is that a recently expired certificate should be treated as a hold rather than a rejection when the vendor is in good standing. | When: Thursday, April 02, 2026 | Involving: R. Menon (Procurement Ops), vendor V-023 (supplier of calibrated bore gauges) | The user requested an extraction of how procurement exceptions at Kaveri were resolved, specifically focusing on the failed standard check, the reason the standard process was insufficient, the approved step codes, the outcome, and the lesson learned for case PR-2026-0488."
+        ]
+      }
+    }
+  },
+  "recall_violation_ms": 586,
+  "recall_violation_summary": [
+    {
+      "type": "observation",
+      "document_id": null,
+      "tags": [
+        "step:vendor"
+      ],
+      "source_fact_ids": [
+        "e334c375-23dc-4341-903b-e14794e57f42",
+        "a211e086-82a3-4e45-8c71-bc19bd39f892",
+        "0f700b9e-6e4c-4ab7-adac-6c4143e95a0d",
+        "a19c587f-4617-4d3d-8725-b520c7a57a65",
+        "94ab6fed-2b00-446d-b2a4-a8bc21eeffa5",
+        "9f3411a8-24e5-41e1-9594-af6096e64dc2",
+        "5e0596b5-47db-48ca-b273-0020636caf34",
+        "7c2ea735-f350-4f38-84c4-a5d368aeea9c",
+        "d732a168-4cda-43a1-8522-e3fbad278b1e"
+      ],
+      "metadata": {}
+    }
+  ],
+  "recall_source_facts_docs": {
+    "e334c375-23dc-4341-903b-e14794e57f42": "PR-2026-0417",
+    "a211e086-82a3-4e45-8c71-bc19bd39f892": "PR-2026-0417",
+    "0f700b9e-6e4c-4ab7-adac-6c4143e95a0d": "PR-2026-0417",
+    "a19c587f-4617-4d3d-8725-b520c7a57a65": "PR-2026-0417",
+    "94ab6fed-2b00-446d-b2a4-a8bc21eeffa5": "PR-2026-0488",
+    "9f3411a8-24e5-41e1-9594-af6096e64dc2": "PR-2026-0488",
+    "5e0596b5-47db-48ca-b273-0020636caf34": "PR-2026-0488",
+    "7c2ea735-f350-4f38-84c4-a5d368aeea9c": "PR-2026-0488",
+    "d732a168-4cda-43a1-8522-e3fbad278b1e": "PR-2026-0488"
+  },
+  "recall_bank_tags_seen": [
+    "step:bank"
+  ],
+  "recall_interaction_ms": 377,
+  "observations_step_vendor": 1,
+  "observation_history_ok": true,
+  "observation_scopes": {
+    "scopes": [
+      {
+        "tags": [
+          "combo:bank+budget"
+        ],
+        "count": 1
+      },
+      {
+        "tags": [
+          "interaction"
+        ],
+        "count": 1
+      },
+      {
+        "tags": [
+          "step:approver"
+        ],
+        "count": 1
+      },
+      {
+        "tags": [
+          "step:bank"
+        ],
+        "count": 1
+      },
+      {
+        "tags": [
+          "step:vendor"
+        ],
+        "count": 1
+      }
+    ],
+    "total": 5,
+    "limit": 100,
+    "offset": 0
+  },
+  "reflect": [
+    {
+      "budget": "low",
+      "ms": 7646,
+      "structured_output_present": true,
+      "structured_output_valid": "invalid: 7 validation errors for Procedure\nsteps.0\n  Input should be a valid dictionary or instance of ProcStep [type=model_type, input_value='VERIFY_BANK_CALLBACK', input_type=str]\n    For further information",
+      "structured_output_error": null,
+      "usage": {
+        "input_tokens": 24497,
+        "output_tokens": 1432,
+        "total_tokens": 25929,
+        "cached_tokens": 0,
+        "thoughts_tokens": 0
+      },
+      "based_on_memories": 12,
+      "based_on_directives": 5
+    },
+    {
+      "budget": "mid",
+      "ms": 7304,
+      "structured_output_present": true,
+      "structured_output_valid": "invalid: 7 validation errors for Procedure\nsteps.0\n  Input should be a valid dictionary or instance of ProcStep [type=model_type, input_value='VERIFY_BANK_CALLBACK', input_type=str]\n    For further information",
+      "structured_output_error": null,
+      "usage": {
+        "input_tokens": 18196,
+        "output_tokens": 1479,
+        "total_tokens": 19675,
+        "cached_tokens": 0,
+        "thoughts_tokens": 0
+      },
+      "based_on_memories": 6,
+      "based_on_directives": 5
+    }
+  ],
+  "hindsight_calls": {
+    "create_bank": 2,
+    "update_bank_config": 2,
+    "get_bank_config": 2,
+    "create_directive": 10,
+    "list_directives": 2,
+    "retain": 10,
+    "list_memories": 2,
+    "recall": 4,
+    "get_observation_history": 1,
+    "list_observation_scopes": 1,
+    "reflect": 2
+  },
+  "followup": {
+    "bank": "kaveri-spike-concise-fafd9d",
+    "reflect_inlined": {
+      "ms": 16470,
+      "valid": true,
+      "structured_output_error": null,
+      "usage": {
+        "input_tokens": 18560,
+        "output_tokens": 1560,
+        "total_tokens": 20120,
+        "cached_tokens": 0,
+        "thoughts_tokens": 0
+      }
+    },
+    "observation_before": [
+      {
+        "id": "9e33d372-95d7-4025-8a6e-b327d6fef995",
+        "text": "When a vendor in good standing has a recently expired ISO 9001 or ISO/IEC 17025 certificate, the procurement exception should be resolved by applying step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO rather than immediate rejection, as demonstrated in cases PR-2026-0417 and PR-2026-0488.",
+        "cases": [
+          "PR-2026-0417",
+          "PR-2026-0488"
+        ]
+      }
+    ],
+    "revision": {
+      "retain_ms": 4440,
+      "retain_usage": {
+        "input_tokens": 2371,
+        "output_tokens": 1158,
+        "total_tokens": 3529,
+        "cached_tokens": 0,
+        "thoughts_tokens": 0
+      },
+      "observation_includes_new_case_after_s": 4.1,
+      "polls": [
+        {
+          "t": 0.7,
+          "pending": 0,
+          "cases": [
+            [
+              "PR-2026-0417",
+              "PR-2026-0488"
+            ]
+          ]
+        },
+        {
+          "t": 2.4,
+          "pending": 0,
+          "cases": [
+            [
+              "PR-2026-0417",
+              "PR-2026-0488"
+            ]
+          ]
+        },
+        {
+          "t": 4.1,
+          "pending": 0,
+          "cases": [
+            [
+              "PR-2026-0417",
+              "PR-2026-0488",
+              "PR-2026-0520"
+            ]
+          ]
+        }
+      ],
+      "observation_after": [
+        {
+          "id": "9e33d372-95d7-4025-8a6e-b327d6fef995",
+          "text": "When a vendor in good standing has a recently expired ISO 9001, ISO/IEC 17025, or IATF 16949 certificate, the procurement exception should be resolved by applying step codes REQUEST_RENEWED_CERT, KEEP_VENDOR_ACTIVE, and HOLD_PO rather than immediate rejection, as demonstrated in cases PR-2026-0417, PR-2026-0488, and PR-2026-0520.",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488",
+            "PR-2026-0520"
+          ]
+        }
+      ],
+      "same_observation_id": true
+    },
+    "history_entries": 2
+  },
+  "scratch_banks_deleted": [
+    "kaveri-spike-concise-fafd9d",
+    "kaveri-spike-verbose-fafd9d"
+  ],
+  "gemini_models": {
+    "gemini-3.8-flash": {
+      "listed": true,
+      "name": "models/gemini-3.8-flash",
+      "display_name": "Gemini 3.8 Flash",
+      "input_token_limit": 1048576,
+      "output_token_limit": 65536,
+      "supported_actions": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ],
+      "thinking": true
+    },
+    "gemini-3.7-flash": {
+      "listed": true,
+      "name": "models/gemini-3.7-flash",
+      "display_name": "Gemini 3.7 Flash",
+      "input_token_limit": 1048576,
+      "output_token_limit": 65536,
+      "supported_actions": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ],
+      "thinking": true
+    }
+  },
+  "gemini_schema_verifier": {
+    "properties": {
+      "verdicts": {
+        "items": {
+          "properties": {
+            "candidate_id": {
+              "title": "Candidate Id",
+              "type": "string"
+            },
+            "verdict": {
+              "enum": [
+                "yes",
+                "partial",
+                "no"
+              ],
+              "title": "Verdict",
+              "type": "string"
+            },
+            "differences": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Differences",
+              "type": "array"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidate_id",
+            "verdict",
+            "differences",
+            "reason"
+          ],
+          "title": "SpikeCandidateVerdict",
+          "type": "object"
+        },
+        "title": "Verdicts",
+        "type": "array"
+      }
+    },
+    "required": [
+      "verdicts"
+    ],
+    "title": "SpikeVerifierOut",
+    "type": "object"
+  },
+  "gemini_schema_procedure_ok": true,
+  "gemini_calls": [
+    {
+      "label": "generate_content/spike/gemini-3.8-flash",
+      "ok": true,
+      "model": "gemini-3.8-flash",
+      "latency_ms": 3396,
+      "input_tokens": 271,
+      "output_tokens": 177,
+      "thinking_tokens": 0,
+      "parsed": {
+        "verdicts": [
+          {
+            "candidate_id": "C1",
+            "verdict": "partial",
+            "differences": [
+              "different procurement category (indirect MRO vs direct material)"
+            ],
+            "reason": "Same failed check (vendor), same root cause (cert_expired), same amount band (up to 2L), but different procurement category (direct material vs indirect MRO)."
+          },
+          {
+            "candidate_id": "C2",
+            "verdict": "no",
+            "differences": [
+              "different failed check cause (bank details changed vs cert_expired)"
+            ],
+            "reason": "Different cause for failed check (bank details changed instead of certificate expired)."
+          }
+        ]
+      }
+    },
+    {
+      "label": "interactions/spike/gemini-3.8-flash",
+      "ok": true,
+      "model": "gemini-3.8-flash",
+      "latency_ms": 10931,
+      "input_tokens": 271,
+      "output_tokens": 205,
+      "thinking_tokens": 0,
+      "parsed": {
+        "verdicts": [
+          {
+            "candidate_id": "C1",
+            "verdict": "partial",
+            "differences": [
+              "Procurement category difference: indirect MRO vs. direct material"
+            ],
+            "reason": "Both cases share the same failed check (vendor), cause (cert_expired), condition (vendor in good standing, ISO 9001 expired 6 days ago), and amount band (up to 2L), but the category differs (indirect MRO vs direct material)."
+          },
+          {
+            "candidate_id": "C2",
+            "verdict": "no",
+            "differences": [
+              "Different failed check and cause: bank details changed vs. cert_expired"
+            ],
+            "reason": "The candidate addresses a completely different failure cause (bank details change rather than certificate expiration)."
+          }
+        ]
+      }
+    },
+    {
+      "label": "generate_content/verifier/gemini-3.8-flash",
+      "ok": false,
+      "error": "gemini-3.8-flash#1: ServerError 503; gemini-3.8-flash#2: ServerError 503; gemini-3.8-flash#3: ServerError 503; gemini-3.7-flash#1: ServerError 503",
+      "wall_ms": 28645
+    },
+    {
+      "label": "generate_content/spike/gemini-3.7-flash",
+      "ok": true,
+      "model": "gemini-3.7-flash",
+      "latency_ms": 93126,
+      "input_tokens": 271,
+      "output_tokens": 176,
+      "thinking_tokens": 191,
+      "parsed": {
+        "verdicts": [
+          {
+            "candidate_id": "C1",
+            "verdict": "partial",
+            "differences": [
+              "Procurement category is direct material instead of indirect MRO"
+            ],
+            "reason": "Same failed check (vendor), cause (cert_expired), and amount band (up to 2L), but category differs (direct material vs indirect MRO)."
+          },
+          {
+            "candidate_id": "C2",
+            "verdict": "no",
+            "differences": [
+              "Different failed check/cause (bank details changed vs ISO certificate expired)"
+            ],
+            "reason": "Candidate C2 pertains to bank detail updates rather than expired ISO certification."
+          }
+        ]
+      }
+    }
+  ],
+  "gemini_cache": {
+    "first_hit": false,
+    "second_hit": true,
+    "requests_used": 1
+  },
+  "gemini_llm_calls_logged": 28,
+  "groq_model": {
+    "id": "openai/gpt-oss-120b",
+    "object": "model",
+    "created": 1754408224,
+    "owned_by": "OpenAI",
+    "active": true,
+    "context_window": 131072,
+    "public_apps": null,
+    "max_completion_tokens": 65536,
+    "hugging_face_id": "openai/gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "input_modalities": [
+      "text"
+    ],
+    "output_modalities": [
+      "text"
+    ],
+    "context_length": 131072,
+    "max_output_length": 65536,
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0.000000075"
+    },
+    "supported_sampling_parameters": [
+      "temperature",
+      "top_p",
+      "stop",
+      "seed",
+      "max_tokens"
+    ],
+    "supported_features": [
+      "tools",
+      "json_mode",
+      "structured_outputs",
+      "reasoning"
+    ]
+  },
+  "groq_raw": [
+    {
+      "label": "default",
+      "status": 200,
+      "ms": 1233,
+      "headers": {
+        "x-groq-region": "bom",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "8000",
+        "x-ratelimit-remaining-requests": "999",
+        "x-ratelimit-remaining-tokens": "7006",
+        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-tokens": "7.455s"
+      },
+      "usage": {
+        "queue_time": 0.353463583,
+        "prompt_tokens": 453,
+        "prompt_time": 0.10219817,
+        "completion_tokens": 335,
+        "completion_time": 0.711570212,
+        "total_tokens": 788,
+        "total_time": 0.813768382,
+        "completion_tokens_details": {
+          "reasoning_tokens": 131
+        }
+      },
+      "message_keys": [
+        "content",
+        "reasoning",
+        "role"
+      ],
+      "error": null
+    },
+    {
+      "label": "include_reasoning_false",
+      "status": 200,
+      "ms": 2019,
+      "headers": {
+        "x-groq-region": "bom",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "8000",
+        "x-ratelimit-remaining-requests": "998",
+        "x-ratelimit-remaining-tokens": "6655",
+        "x-ratelimit-reset-requests": "2m52.8s",
+        "x-ratelimit-reset-tokens": "10.087s"
+      },
+      "usage": {
+        "queue_time": 0.35367346,
+        "prompt_tokens": 453,
+        "prompt_time": 0.036999124,
+        "completion_tokens": 283,
+        "completion_time": 1.58212491,
+        "total_tokens": 736,
+        "total_time": 1.619124034,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 100
+        }
+      },
+      "message_keys": [
+        "content",
+        "role"
+      ],
+      "error": null
+    }
+  ],
+  "groq_max_completion_9000": {
+    "status": 200,
+    "body": "{\"id\":\"chatcmpl-ca02fa6c-f67e-43d7-a0aa-31b5b05d635d\",\"object\":\"chat.completion\",\"created\":1790591770,\"model\":\"openai/gpt-oss-120b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdicts\\\": [\\n    {\\n      \\\"candidate_id\\\": \\\"C1\\\",\\n      \\\"verdict\\\": \\\"partial\\\",\\n      \\\"differences\\\": [\\n        \\\"Category: direct material vs indirect MRO\\\",\\n        \\\"Procurement type: direct vs indirect\\\"\\n      ],\\n      \\\"reason\\\": \\\"Both cases failed due to ISO 9001 certificate expiration within a week, but the prior case involved a direct material purchase while the new request"
+  },
+  "groq_calls": [
+    {
+      "role": "spike",
+      "effort": "low",
+      "size": "small",
+      "ok": true,
+      "model": "openai/gpt-oss-120b",
+      "ms": 1215,
+      "in": 453,
+      "out": 154,
+      "reasoning": 126,
+      "verdicts": [
+        [
+          "C1",
+          "partial"
+        ],
+        [
+          "C2",
+          "no"
+        ]
+      ],
+      "n_verdicts": 2
+    },
+    {
+      "role": "verifier",
+      "effort": "medium",
+      "size": "small",
+      "ok": true,
+      "model": "openai/gpt-oss-120b",
+      "ms": 2195,
+      "in": 501,
+      "out": 123,
+      "reasoning": 613,
+      "verdicts": [
+        [
+          "C1",
+          "partial"
+        ],
+        [
+          "C2",
+          "no"
+        ]
+      ],
+      "n_verdicts": 2
+    },
+    {
+      "role": "spike",
+      "effort": "low",
+      "size": "15 candidates",
+      "ok": true,
+      "model": "openai/gpt-oss-120b",
+      "ms": 3867,
+      "in": 1489,
+      "out": 1282,
+      "reasoning": 133,
+      "verdicts": [
+        [
+          "C1",
+          "partial"
+        ],
+        [
+          "C2",
+          "partial"
+        ],
+        [
+          "C3",
+          "partial"
+        ],
+        [
+          "C4",
+          "partial"
+        ]
+      ],
+      "n_verdicts": 15
+    },
+    {
+      "role": "verifier",
+      "effort": "medium",
+      "size": "15 candidates",
+      "ok": true,
+      "model": "openai/gpt-oss-120b",
+      "ms": 6022,
+      "in": 1537,
+      "out": 1313,
+      "reasoning": 1177,
+      "verdicts": [
+        [
+          "C1",
+          "partial"
+        ],
+        [
+          "C2",
+          "partial"
+        ],
+        [
+          "C3",
+          "partial"
+        ],
+        [
+          "C4",
+          "partial"
+        ]
+      ],
+      "n_verdicts": 15
+    }
+  ]
+}

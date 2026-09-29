@@ -1,0 +1,849 @@
+{
+ "run_id": "dev1",
+ "arm": "C",
+ "dataset": "bench",
+ "split": "dev",
+ "rows": [
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-001",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": true,
+   "tokens": 4013,
+   "latency_ms": 21845,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-001",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": true,
+   "tokens": 4013,
+   "latency_ms": 21845,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-002",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE",
+    "HOLD_PO",
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": true,
+   "tokens": 4876,
+   "latency_ms": 25378,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-002",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "HOLD_PO",
+    "REQUEST_RENEWED_CERT",
+    "ROUTE_DELEGATE",
+    "KEEP_VENDOR_ACTIVE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": true,
+   "tokens": 4876,
+   "latency_ms": 25378,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-003",
+   "predicted_class": "generalized",
+   "predicted_steps": [],
+   "review_mode": "step_by_step",
+   "flags": [
+    "dropped_uncited_step:ROUTE_NEXT_LEVEL_APPROVER",
+    "dropped_uncited_step:ADD_CONTROLLER_SIGNOFF",
+    "dropped_uncited_step:EXPEDITE_PO",
+    "dropped_uncited_step:ATTACH_LINE_DOWN_EVIDENCE",
+    "dropped_uncited_step:ALLOW_BUDGET_OVERRUN",
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": false,
+   "tokens": 4087,
+   "latency_ms": 19262,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-003",
+   "predicted_class": "generalized",
+   "predicted_steps": [
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 4087,
+   "latency_ms": 19262,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-004",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": false,
+   "tokens": 3373,
+   "latency_ms": 23188,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-004",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 3373,
+   "latency_ms": 23188,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-005",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "ROUTE_DELEGATE",
+    "LINK_MASTER_PO",
+    "ALLOW_SPLIT_DELIVERY",
+    "ESCALATE_AUDIT"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "dropped_uncited_step:VERIFY_BANK_CALLBACK",
+    "dropped_uncited_step:HOLD_PAYMENT",
+    "dropped_uncited_step:ADD_CONTROLLER_SIGNOFF",
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": true,
+   "tokens": 5037,
+   "latency_ms": 43391,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-005",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "ROUTE_DELEGATE",
+    "LINK_MASTER_PO",
+    "ALLOW_SPLIT_DELIVERY"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": true,
+   "tokens": 5037,
+   "latency_ms": 43391,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-006",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 903,
+   "latency_ms": 1607,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-006",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 903,
+   "latency_ms": 1607,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-007",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1067,
+   "latency_ms": 3122,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-007",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1067,
+   "latency_ms": 3122,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-008",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE",
+    "HOLD_PO"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 3469,
+   "latency_ms": 44109,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-008",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "HOLD_PO",
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 3469,
+   "latency_ms": 44109,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-009",
+   "predicted_class": "generalized",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE",
+    "HOLD_PO"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "dropped_uncited_step:ESCALATE_AUDIT"
+   ],
+   "novel_combination": false,
+   "tokens": 3804,
+   "latency_ms": 15681,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-009",
+   "predicted_class": "generalized",
+   "predicted_steps": [
+    "HOLD_PO",
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 3804,
+   "latency_ms": 15681,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-010",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "DECLARE_CONFLICT_OF_INTEREST"
+   ],
+   "review_mode": "escalate",
+   "flags": [
+    "F3:no_one_click"
+   ],
+   "novel_combination": false,
+   "tokens": 1233,
+   "latency_ms": 2431,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-010",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "DECLARE_CONFLICT_OF_INTEREST"
+   ],
+   "review_mode": "escalate",
+   "flags": [
+    "F3:no_one_click"
+   ],
+   "novel_combination": false,
+   "tokens": 1233,
+   "latency_ms": 2431,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-011",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "VERIFY_GST_STATUS",
+    "HOLD_PO"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 2972,
+   "latency_ms": 19963,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-011",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "VERIFY_GST_STATUS",
+    "HOLD_PO"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 2972,
+   "latency_ms": 19963,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-012",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1037,
+   "latency_ms": 10180,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-012",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1037,
+   "latency_ms": 10180,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-013",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 3698,
+   "latency_ms": 43059,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-013",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 3698,
+   "latency_ms": 43059,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-014",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "COLLECT_QUOTES",
+    "SOLE_SOURCE_FORM"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "restored_removed_step:SOLE_SOURCE_FORM"
+   ],
+   "novel_combination": true,
+   "tokens": 4529,
+   "latency_ms": 33673,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-014",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "SOLE_SOURCE_FORM",
+    "CATEGORY_HEAD_SIGNOFF"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": true,
+   "tokens": 4529,
+   "latency_ms": 33673,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-015",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "COLLECT_QUOTES",
+    "SOLE_SOURCE_FORM"
+   ],
+   "review_mode": "one_click",
+   "flags": [
+    "dropped_uncited_step:STANDARD_APPROVAL",
+    "restored_removed_step:SOLE_SOURCE_FORM"
+   ],
+   "novel_combination": false,
+   "tokens": 3109,
+   "latency_ms": 14177,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-015",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "SOLE_SOURCE_FORM",
+    "CATEGORY_HEAD_SIGNOFF"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 3109,
+   "latency_ms": 14177,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-016",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1092,
+   "latency_ms": 2115,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-016",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "one_click",
+   "flags": [],
+   "novel_combination": false,
+   "tokens": 1092,
+   "latency_ms": 2115,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-017",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "composed_without_memory_reasoning"
+   ],
+   "novel_combination": false,
+   "tokens": 2975,
+   "latency_ms": 142805,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-017",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": false,
+   "tokens": 2975,
+   "latency_ms": 142805,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-018",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "LINK_MASTER_PO",
+    "ALLOW_SPLIT_DELIVERY"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [],
+   "novel_combination": true,
+   "tokens": 4669,
+   "latency_ms": 53560,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-018",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PAYMENT",
+    "HOLD_PO",
+    "LINK_MASTER_PO",
+    "ALLOW_SPLIT_DELIVERY"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only"
+   ],
+   "novel_combination": true,
+   "tokens": 4669,
+   "latency_ms": 53560,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-019",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "DECLARE_CONFLICT_OF_INTEREST"
+   ],
+   "review_mode": "escalate",
+   "flags": [
+    "F3:no_one_click"
+   ],
+   "novel_combination": false,
+   "tokens": 910,
+   "latency_ms": 2490,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-019",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "DECLARE_CONFLICT_OF_INTEREST"
+   ],
+   "review_mode": "escalate",
+   "flags": [
+    "F3:no_one_click"
+   ],
+   "novel_combination": false,
+   "tokens": 910,
+   "latency_ms": 2490,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "C",
+   "split": "dev",
+   "case_id": "DEV-020",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE",
+    "HOLD_PO"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "dropped_uncited_step:ROUTE_NEXT_LEVEL_APPROVER",
+    "predates_policy:POLICY-2026-07-01"
+   ],
+   "novel_combination": true,
+   "tokens": 4605,
+   "latency_ms": 20700,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "E",
+   "split": "dev",
+   "case_id": "DEV-020",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "HOLD_PO",
+    "REQUEST_RENEWED_CERT",
+    "KEEP_VENDOR_ACTIVE",
+    "ROUTE_NEXT_LEVEL_APPROVER"
+   ],
+   "review_mode": "step_by_step",
+   "flags": [
+    "union_only",
+    "F2:delegate_cannot_approve"
+   ],
+   "novel_combination": true,
+   "tokens": 4605,
+   "latency_ms": 20700,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  }
+ ]
+}

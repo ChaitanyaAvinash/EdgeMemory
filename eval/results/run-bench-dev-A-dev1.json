@@ -1,0 +1,379 @@
+{
+ "run_id": "dev1",
+ "arm": "A",
+ "dataset": "bench",
+ "split": "dev",
+ "rows": [
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-001",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2089,
+   "latency_ms": 1962,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-002",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "ROUTE_DELEGATE"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2497,
+   "latency_ms": 2573,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-003",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "ROUTE_DELEGATE",
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2125,
+   "latency_ms": 17868,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-004",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "ROUTE_DELEGATE",
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2164,
+   "latency_ms": 16267,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-005",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "HOLD_PO"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2556,
+   "latency_ms": 17987,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-006",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 1764,
+   "latency_ms": 16550,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-007",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 1994,
+   "latency_ms": 17472,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-008",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2331,
+   "latency_ms": 15225,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-009",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "REQUEST_RENEWED_CERT",
+    "HOLD_PO"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2271,
+   "latency_ms": 17561,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-010",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2007,
+   "latency_ms": 16561,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-011",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "VERIFY_GST_STATUS",
+    "HOLD_PO",
+    "ESCALATE_AUDIT"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2266,
+   "latency_ms": 14637,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-012",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 1891,
+   "latency_ms": 16434,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-013",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "HOLD_PO",
+    "ESCALATE_AUDIT"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2500,
+   "latency_ms": 17004,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-014",
+   "predicted_class": "composed",
+   "predicted_steps": [
+    "COLLECT_QUOTES",
+    "VERIFY_BANK_CALLBACK",
+    "SOLE_SOURCE_FORM"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2191,
+   "latency_ms": 16876,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-015",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "SOLE_SOURCE_FORM"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2234,
+   "latency_ms": 16227,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-016",
+   "predicted_class": "normal",
+   "predicted_steps": [
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2106,
+   "latency_ms": 16749,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-017",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "ESCALATE_AUDIT"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2185,
+   "latency_ms": 15475,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-018",
+   "predicted_class": "unknown",
+   "predicted_steps": [
+    "VERIFY_BANK_CALLBACK",
+    "HOLD_PO"
+   ],
+   "review_mode": "escalate",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2279,
+   "latency_ms": 17735,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-019",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "DECLARE_CONFLICT_OF_INTEREST",
+    "STANDARD_APPROVAL"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2286,
+   "latency_ms": 16289,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  },
+  {
+   "run_id": "dev1",
+   "arm": "A",
+   "split": "dev",
+   "case_id": "DEV-020",
+   "predicted_class": "known",
+   "predicted_steps": [
+    "ROUTE_NEXT_LEVEL_APPROVER"
+   ],
+   "review_mode": "",
+   "flags": [],
+   "model": "openai/gpt-oss-120b",
+   "tokens": 2763,
+   "latency_ms": 18691,
+   "models": [
+    "openai/gpt-oss-120b"
+   ]
+  }
+ ]
+}

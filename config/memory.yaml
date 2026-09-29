@@ -1,0 +1,48 @@
+# Hindsight bank configuration (SPEC §8.2). Field names verified in Phase 0 (docs/api-notes.md D1, D8).
+retain_extraction_mode: concise          # chosen in Phase 0 (api-notes.md "Extraction mode")
+observation_scopes: per_tag              # api-notes.md D3
+context: procurement exception resolution
+
+retain_mission: >-
+  Extract how procurement exceptions at Kaveri were resolved: which standard check failed and why, why the
+  standard process did not fit, the exact step codes the human approved, the outcome, and the lesson. Keep
+  case IDs, vendor IDs, dates and rupee amounts exact.
+
+observations_mission: >-
+  Form one durable lesson per failed check, and one per combination of failed checks, stating when the
+  exception applies, the procedure as step codes, the supporting case IDs, and any override or policy
+  change that limits it.
+
+reflect_mission: >-
+  I help Kaveri's procurement analysts handle purchase requests that break the standard process. I apply
+  lessons from past exceptions cautiously, cite the case behind every step, and say when no lesson applies.
+
+disposition: {skepticism: 5, literalism: 4, empathy: 2}
+
+# Untagged, so they always apply to reflect.
+directives:
+  - {name: cite-cases, content: "Cite the case ID behind every step."}
+  - {name: no-payment-release, content: "Never recommend releasing a payment. Propose only steps for a human to approve."}
+  - {name: bank-change-floor, content: "Whenever vendor bank details changed recently or are claimed to have changed, include VERIFY_BANK_CALLBACK and HOLD_PAYMENT."}
+  - {name: say-unknown, content: "If no experience covers a condition, say so explicitly."}
+  - {name: prefer-post-policy, content: "Prefer lessons dated after any relevant policy change; flag any lesson that predates one."}
+
+# Recall (SPEC §8.4 with api-notes.md D5/D6). Never threshold on scores (CLAUDE.md rule 7).
+recall:
+  types: [world, experience, observation]
+  budget: mid
+  max_tokens: 2048
+  top_candidates: 5
+  query_max_chars: 1600    # keeps the query well under Hindsight's 500-token limit
+  # Verifier prompt budget (estimated tokens, system prompt included). Groq refuses a single request above its
+  # 8,000 TPM (HTTP 413; api-notes). Over budget, the lowest-ranked standard candidates are dropped and flagged.
+  verifier_max_prompt_tokens: 5500   # the largest accepted verifier prompt measured 5,572 tokens
+
+# Consolidation polling (measured 4.1 s in Phase 0).
+consolidation: {poll_s: 1.0, max_poll_s: 5.0, timeout_s: 60}
+
+# Reflect (SPEC §8.5): budget mid, dropping to low if dev p95 latency is over 10 s (Phase 0: 7-17 s).
+reflect: {budget: mid, max_tokens: 4096}
+
+# Arm D (VectorBackend): local embeddings, never an LLM API (CLAUDE.md). Same recall budget as Hindsight.
+vector: {model: sentence-transformers/all-MiniLM-L6-v2}

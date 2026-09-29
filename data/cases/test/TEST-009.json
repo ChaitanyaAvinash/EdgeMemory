@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-009",
+  "submitted_at": "2026-10-09T15:00:00",
+  "requester_id": "E-405",
+  "cost_centre": "CC-ADMIN",
+  "vendor_name": "Ramoji Facility Services",
+  "amount_raw": "₹8,400",
+  "quotes_attached": 1,
+  "justification": "Monthly pest control for the admin block and canteen is a standing arrangement with Ramoji Facility Services. They have been handling it for the past two years and the cost is ₹8,400 to cost centre CC-ADMIN.",
+  "email_thread": "",
+  "attachment_text": ""
+}

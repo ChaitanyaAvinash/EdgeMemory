@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-028",
+  "submitted_at": "2026-11-04T15:30:00",
+  "requester_id": "E-409",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Ramoji Facility Services",
+  "amount_raw": "60k",
+  "quotes_attached": 1,
+  "justification": "Quarterly deep cleaning of the QA lab and its air‑handling ducts requires a purchase of 60,000 INR from Ramoji Facility Services. The vendor has confirmed their bank details remain unchanged, so the payment can be processed as usual.",
+  "email_thread": "From: purchase@kaveriprecision.com\nSubject: Request for cleaning services – Quote attached\nDate: 2026-11-04\n\nDear Ramoji Team,\nPlease find attached the quote for quarterly deep cleaning of our QA lab and ducts. Amount: 60k, cost centre CC‑QA. Let us know if anything else needed.\n---\nFrom: accounts@ramojifacilities.com\nSubject: Re: Request for cleaning services – Quote attached\nDate: 2026-11-04\n\nHello,\nWe have reviewed the quote. Our bank details remain unchanged. Please remit payment to the same account as before.\n---\nFrom: purchase@kaveriprecision.com\nSubject: Re: Request for cleaning services – Quote attached\nDate: 2026-11-04\n\nThanks for confirming. We will process the payment today.\n",
+  "attachment_text": ""
+}

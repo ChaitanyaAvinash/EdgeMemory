@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-033",
+  "submitted_at": "2026-11-10T11:50:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Adibatla Leak Test Systems",
+  "amount_raw": "8.6L",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for a new helium leak-test machine for valve-body testing, to be recorded as a fixed asset. The customer approved only Adibatla's machine design, making it the only approved source, and there is a single quote attached.",
+  "email_thread": "From: Ramesh Kumar (Procurement)\nDate: 2026-11-09\nSubject: Request for Leak-Test Machine\nPlease arrange purchase of 8.6L leak-test machine for Adibatla Leak Test Systems. Cost centre CC-ASSY. One quote attached.\n---\nFrom: Anjali Rao (Finance)\nDate: 2026-11-09\nSubject: Re: Request for Leak-Test Machine\nGot it. Since this is to be capitalised, ensure asset tag is created. Confirm that Adibatla is the only approved source.\n---\nFrom: Suresh Patel (Shop Floor)\nDate: 2026-11-10\nSubject: Re: Request for Leak-Test Machine\nAll set. Will update inventory once the machine arrives. Thanks.",
+  "attachment_text": ""
+}

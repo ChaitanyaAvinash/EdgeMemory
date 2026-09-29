@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-020",
+  "submitted_at": "2026-10-22T12:40:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Kushaiguda Crate Makers",
+  "amount_raw": "Rs 96,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for the balance quantity of crates from the second shipment. Accounts flagged a duplicate invoice from the vendor that was caught by internal audit.",
+  "email_thread": "From: Anil Sharma (Procurement)\nDate: 2026-10-20\nSubject: PR-2026-0953 - Second shipment of crates\n\nPlease note this is the second shipment of the crate order raised on 6 Oct (PR-2026-0953). The balance quantity is arriving now. Kindly process Rs 96,000 to Kushaiguda Crate Makers, cost centre CC-MAINT.\n---\nFrom: Meena Rao (Accounts)\nDate: 2026-10-21\nSubject: Re: PR-2026-0953 - Second shipment of crates\n\nWe have a duplicate invoice from Kushaiguda for the same crates dated 2025. Internal audit has already flagged it. Please confirm the correct invoice before payment.\n---\nFrom: Anil Sharma (Procurement)\nDate: 2026-10-22\nSubject: Re: PR-2026-0953 - Second shipment of crates\n\nAcknowledged. We will request the vendor to resend the correct invoice. Once received, will forward for payment processing.",
+  "attachment_text": ""
+}

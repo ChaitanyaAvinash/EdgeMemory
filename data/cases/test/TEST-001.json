@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-001",
+  "submitted_at": "2026-09-15T07:05:00",
+  "requester_id": "E-408",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Shamshabad Hydraulics",
+  "amount_raw": "1.55 lakh",
+  "quotes_attached": 1,
+  "justification": "The hydraulic power pack on the broaching machine failed, and the maintenance log confirms the breakdown. A replacement pump and valve block are required for line 1. The request is for 1.55 lakh to Shamshabad Hydraulics under cost centre CC-MACH.",
+  "email_thread": "From: S. Rao <srao@kaveriprecision.com>\nDate: 2026-09-15 08:30\nSubject: Request for hydraulic pump & valve block\n\nline 1 is down. Need 1.55 lakh to Shamshabad Hydraulics, cost centre CC-MACH. Please attach quote.\n---\nFrom: A. Mehta <amehta@shamshabadhydraulics.com>\nDate: 2026-09-15 09:10\nSubject: Re: Request for hydraulic pump & valve block\n\nGot your request. Quote attached. Let me know if any changes.\n---\nFrom: S. Rao <srao@kaveriprecision.com>\nDate: 2026-09-15 09:45\nSubject: Re: Request for hydraulic pump & valve block\n\nThanks. maintenance log confirms the failure. K. Raghavan is on leave, so I will forward to finance.\n---\nFrom: Finance Dept <finance@kaveriprecision.com>\nDate: 2026-09-15 10:20\nSubject: Re: Request for hydraulic pump & valve block\n\nWe will process 1.55 lakh under CC-MACH. Approve and forward PO.\n",
+  "attachment_text": ""
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-032",
+  "submitted_at": "2026-11-09T15:45:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Isnapur Ring Rollers",
+  "amount_raw": "2.6 lakh",
+  "quotes_attached": 1,
+  "justification": "The purchase of seamless rolled flange rings from Isnapur Ring Rollers is needed for a scheduled customer shipment. Isnapur is the only approved source and has a good quality record, but its ISO 9001 certificate has expired and we are waiting for the renewed document after the renewal audit is done.",
+  "email_thread": "From: Rajesh Kumar (Purchasing)\nSent: 2026-11-08\nSubject: Request for 2.6 lakh to Isnapur Ring Rollers\n\nPlease raise 2.6 lakh to Isnapur Ring Rollers, cost centre CC-ASSY. 1 quote attached. Isnapur is only approved source for these flange rings. Let me know if any issue.\n---\nFrom: Meena Joshi (Finance)\nSent: 2026-11-09\nSubject: RE: Request for 2.6 lakh to Isnapur Ring Rollers\n\nGot it. Noted that ISO 9001 certificate expired on 2 Nov but renewal audit is done. We will wait for the new cert before release.\n",
+  "attachment_text": "ISO 9OO1 Certi ficate\nIsnapur Ring Rollers Pvt Ltd\nCertificate No: 2025/ISO/0456\nValid From: 02-12-2025   Valid To: 01-12-2026\nRenewal audit is done   \nIssued by: BSI India\n"
+}

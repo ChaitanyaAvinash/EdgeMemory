@@ -1,0 +1,49 @@
+{
+  "status": 200,
+  "headers": {
+    "x-groq-region": "bom",
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "7006",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "7.455s"
+  },
+  "body": {
+    "id": "chatcmpl-0500ce09-d346-4f6c-a549-cee8040dde81",
+    "object": "chat.completion",
+    "created": 1790591760,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"verdicts\": [\n    {\n      \"candidate_id\": \"C1\",\n      \"verdict\": \"partial\",\n      \"differences\": [\n        \"category differs (direct material vs indirect MRO)\",\n        \"same amount band (up to 2 L) but different procurement category\"\n      ],\n      \"reason\": \"The failed check (ISO 9001 certificate expired) matches, and the amount band is the same, but the procurement category is different, so the precedent applies only partially.\"\n    },\n    {\n      \"candidate_id\": \"C2\",\n      \"verdict\": \"no\",\n      \"differences\": [\n        \"different cause of failure (bank details changed vs certificate expired)\",\n        \"different remedial steps\"\n      ],\n      \"reason\": \"The precedent relates to a bank‑details issue, not a certificate‑expiry issue, so it does not apply to the new request.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with verdicts array. For each candidate, compare.\n\nNew request: amount 60,000 (up to 2L band), category indirect MRO. Cause cert_expired.\n\nC1: amount 1,40,000 (up to 2L band also), category direct material (different category). Cause same cert_expired. Same vendor status. So verdict partial, differences: category difference, maybe amount band same but category diff. Also steps differ but not needed.\n\nC2: cause different (bank details changed) so verdict no. Differences: cause different, also maybe other.\n\nProvide reason.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.353463583,
+      "prompt_tokens": 453,
+      "prompt_time": 0.10219817,
+      "completion_tokens": 335,
+      "completion_time": 0.711570212,
+      "total_tokens": 788,
+      "total_time": 0.813768382,
+      "completion_tokens_details": {
+        "reasoning_tokens": 131
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3ksbxdmeexsksqegdta4nxw",
+      "seed": 1126108510
+    },
+    "service_tier": "on_demand"
+  }
+}

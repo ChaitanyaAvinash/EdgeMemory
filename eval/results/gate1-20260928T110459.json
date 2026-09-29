@@ -1,0 +1,70 @@
+{
+  "bank": "kaveri-gate1-7a98a25e",
+  "started": "2026-09-28T11:04:59.259711+00:00",
+  "passed": true,
+  "summary": {
+    "false_confidence": 0,
+    "classes_correct": 1,
+    "cases": 1,
+    "citations_resolved": 2,
+    "citations_total": 2,
+    "checks_exact": 1,
+    "novel_flag_correct": 0,
+    "composed_cases": 0,
+    "tokens": 2203
+  },
+  "cases": [
+    {
+      "case": "GATE-K1",
+      "expected": "known",
+      "predicted": "known",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "vendor"
+      ],
+      "checks_found": [
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cert_expired cause, vendor active, amount ≤2L, direct_material matches PR-2026-0417.",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cert_expired cause, vendor active, amount ≤2L, direct_material matches PR-2026-0417.",
+          "differences": []
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "direct_material",
+      "amount": 120000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        781
+      ]
+    }
+  ]
+}

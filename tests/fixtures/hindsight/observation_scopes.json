@@ -1,0 +1,37 @@
+{
+  "scopes": [
+    {
+      "tags": [
+        "combo:bank+budget"
+      ],
+      "count": 1
+    },
+    {
+      "tags": [
+        "interaction"
+      ],
+      "count": 1
+    },
+    {
+      "tags": [
+        "step:approver"
+      ],
+      "count": 1
+    },
+    {
+      "tags": [
+        "step:bank"
+      ],
+      "count": 1
+    },
+    {
+      "tags": [
+        "step:vendor"
+      ],
+      "count": 1
+    }
+  ],
+  "total": 5,
+  "limit": 100,
+  "offset": 0
+}

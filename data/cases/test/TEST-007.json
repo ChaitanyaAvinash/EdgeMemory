@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-007",
+  "submitted_at": "2026-10-06T14:25:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Patancheru Electricals Pvt. Ltd.",
+  "amount_raw": "1,85,000",
+  "quotes_attached": 1,
+  "justification": "The maintenance department needs a new 5‑tonne electric chain hoist for the bay. It will be recorded as a capitalised fixed asset under cost centre CC‑MAINT. One vendor quote is attached for approval.",
+  "email_thread": "From: ramesh.kumar@kaveriprecision.com\nTo: patancheru.elec@pvtltd.com\nSubject: Request for 5‑tonne chain hoist\n\nHi,\nWe need a new 5‑tonne electric chain hoist for the maintenance bay. Please send us your quote.\nThanks,\nRamesh\n---\nFrom: ananya.s@patancheru.com\nTo: ramesh.kumar@kaveriprecision.com\nSubject: Re: Request for 5‑tonne chain hoist\n\nHello Sir,\nAttached is our quote for the chain hoist. Let us know if any clarification needed.\nRegards,\nAnanya",
+  "attachment_text": ""
+}

@@ -1,0 +1,205 @@
+{
+  "results": [
+    {
+      "id": "d3e388a3-afcd-48b0-9374-eaa446353d6e",
+      "text": "When a vendor changes their bank account within a short timeframe, the system flags this as a potential payment-fraud risk; the required procedure is to execute step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO, as demonstrated in case PR-2026-0233.",
+      "type": "observation",
+      "occurred_start": "2026-02-20T00:00:00+00:00",
+      "occurred_end": "2026-02-20T00:00:00.020000+00:00",
+      "mentioned_at": "2026-02-20T06:30:00.030000+00:00",
+      "metadata": {},
+      "tags": [
+        "step:bank"
+      ],
+      "source_fact_ids": [
+        "091b670b-3c6c-4384-b983-025d37112c27",
+        "4f0fa95a-5251-4f34-8ab3-14cb432116ef",
+        "f70a470d-d42e-4870-8f1b-afa4ddda32ad",
+        "35ecce7f-d075-41d0-81bb-0f043d4d6db8"
+      ],
+      "scores": {
+        "final": 0.8077451695625034,
+        "reranker": 0.8248855,
+        "semantic": 0.7447676658630371,
+        "keyword": 0.5
+      },
+      "entities": null,
+      "context": null,
+      "document_id": null,
+      "chunk_id": null,
+      "attachments": null
+    },
+    {
+      "id": "f70a470d-d42e-4870-8f1b-afa4ddda32ad",
+      "text": "The callback confirmed the new account and the PO was released after 2 days. | When: 2026-02-20 | Involving: R. Menon",
+      "type": "experience",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-02-20T00:00:00.020000+00:00",
+      "occurred_end": "2026-02-20T00:00:00.020000+00:00",
+      "mentioned_at": "2026-02-20T06:30:00.020000+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "scores": {
+        "final": 0.00879871941547256,
+        "reranker": 0.008985428,
+        "semantic": 0.6550702452659607,
+        "keyword": 0.10000000149011612
+      },
+      "entities": null,
+      "source_fact_ids": null,
+      "attachments": null
+    },
+    {
+      "id": "4f0fa95a-5251-4f34-8ab3-14cb432116ef",
+      "text": "R. Menon approved step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO to resolve the procurement exception. | When: 2026-02-20 | Involving: R. Menon",
+      "type": "experience",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-02-20T00:00:00.010000+00:00",
+      "occurred_end": "2026-02-20T00:00:00.010000+00:00",
+      "mentioned_at": "2026-02-20T06:30:00.010000+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "scores": {
+        "final": 0.003505261350115836,
+        "reranker": 0.0035796429,
+        "semantic": 0.664969801902771,
+        "keyword": 0.20000000298023224
+      },
+      "entities": null,
+      "source_fact_ids": null,
+      "attachments": null
+    }
+  ],
+  "source_facts": {
+    "091b670b-3c6c-4384-b983-025d37112c27": {
+      "id": "091b670b-3c6c-4384-b983-025d37112c27",
+      "text": "Case PR-2026-0233 for ₹3,20,000 involving vendor V-031 failed the bank check because the vendor changed their bank account 9 days prior. | When: 2026-02-20 | Involving: R. Menon (Procurement Ops), vendor V-031 | The standard bank check flags account changes as a potential payment-fraud risk without verifying authenticity.",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-02-20T00:00:00+00:00",
+      "occurred_end": "2026-02-20T00:00:00+00:00",
+      "mentioned_at": "2026-02-20T06:30:00+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "4f0fa95a-5251-4f34-8ab3-14cb432116ef": {
+      "id": "4f0fa95a-5251-4f34-8ab3-14cb432116ef",
+      "text": "R. Menon approved step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO to resolve the procurement exception. | When: 2026-02-20 | Involving: R. Menon",
+      "type": "experience",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-02-20T00:00:00.010000+00:00",
+      "occurred_end": "2026-02-20T00:00:00.010000+00:00",
+      "mentioned_at": "2026-02-20T06:30:00.010000+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "f70a470d-d42e-4870-8f1b-afa4ddda32ad": {
+      "id": "f70a470d-d42e-4870-8f1b-afa4ddda32ad",
+      "text": "The callback confirmed the new account and the PO was released after 2 days. | When: 2026-02-20 | Involving: R. Menon",
+      "type": "experience",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-02-20T00:00:00.020000+00:00",
+      "occurred_end": "2026-02-20T00:00:00.020000+00:00",
+      "mentioned_at": "2026-02-20T06:30:00.020000+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "35ecce7f-d075-41d0-81bb-0f043d4d6db8": {
+      "id": "35ecce7f-d075-41d0-81bb-0f043d4d6db8",
+      "text": "Lesson learned: a recent bank change requires a callback on a known number and a payment hold before proceeding.",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "mentioned_at": "2026-02-20T06:30:00.030000+00:00",
+      "document_id": "PR-2026-0233",
+      "metadata": {
+        "kind": "experience",
+        "combo": "bank",
+        "case_id": "PR-2026-0233",
+        "outcome": "callback confirmed; PO released",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0233_0",
+      "tags": [
+        "step:bank"
+      ],
+      "entities": null,
+      "occurred_start": null,
+      "occurred_end": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    }
+  },
+  "source_facts_truncated": false,
+  "trace": null,
+  "entities": null,
+  "chunks": null
+}

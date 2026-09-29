@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-020",
+  "submitted_at": "2026-11-12T10:45:00",
+  "requester_id": "E-409",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Nacharam Gauge Works",
+  "amount_raw": "1.6 lakh",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for thread plug gauges and ring gauges for the QA lab, amounting to 1.6 lakh to Nacharam Gauge Works. The vendor has a long history with no quality complaints and the ISO 9001 renewal audit is done, with the new certificate pending.",
+  "email_thread": "From: Ramesh Kumar <ramesh.kumar@kaveriprecision.com>\nDate: 2026-11-10\nSubject: Request for Quote – Thread Plug & Ring Gauges\n\nPlease prepare a quote for thread plug gauges and ring gauges for our QA lab. Amount needed is 1.6 lakh, cost centre CC‑QA. Attach the quote and send back.\n---\nFrom: Anjali Rao <anjali.rao@nacharamgauge.com>\nDate: 2026-11-11\nSubject: Re: Request for Quote – Thread Plug & Ring Gauges\n\nSure, we will send the quote tomorrow. Our ISO 9001 certificate expired on 7 Nov but renewal audit is done, new cert will be with us soon.\n---\nFrom: Ramesh Kumar <ramesh.kumar@kaveriprecision.com>\nDate: 2026-11-12\nSubject: Re: Request for Quote – Thread Plug & Ring Gauges\n\nGot the quote, thanks. Noted that there are no quality complaints from you. Please forward the certificate snippet when you get it. QA head is on leave till 20 Nov, so proceed as normal.",
+  "attachment_text": "ISO  9 0 1   Certi ficate\nNo.  2025/NRG-07\nIssued: 08-Nov-2026\nValid  Till: 07-Nov-2029\nRenewal audit is done\nIssuer: Bureau of Indian Standards\n\n"
+}

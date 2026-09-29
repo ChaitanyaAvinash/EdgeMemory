@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-003",
+  "submitted_at": "2026-09-29T09:30:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Kazipet Die Castings",
+  "amount_raw": "₹4,20,000",
+  "quotes_attached": 3,
+  "justification": "The request is for purchasing aluminium die-cast housings for the October assembly plan. Three vendor quotes are attached, with Kazipet Die Castings offering the lowest price. The plant head is on leave until 2 Oct, so the requester seeks approval from the delegate.",
+  "email_thread": "From: Ravi Kumar (Purchase Officer)\nSubject: Request for ₹4,20,000 to Kazipet Die Castings\nBody: Sir, need to place order for die-cast housings for Oct assembly. 3 quotes attached, Kazipet is cheapest. Plant head is on leave till 2 Oct. Can we forward to his delegate?\n---\nFrom: Anjali Mehta (Assistant Manager)\nSubject: Re: Request for ₹4,20,000 to Kazipet Die Castings\nBody: Hi Ravi, noted. I will check with the delegate and get back. Please keep the quotes handy.\n---\nFrom: Ravi Kumar (Purchase Officer)\nSubject: Re: Request for ₹4,20,000 to Kazipet Die Castings\nBody: Thx. I have the PDFs ready, will forward once you confirm.\n---\nFrom: Anjali Mehta (Assistant Manager)\nSubject: Re: Request for ₹4,20,000 to Kazipet Die Castings\nBody: Okay, go ahead and send the order to Kazipet. Mention cost centre CC-ASSY. Thanks.",
+  "attachment_text": ""
+}

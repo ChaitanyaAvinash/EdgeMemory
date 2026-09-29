@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-008",
+  "submitted_at": "2026-10-09T10:35:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Medak Machined Parts",
+  "amount_raw": "14.5 L",
+  "quotes_attached": 3,
+  "justification": "The purchase request is for 14.5 L of machined valve bodies to be supplied to Medak Machined Parts. Three quotes were received and Medak offers the lowest price. Their ISO 9001 renewal audit is done and they have no quality complaints, with a good delivery record.",
+  "email_thread": "From: Ravi Kumar <ravi.kumar@kaveriprecision.com>\nSent: 2026-10-08\nSubject: Request for 14.5 L order to Medak\n\nPlease raise PO for 14.5 L to Medak Machined Parts, cost centre CC-ASSY. Attach the three quotes.\n---\nFrom: Sita Rao <sita.rao@kaveriprecision.com>\nSent: 2026-10-08\nSubject: Re: Request for 14.5 L order to Medak\n\nChecked quotes. Medak is lowest. Their ISO 9001 | renewal audit is done | no quality complaints. Ready to proceed.\n---\nFrom: Anil Singh <anil.singh@kaveriprecision.com>\nSent: 2026-10-09\nSubject: Approval\n\nApproved. Please issue PO and send to Medak. Keep copy on CC-ASSY.",
+  "attachment_text": "ISO 9001  Certi ficate\nNo. 2024/5678\nIssued: 03 Oct 2024\nValid   till: 02 Oct 2026\nHolder: Medak Machined Parts\n\n(Seal)   *\n\nNote: Renewal audit is done. New certi- ficate will be issued shortly."
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-009",
+  "submitted_at": "2026-10-09T12:00:00",
+  "requester_id": "E-403",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Begumpet Metrology Services",
+  "amount_raw": "72000",
+  "quotes_attached": 1,
+  "justification": "The QA lab needs its height gauges and slip‑gauge sets calibrated annually. The external lab will perform the work and a renewed ISO/IEC 17025 certificate is pending after the reassessment visit is done.",
+  "email_thread": "From: Arjun Rao <arjun.rao@kaveriprecision.com>\nSent: Mon, 9 Oct 2026 09:15 AM\nTo: Begumpet Metrology Services <sales@begumpetmetrology.in>\nSubject: Request for calibration quote – CC-QA\n\nPlease send us the quote for annual calibration of height gauges and slip‑gauge sets. Cost centre CC‑QA. We have been doing this with you for four years without problems.\n---\nFrom: Priya Nair <priyaa@begumpetmetrology.in>\nSent: Mon, 9 Oct 2026 10:02 AM\nTo: Arjun Rao <arjun.rao@kaveriprecision.com>\nSubject: Re: Request for calibration quote – CC-QA\n\nAttached is our quote ₹72,000. The ISO/IEC 17025 accreditation renewal is in process; the reassessment visit is done and we await the updated certificate.\n---\nFrom: Arjun Rao <arjun.rao@kaveriprecision.com>\nSent: Mon, 9 Oct 2026 10:30 AM\nTo: Priya Nair <priyaa@begumpetmetrology.in>\nSubject: Re: Request for calibration quote – CC-QA\n\nThanks. Approve and proceed. Keep me posted when the new ISO/IEC 17025 certificate arrives.",
+  "attachment_text": "   Certifi cate of Accre ditation\nISO/IEC 17025 : 2023\nLab Name: Kaveri Precision Components QA Lab\nAccreditation No: 12345-XYZ\nReassessment visit is done\nNext surveillance: 2028-10-04\n   Signature:   Dr. S. Kumar"
+}

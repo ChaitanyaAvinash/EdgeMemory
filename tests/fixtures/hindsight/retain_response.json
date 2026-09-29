@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "bank_id": "kaveri-spike-concise-fafd9d",
+  "items_count": 1,
+  "async": false,
+  "usage": {
+    "input_tokens": 2370,
+    "output_tokens": 1006,
+    "total_tokens": 3376,
+    "cached_tokens": 0,
+    "thoughts_tokens": 0
+  },
+  "operation_id": null,
+  "operation_ids": null
+}

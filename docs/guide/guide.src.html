@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EdgeMemory User Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm; }
+  @page :first { margin: 0; }
+  :root {
+    --paper: #f4f1ea; --ink: #141412; --muted: #6a675f; --line: #dcd6ca; --card: #fbf9f4;
+    --signal: #e8491d; --soft: #f7d9cc; --green: #0f6b4f; --greenbg: #dcf1e7; --amber: #8a5a00; --amberbg: #fbecc8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Geist", system-ui, sans-serif; font-size: 10.4pt; line-height: 1.55; color: var(--ink); background: #fff; }
+  .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+  em.s { font-family: "Instrument Serif", Georgia, serif; font-style: italic; color: var(--signal); }
+  h1, h2, h3 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -0.015em; line-height: 1.05; margin: 0; }
+  h2 { font-size: 34pt; margin: 0 0 4mm; }
+  h3 { font-size: 17pt; margin: 6mm 0 2mm; }
+  p { margin: 0 0 2.6mm; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin: 0 0 1.2mm; }
+  code, .mono { font-family: "Geist Mono", ui-monospace, monospace; font-size: 8.8pt; }
+  code { background: #f1ede4; padding: 0.3mm 1.2mm; border-radius: 1mm; }
+  pre { font-family: "Geist Mono", monospace; font-size: 8.6pt; line-height: 1.5; background: #141412; color: #eeeae1;
+        padding: 3.5mm 4mm; border-radius: 3mm; margin: 0 0 3mm; white-space: pre-wrap; break-inside: avoid; }
+  pre .c { color: #9b978d; }
+  .section { break-before: page; }
+  .eyebrow { font-size: 8pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 2mm; display: flex; gap: 3mm; align-items: center; }
+  .eyebrow b { color: var(--signal); font-weight: 500; font-family: "Geist Mono", monospace; letter-spacing: 0.05em; }
+  .lead { font-size: 12.5pt; color: #3b3a36; margin-bottom: 5mm; }
+  .muted { color: var(--muted); }
+
+  /* cover */
+  .cover { height: 297mm; width: 210mm; background: var(--paper); position: relative; overflow: hidden; padding: 22mm 20mm; display: flex; flex-direction: column; }
+  .cover .glow { position: absolute; right: -60mm; top: -50mm; width: 190mm; height: 190mm; border-radius: 50%; background: radial-gradient(circle, rgba(232,73,29,0.30), rgba(232,73,29,0) 65%); }
+  .cover .brand { font-family: "Instrument Serif", serif; font-size: 20pt; position: relative; }
+  .cover .brand i { color: var(--signal); }
+  .cover h1 { font-size: 62pt; line-height: 0.92; margin-top: 18mm; position: relative; }
+  .cover h1 i { color: var(--signal); }
+  .cover .sub { font-size: 13pt; color: #3b3a36; max-width: 140mm; margin-top: 7mm; position: relative; }
+  .cover .frame { margin-top: auto; position: relative; border-radius: 4mm; overflow: hidden; border: 0.3mm solid var(--line); box-shadow: 0 6mm 18mm -8mm rgba(20,20,18,0.35); }
+  .cover .frame img { width: 100%; display: block; }
+  .cover .foot { display: flex; justify-content: space-between; font-size: 8.5pt; color: var(--muted); margin-top: 7mm; position: relative; }
+
+  /* figures */
+  figure.shot { margin: 3mm 0 5mm; break-inside: avoid; }
+  .crop { width: 100%; overflow: hidden; border-radius: 3mm; border: 0.3mm solid var(--line); background: var(--paper); }
+  .crop img { width: 100%; display: block; }
+  figcaption { font-size: 8.4pt; color: var(--muted); margin-top: 1.8mm; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .pair figure.shot { margin: 0; }
+
+  /* boxes */
+  .box { border-radius: 3mm; padding: 3.5mm 4.5mm; margin: 3mm 0 4mm; break-inside: avoid; border: 0.3mm solid var(--line); background: var(--card); }
+  .box .t { font-weight: 600; margin-bottom: 1mm; display: block; }
+  .box.tip { background: var(--greenbg); border-color: #b7dfcd; }
+  .box.tip .t { color: var(--green); }
+  .box.note { background: var(--amberbg); border-color: #efd592; }
+  .box.note .t { color: var(--amber); }
+  .box.key { background: var(--soft); border-color: #f0b9a3; }
+  .box.key .t { color: var(--signal); }
+
+  /* flow */
+  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.5mm; margin: 4mm 0 5mm; }
+  .flow div { background: var(--paper); border: 0.3mm solid var(--line); border-radius: 3mm; padding: 3mm; break-inside: avoid; }
+  .flow b { display: block; font-family: "Geist Mono", monospace; color: var(--signal); font-weight: 500; font-size: 8pt; }
+  .flow .h { font-family: "Instrument Serif", serif; font-size: 14pt; line-height: 1.1; margin: 1mm 0; display: block; }
+  .flow span.d { font-size: 8.4pt; color: #3b3a36; display: block; line-height: 1.4; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .idea { border-top: 0.4mm solid var(--ink); padding-top: 2.5mm; break-inside: avoid; }
+  .idea .n { font-family: "Geist Mono", monospace; color: var(--signal); font-size: 8pt; }
+  .idea h3 { margin-top: 1mm; }
+
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 9.2pt; break-inside: avoid; }
+  th { text-align: left; font-weight: 500; color: var(--muted); font-size: 8.2pt; border-bottom: 0.4mm solid var(--ink); padding: 1.6mm 2mm; }
+  td { border-bottom: 0.25mm solid var(--line); padding: 1.8mm 2mm; vertical-align: top; }
+  td.c, th.c { background: #fbe9e1; }
+  .pill { display: inline-block; border-radius: 99px; padding: 0.3mm 2.4mm; font-size: 8pt; font-weight: 500; }
+  .p-known { background: #dcf1e7; color: #0f6b4f; } .p-gen { background: #dbeefb; color: #0b4a6f; }
+  .p-comp { background: #ece4fb; color: #4b2a8a; } .p-unk { background: #fbecc8; color: #8a5a00; } .p-norm { background: #e9e5dc; color: #3b3a36; }
+
+  .steps { counter-reset: s; list-style: none; padding: 0; }
+  .steps > li { counter-increment: s; position: relative; padding-left: 10mm; margin-bottom: 3mm; break-inside: avoid; }
+  .steps > li::before { content: counter(s); position: absolute; left: 0; top: -0.3mm; width: 6.5mm; height: 6.5mm; border-radius: 50%;
+    background: var(--ink); color: #fff; font-size: 8.5pt; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+
+  .beat { border: 0.3mm solid var(--line); border-radius: 3mm; padding: 4mm 4.5mm; margin: 0 0 4mm; break-inside: avoid; background: #fff; }
+  .beat .top { display: flex; gap: 3mm; align-items: baseline; margin-bottom: 1.5mm; }
+  .beat .num { font-family: "Instrument Serif", serif; font-size: 26pt; color: var(--signal); line-height: 0.9; }
+  .beat .ttl { font-family: "Instrument Serif", serif; font-size: 16pt; }
+  .beat .row { display: grid; grid-template-columns: 22mm 1fr; gap: 1mm 3mm; font-size: 9.4pt; }
+  .beat .row b { color: var(--muted); font-weight: 500; }
+
+  .toc { list-style: none; padding: 0; margin-top: 8mm; }
+  .toc li { display: flex; align-items: baseline; gap: 4mm; border-bottom: 0.25mm solid var(--line); padding: 3mm 0; font-size: 12pt; }
+  .toc li .n { font-family: "Geist Mono", monospace; color: var(--signal); font-size: 9pt; width: 8mm; }
+  .toc li .t { font-family: "Instrument Serif", serif; font-size: 18pt; }
+  .toc li .d { color: var(--muted); font-size: 9pt; margin-left: auto; }
+  .check li::marker { content: "✓  "; color: var(--green); }
+  .cross li::marker { content: "✕  "; color: var(--signal); }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="glow"></div>
+  <div class="brand">Edge<i>Memory</i></div>
+  <h1>The user<br><i>guide</i></h1>
+  <p class="sub">What EdgeMemory is, how it works, how to set it up and use it, and what to expect: in plain
+  language, with pictures of the real screens.</p>
+  <div class="frame"><img src="img/home-light.png" alt="EdgeMemory home page"></div>
+  <div class="foot"><span>HackwithHyderabad 3.0 · memory by Hindsight</span><span>All company, people and case data in this guide is synthetic (made up).</span></div>
+</section>
+
+<!-- CONTENTS -->
+<section class="section">
+  <div class="eyebrow">Contents</div>
+  <h2>Inside this <em class="s">guide</em></h2>
+  <ol class="toc">
+    <li><span class="n">01</span><span class="t">What is EdgeMemory?</span><span class="d">the idea in two minutes</span></li>
+    <li><span class="n">02</span><span class="t">How it works</span><span class="d">from request to decision</span></li>
+    <li><span class="n">03</span><span class="t">Where to use it</span><span class="d">who it's for, where it fits</span></li>
+    <li><span class="n">04</span><span class="t">Set it up</span><span class="d">install and start, step by step</span></li>
+    <li><span class="n">05</span><span class="t">A tour of the screens</span><span class="d">what each page shows</span></li>
+    <li><span class="n">06</span><span class="t">Guided walkthrough</span><span class="d">run the demo and check it works</span></li>
+    <li><span class="n">07</span><span class="t">What to expect</span><span class="d">speed, results, limits</span></li>
+    <li><span class="n">08</span><span class="t">Troubleshooting</span><span class="d">when something goes wrong</span></li>
+    <li><span class="n">09</span><span class="t">Glossary</span><span class="d">the words, explained</span></li>
+  </ol>
+  <div class="box key" style="margin-top:10mm"><span class="t">The short version</span>
+  EdgeMemory helps the people who handle purchase requests that <b>break the normal rules</b>. It remembers how
+  similar problems were solved before, suggests the steps to take, says clearly when it has never seen a problem,
+  and learns from every decision a person makes. <b>It never approves anything on its own. A human always decides.</b></div>
+</section>
+
+<!-- 1. WHAT -->
+<section class="section">
+  <div class="eyebrow"><b>01</b> What is EdgeMemory?</div>
+  <h2>A memory for the <em class="s">exceptions</em></h2>
+  <p class="lead">Most purchase requests are routine. The ones that aren't (an expired certificate, a budget
+  overrun, an approver on leave) take most of the time, and the know-how to fix them lives in people's heads
+  and old emails.</p>
+
+  <h3>The problem</h3>
+  <p>In a company like <i>Kaveri Precision Components</i> (a made-up mid-size manufacturer in Hyderabad), every
+  purchase request goes through a set of checks: Is there budget? Is the vendor in good standing? Is the right
+  person available to approve? Is this a duplicate? Did the vendor's bank details change? Were enough quotes
+  collected?</p>
+  <p>When a check fails, the request lands with a procurement analyst. They have to work out what to do: who to
+  ask, what paperwork to collect, whether to hold the order. Usually someone solved the same problem before, but
+  finding out how takes time. When several checks fail at once, the answer can be different from simply doing
+  each fix.</p>
+
+  <h3>What EdgeMemory does</h3>
+  <ul>
+    <li><b>Finds the precedents.</b> For every check that failed, it looks up how people resolved that same problem before.</li>
+    <li><b>Checks they really apply.</b> A precedent only counts if the situation matches: same problem, same cause, similar amount and category, and no policy change since.</li>
+    <li><b>Suggests a procedure.</b> It combines the lessons into one list of steps, and every step links back to the real past cases behind it.</li>
+    <li><b>Says "I don't know" when it doesn't.</b> If nothing matches, it sends the case to a person, with what is known and what isn't.</li>
+    <li><b>Learns from you.</b> Every approve, edit, reject or resolve is remembered, so the next similar case is easier.</li>
+  </ul>
+
+  <h3>What it never does</h3>
+  <ul class="cross">
+    <li>It never approves, rejects or pays anything by itself. It only recommends; a person decides.</li>
+    <li>It never releases a payment.</li>
+    <li>It never removes a safety step (such as "hold the payment until the new bank account is confirmed by phone").</li>
+    <li>It never gives a confident answer to a problem it has never seen.</li>
+  </ul>
+
+  <div class="box note"><span class="t">About the data</span>
+  Everything you see in this guide and in the app (the company, people, vendors, amounts and past cases) is
+  <b>synthetic</b>: made up for the demo. Only synthetic data is ever sent to the AI services this build uses.</div>
+</section>
+
+<!-- 2. HOW -->
+<section class="section">
+  <div class="eyebrow"><b>02</b> How it works</div>
+  <h2>From request to <em class="s">decision</em></h2>
+  <p class="lead">Every request goes through the same five steps. The first four are automatic and take about
+  10–20 seconds. The fifth is yours.</p>
+
+  <div class="flow">
+    <div><b>STEP 1</b><span class="h">Read</span><span class="d">An AI reads the request, emails and attachments (even messy ones like "1.9L" or Hinglish) and pulls out the facts.</span></div>
+    <div><b>STEP 2</b><span class="h">Check</span><span class="d">Six fixed rules run: budget, vendor, approver, duplicate, bank, quotes. Plain code, no AI.</span></div>
+    <div><b>STEP 3</b><span class="h">Recall</span><span class="d">For each failed check, memory finds past resolutions, and a verifier confirms each one really applies.</span></div>
+    <div><b>STEP 4</b><span class="h">Compose</span><span class="d">The lessons are combined into one procedure. A safety floor adds any step that must never be skipped.</span></div>
+    <div><b>STEP 5</b><span class="h">You decide</span><span class="d">Approve, confirm, edit, reject or resolve. The decision is remembered for next time.</span></div>
+  </div>
+
+  <h3>Four ideas that make it different</h3>
+  <div class="grid2">
+    <div class="idea"><span class="n">IDEA 1</span><h3>One problem at a time</h3>
+      <p>A request with three failed checks isn't "one big unknown". EdgeMemory looks for a precedent for <b>each</b> check separately, so it can say "two of these three are familiar, one is new".</p></div>
+    <div class="idea"><span class="n">IDEA 2</span><h3>Problems can change each other</h3>
+      <p>Sometimes two problems together need a different fix. Example: an approver on leave <i>plus</i> a budget overrun means the delegate can't approve; it must go one level up. EdgeMemory learns these combinations from past decisions; nobody programs them in.</p></div>
+    <div class="idea"><span class="n">IDEA 3</span><h3>Lessons grow up</h3>
+      <p>A lesson backed by one case is <b>tentative</b>: you check each step. Once several cases agree it becomes <b>established</b> and can be approved in one click. If a reviewer overrules a lesson, it is revised. If policy changes, old lessons are flagged as out of date.</p></div>
+    <div class="idea"><span class="n">IDEA 4</span><h3>Honest about the unknown</h3>
+      <p>If any failed check has no real precedent, the case goes to a person, with what is known and what isn't. The goal is <b>zero false confidence</b>: never a confident answer that wasn't earned.</p></div>
+  </div>
+
+  <h3>The five kinds of case</h3>
+  <table>
+    <tr><th>Kind</th><th>What it means</th><th>How you review it</th></tr>
+    <tr><td><span class="pill p-norm">Normal</span></td><td>Every check passed.</td><td>One click</td></tr>
+    <tr><td><span class="pill p-known">Known</span></td><td>One problem, and a precedent that applies directly.</td><td>One click if the lesson is established; otherwise step by step</td></tr>
+    <tr><td><span class="pill p-gen">Generalized</span></td><td>One problem, and a precedent that applies with some differences (listed for you).</td><td>Step by step</td></tr>
+    <tr><td><span class="pill p-comp">Composed</span></td><td>Several problems, each with a precedent. The procedure combines them, adjusted for how they interact.</td><td>Step by step</td></tr>
+    <tr><td><span class="pill p-unk">Unknown</span></td><td>At least one problem has no real precedent.</td><td>Goes to a person to resolve</td></tr>
+  </table>
+
+  <div class="box key"><span class="t">The safety floor</span>
+  Some steps can never be removed by any lesson. For example: if a vendor's bank details changed, EdgeMemory always
+  adds <i>verify the bank account by phone</i> and <i>hold the payment</i>. If the requester is related to the
+  vendor, it always adds <i>declare the conflict of interest</i>. If a vendor's tax (GST) registration is cancelled,
+  it always holds the order.</div>
+
+  <p class="muted" style="font-size:9pt">Behind the scenes: memory is <b>Hindsight</b> (by Vectorize). It stores each
+  resolved case, merges similar cases into lessons, and keeps track of which cases each lesson came from, which
+  is how every step can cite real case numbers.</p>
+</section>
+
+<!-- 3. WHERE -->
+<section class="section">
+  <div class="eyebrow"><b>03</b> Where to use it</div>
+  <h2>Who it's for, and <em class="s">where it fits</em></h2>
+
+  <h3>Who it's for</h3>
+  <ul>
+    <li><b>Procurement operations analysts</b>: the people who handle requests that fail the standard checks. This is who EdgeMemory is built for.</li>
+    <li><b>Approvers and team leads</b>: they see a clear procedure with the reasons and past cases behind it, instead of a long email chain.</li>
+    <li><b>Finance controllers and auditors</b>: every recommendation, citation, safety step and human decision is logged with a timestamp and can be exported.</li>
+  </ul>
+
+  <h3>Where it fits in your day</h3>
+  <p>EdgeMemory sits next to the approvals queue you already have. Requests can come from a monitored approvals
+  inbox or from an export of your existing system. For each exception, it adds a recommendation: the steps,
+  a citation for every step, and what isn't covered.</p>
+
+  <h3>How a team would start</h3>
+  <ol class="steps">
+    <li><b>Load your history.</b> Export the last year of resolved exceptions (what failed, what was done, why) into a simple spreadsheet format. EdgeMemory learns its first lessons from that. The demo starts exactly this way.</li>
+    <li><b>Shadow mode.</b> EdgeMemory recommends; analysts keep working as usual and compare.</li>
+    <li><b>Step-by-step review.</b> After about two weeks, analysts start ticking each recommended step.</li>
+    <li><b>One-click review, lesson by lesson.</b> As lessons become established, those cases can be approved in one click. Unknown cases always go to a person; that never switches off.</li>
+  </ol>
+
+  <h3>Other places the same idea could help</h3>
+  <p>The approach (check each problem separately, learn how problems combine, learn from every human decision)
+  could apply to other rule-heavy approval work, such as accounts-payable exceptions, IT change approvals or
+  insurance claims. <b>This build has only been built and tested for procurement.</b></p>
+
+  <div class="box note"><span class="t">Using real company data</span>
+  This hackathon build runs on free AI tiers and must only process synthetic data. A real deployment would use a
+  paid, zero-data-retention AI setup (or the company's own AI provider) and a private memory store. The code is
+  built so only one file changes for that.</div>
+</section>
+
+<!-- 4. SETUP -->
+<section class="section">
+  <div class="eyebrow"><b>04</b> Set it up</div>
+  <h2>Install and <em class="s">start</em></h2>
+  <p class="lead">About 15 minutes the first time. You need two programs, three free keys, and two terminal windows.</p>
+
+  <h3>What you need</h3>
+  <table>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Python 3.11 or newer</td><td>Runs the engine and the API (the "back end").</td></tr>
+    <tr><td>Node.js 20 or newer</td><td>Runs the website (the "front end").</td></tr>
+    <tr><td>Groq API key (free)</td><td>The main AI model, <code>openai/gpt-oss-120b</code>. From console.groq.com.</td></tr>
+    <tr><td>Gemini API key (free)</td><td>Backup AI models, used only if Groq fails. From Google AI Studio.</td></tr>
+    <tr><td>Hindsight Cloud key</td><td>The memory. From Vectorize's Hindsight Cloud.</td></tr>
+  </table>
+
+  <h3>Step by step (Windows PowerShell)</h3>
+  <ol class="steps">
+    <li><b>Open the project folder</b> in PowerShell.
+<pre>cd D:\EdgeMemory</pre></li>
+    <li><b>Add your keys.</b> Copy the example settings file, then open <code>.env</code> in a text editor and paste your three keys between the quotes.
+<pre>copy .env.example .env</pre></li>
+    <li><b>Install the back end</b> (once).
+<pre>python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt</pre></li>
+    <li><b>Install the website</b> (once).
+<pre>cd web
+npm install
+cd ..</pre></li>
+    <li><b>Start the API</b> and leave this window open.
+<pre>.venv\Scripts\python -m uvicorn api.main:app --port 8000</pre></li>
+    <li><b>Start the website</b> in a second PowerShell window and leave it open too.
+<pre>cd D:\EdgeMemory\web
+npm run dev</pre></li>
+    <li><b>Open the app</b> at <code>http://localhost:3000</code>. Go to <b>Demo</b>, click <b>Reset</b>, then <b>Seed</b>. Seeding loads 37 past cases into memory and takes about 3 minutes.</li>
+  </ol>
+
+  <div class="box tip"><span class="t">On macOS or Linux, or if you have "make"</span>
+  The same steps are shortcuts: <code>make setup</code> installs, <code>make api</code> and <code>make web</code> start the two
+  parts, and <code>make test</code> runs the automated tests. Use <code>.venv/bin/python</code> in place of
+  <code>.venv\Scripts\python</code>.</div>
+
+  <div class="box"><span class="t">How to tell it's running</span>
+  The website opens at <code>localhost:3000</code>. The <b>Demo</b> page shows how much free AI quota is left and the API
+  response time. The API's own page is at <code>localhost:8000/docs</code>. To stop, press <b>Ctrl+C</b> in each window.</div>
+</section>
+
+<!-- 5. TOUR -->
+<section class="section">
+  <div class="eyebrow"><b>05</b> A tour of the screens</div>
+  <h2>What you're <em class="s">looking at</em></h2>
+  <p class="lead">Six pages, all in the top menu. The switch at the top right changes between light, dark, and your
+  computer's setting.</p>
+
+  <h3>Home and the queue</h3>
+  <p>The home page explains EdgeMemory in one line and shows headline results from the benchmark. The numbers
+  come straight from the scored test runs. Scroll down for how it works, then <b>the queue</b>: open requests
+  grouped by kind, most urgent first (cases that need a person at the top). Click any row to open it.</p>
+  <div class="pair">
+    <!--shot home-light.png 0 1060 | Light theme.-->
+    <!--shot home-dark.png 0 1060 | Dark theme.-->
+  </div>
+
+  <h3>The case page: seven stages</h3>
+  <p>Opening a request shows how EdgeMemory reached its recommendation, in seven numbered stages. In demo mode
+  they appear one after another, so you can follow the reasoning.</p>
+  <table>
+    <tr><th style="width:10mm">#</th><th style="width:48mm">Stage</th><th>What it tells you</th></tr>
+    <tr><td>1</td><td>The request</td><td>Vendor, amount, cost centre, and the original text. Important phrases (like a family link) are highlighted.</td></tr>
+    <tr><td>2</td><td>Failed checks</td><td>Which of the six checks failed, and exactly why.</td></tr>
+    <tr><td>3</td><td>How each problem was resolved before</td><td>For each failed check: whether a precedent applies, the past case numbers, and how mature the lesson is.</td></tr>
+    <tr><td>4</td><td>The plain combination</td><td>The steps you'd get by simply adding up each problem's lesson.</td></tr>
+    <tr><td>5</td><td>What changes together</td><td>Steps removed or added because these problems happened <i>together</i>, each with the past cases that justify it.</td></tr>
+    <tr><td>6</td><td>Safety floor</td><td>Any must-have steps added by the safety rules.</td></tr>
+    <tr><td>7</td><td>Recommended procedure</td><td>The final steps, each with its past cases and a <b>Why this step?</b> button, plus the decision buttons.</td></tr>
+  </table>
+  <!--shot case-hook.png 70 810 | The top of a case: the request (stage 1) and its three failed checks (stage 2).-->
+</section>
+
+<section class="section">
+  <!--shot case-hook.png 885 525 | Stage 3: each problem's precedents. Budget matches directly; approver and bank apply with differences, which are listed. A past case of the same pair of problems (approver + budget) also applies.-->
+  <!--shot case-hook.png 1410 1090 | Stages 4 to 7. The plain combination would route to the delegate, but because the budget is also over, the procedure routes to the next-level approver instead, citing the past cases where that happened. Payment stays held until the bank callback.-->
+
+  <h3>Your decision buttons</h3>
+  <table>
+    <tr><th style="width:36mm">Button</th><th>When you see it</th><th>What happens</th></tr>
+    <tr><td><b>Approve</b></td><td>One-click cases (established lessons)</td><td>Accepts the procedure as it is.</td></tr>
+    <tr><td><b>Confirm</b></td><td>Step-by-step cases</td><td>Tick each step first, then confirm.</td></tr>
+    <tr><td><b>Resolve</b></td><td>Unknown cases</td><td>You write what should be done. This becomes a brand-new lesson.</td></tr>
+    <tr><td><b>Edit</b></td><td>Always</td><td>Change the steps. Your version is remembered as a correction.</td></tr>
+    <tr><td><b>Reject</b></td><td>Always</td><td>Overrule the lesson for this situation. EdgeMemory revises the lesson for similar cases.</td></tr>
+  </table>
+  <div class="box tip"><span class="t">Why this step?</span>
+  Click it next to any step to see the past cases behind it, what memory recalled, and the verifier's verdict. Nothing is
+  recommended without a real past case you can check.</div>
+</section>
+
+<section class="section">
+  <h3>Lessons: what memory has learned</h3>
+  <p>Pick a check (for example <code>step:vendor</code>) to see the current lesson in plain words, the cases it was built
+  from, and <b>how it changed</b>: removed words are struck through in red, new words are highlighted in green.</p>
+  <!--shot lessons-vendor.png 95 960 | The certificate lesson after four decisions. It started from one case; the latest revision added two more cases.-->
+
+  <h3>New request</h3>
+  <p>Type or paste a request the way people really write them. The example is pre-filled. Press <b>Submit</b>; after
+  10–60 seconds the new case opens with the staged reveal.</p>
+  <!--shot new.png 95 890 | The new-request form, with the pre-filled example.-->
+</section>
+
+<section class="section">
+  <h3>Benchmark: does it hold up?</h3>
+  <p>The results of testing EdgeMemory against simpler approaches on 24 made-up test cases whose correct answers
+  were written down and locked before testing. The highlighted column is EdgeMemory. See section 07 for what the
+  numbers mean.</p>
+  <!--shot benchmark.png 345 535 | The results table. Lower is better for mistakes; higher is better for correct answers.-->
+  <!--shot benchmark.png 890 820 | The learning curve: the test cases replayed in date order, with each decision remembered. The orange line is EdgeMemory with Hindsight; the grey line is the same system with plain search memory.-->
+</section>
+
+<section class="section">
+  <h3>Demo controls</h3>
+  <p>Everything needed to run the scripted demo: the eight steps (each opens its case), the demo clock, <b>Reset</b>
+  and <b>Seed</b> for the demo memory, and how much free AI quota is left today.</p>
+  <!--shot demo.png 95 1270 | The Demo page. Run the steps in order after Reset and Seed.-->
+</section>
+
+<!-- 6. WALKTHROUGH -->
+<section class="section">
+  <div class="eyebrow"><b>06</b> Guided walkthrough</div>
+  <h2>Run the demo, <em class="s">step by step</em></h2>
+  <p class="lead">This is the best way to test EdgeMemory and see it learn. It takes about 10 minutes. Go to
+  <b>Demo</b>, click <b>Reset</b> then <b>Seed</b>, and wait about 3 minutes. Then click <b>Run</b> on each step in order.</p>
+
+  <div class="beat"><div class="top"><span class="num">1</span><span class="ttl">The hook: three problems at once</span></div>
+    <div class="row"><b>The request</b><span>₹4.8 lakh, production line 3 is down, 6% over budget, the approver is on leave, and the vendor's bank details changed 12 days ago.</span>
+    <b>You'll see</b><span><span class="pill p-comp">Composed</span>, step-by-step. All three problems have precedents, and a past case of <i>approver away + budget over</i> changes the plan: it goes to the next-level approver, not the delegate. Payment is held until the bank is verified by phone.</span>
+    <b>Do</b><span>Nothing yet. Come back to it at the end (pictured in section 05).</span></div></div>
+
+  <div class="beat"><div class="top"><span class="num">2</span><span class="ttl">A problem it has never seen</span></div>
+    <div class="row"><b>The request</b><span>₹60,000 to a vendor whose quality certificate expired 6 days ago. Memory has no certificate cases yet.</span>
+    <b>You'll see</b><span><span class="pill p-unk">Unknown</span> and <b>Escalate to a human</b>, with "No verified precedent".</span>
+    <b>Do</b><span>Click <b>Resolve</b>. The form is pre-filled with a sensible answer. Save it. It becomes the first certificate lesson.</span></div></div>
+  <!--shot case-first.png 95 820 | Step 2: no precedent, so EdgeMemory says so and sends it to a person.-->
+</section>
+
+<section class="section">
+  <div class="beat"><div class="top"><span class="num">3</span><span class="ttl">One week later: the same problem again</span></div>
+    <div class="row"><b>The request</b><span>A different vendor, the same kind of expired certificate.</span>
+    <b>You'll see</b><span>It now recognises the problem and cites <b>PR-DEMO-E1-01</b>, the case you resolved in step 2. The lesson is <b>tentative</b> (one case), so the review is step by step.</span>
+    <b>Do</b><span>Tick the three steps and click <b>Confirm</b>.</span></div></div>
+  <!--shot case-tentative.png 105 810 | Step 3: learned from one decision, so the lesson is tentative and each step is checked.-->
+
+  <div class="beat"><div class="top"><span class="num">4</span><span class="ttl">Three weeks pass</span></div>
+    <div class="row"><b>What happens</b><span>Two more certificate cases are resolved the same way in the background, and the demo clock moves forward.</span>
+    <b>Do</b><span>Optional: open <b>Lessons</b> → <code>step:vendor</code> to see the lesson now backed by more cases, with the change highlighted.</span></div></div>
+</section>
+
+<section class="section">
+  <div class="beat"><div class="top"><span class="num">5</span><span class="ttl">The lesson is established</span></div>
+    <div class="row"><b>You'll see</b><span><span class="pill p-known">Known</span>, <b>established (4 cases)</b>, and a single <b>Approve</b> button: one-click review.</span>
+    <b>Do</b><span>Click <b>Approve</b>.</span></div></div>
+  <!--shot case-known.png 105 185 | Step 5: the same problem, now established.-->
+  <!--shot case-known.png 1355 355 | The procedure cites all four past cases and can be approved in one click.-->
+
+  <div class="beat"><div class="top"><span class="num">6</span><span class="ttl">You overrule a lesson</span></div>
+    <div class="row"><b>The request</b><span>A "split shipment" from a vendor that once sent a duplicate invoice.</span>
+    <b>You'll see</b><span>The usual split-shipment lesson: link it to the main order and allow the split delivery.</span>
+    <b>Do</b><span>Click <b>Reject</b>. The form is pre-filled: this vendor's history means the claim can't be taken on trust. Save it. EdgeMemory records this as an <b>override</b> for this situation.</span></div></div>
+</section>
+
+<section class="section">
+  <div class="beat"><div class="top"><span class="num">7</span><span class="ttl">It follows your correction</span></div>
+    <div class="row"><b>The request</b><span>Another split shipment from the same vendor.</span>
+    <b>You'll see</b><span>The old steps are crossed out, and the procedure is now <b>Reject request</b> and <b>Escalate to audit</b>, citing <b>PR-DEMO-E4-01</b>, your decision in step 6. The original lesson still holds for other vendors.</span>
+    <b>Do</b><span>Confirm.</span></div></div>
+  <!--shot case-override.png 930 800 | Step 7: the reviewer's correction from step 6 changes the recommendation for a similar case.-->
+</section>
+
+<section class="section">
+  <div class="beat"><div class="top"><span class="num">8</span><span class="ttl">An honest limit</span></div>
+    <div class="row"><b>The request</b><span>The vendor's owner signs an email as the requester's brother-in-law.</span>
+    <b>You'll see</b><span>The family link is highlighted. <span class="pill p-unk">Unknown</span>: there is no precedent for a related party, so it goes to a person. The safety floor still adds <b>Declare conflict of interest</b>.</span>
+    <b>Do</b><span>Nothing. This shows EdgeMemory refusing to guess.</span></div></div>
+  <!--shot case-unknown.png 100 520 | Step 8: the highlighted phrase is why the related-party check failed.-->
+  <!--shot case-unknown.png 1280 380 | No precedent, so no guess: only the safety-floor step, and the case goes to a person.-->
+
+  <h3>It's working if…</h3>
+  <ul class="check">
+    <li>Steps 2 → 3 → 5 show the same problem going <b>unknown → tentative → established</b>.</li>
+    <li>Step 7 follows your step-6 rejection instead of the old lesson.</li>
+    <li>Steps 2 and 8 go to a person instead of guessing.</li>
+    <li>The hook (step 1) and step 8 keep their safety-floor steps.</li>
+    <li>Every step's <b>Why this step?</b> shows real case numbers.</li>
+  </ul>
+  <div class="box note"><span class="t">Small differences are normal</span>
+  The AI isn't perfectly repeatable, so a class or a step may occasionally differ from the pictures (for example
+  "Known" instead of "Generalized"). Steps 2 and 8 must always go to a person, and step 7 must always recommend
+  rejecting and escalating. Before recording a demo, click <b>Reset</b> and <b>Seed</b> again, because running
+  the steps changes the memory.</div>
+</section>
+
+<!-- 7. EXPECT -->
+<section class="section">
+  <div class="eyebrow"><b>07</b> What to expect</div>
+  <h2>Speed, results and <em class="s">limits</em></h2>
+
+  <h3>Speed</h3>
+  <table>
+    <tr><th>Action</th><th>Typical time</th></tr>
+    <tr><td>A new request (read, check, recall, compose)</td><td>10–20 seconds (up to about 60 for a new request)</td></tr>
+    <tr><td>Saving a decision (remember and merge into lessons)</td><td>6–10 seconds</td></tr>
+    <tr><td>Seeding the demo memory</td><td>About 3 minutes</td></tr>
+    <tr><td>The whole 8-step demo, including reset and seed</td><td>About 5 minutes</td></tr>
+  </table>
+
+  <h3>Results on the test cases</h3>
+  <p>EdgeMemory (C) was compared with: <b>A</b>, an AI with the policy but no memory; <b>B</b>, an AI with plain
+  document search; and <b>D</b>, the same EdgeMemory pipeline with plain search memory instead of Hindsight. 24
+  made-up test cases; each approach ran once; the correct answers were locked before scoring.</p>
+  <table>
+    <tr><th>Measure</th><th>A</th><th>B</th><th class="c">C · EdgeMemory</th><th>D</th></tr>
+    <tr><td>Confident answer on a case it should have escalated (lower is better)</td><td>3 of 5</td><td>1 of 5</td><td class="c"><b>0 of 5</b></td><td>0 of 5</td></tr>
+    <tr><td>Required safety steps missing (lower is better)</td><td>7 of 9</td><td>4 of 9</td><td class="c"><b>0 of 9</b></td><td>0 of 9</td></tr>
+    <tr><td>Kind of case identified correctly</td><td>11 of 24</td><td>15 of 24</td><td class="c"><b>21 of 24</b></td><td>21 of 24</td></tr>
+    <tr><td>Combined problems handled exactly right</td><td>0 of 8</td><td>0 of 8</td><td class="c"><b>3 of 8</b></td><td>3 of 8</td></tr>
+    <tr><td>Used an out-of-date lesson after a policy change (lower is better)</td><td>0 of 3</td><td>0 of 3</td><td class="c"><b>0 of 3</b></td><td>2 of 3</td></tr>
+    <tr><td>Right answer after a reviewer override</td><td>1 of 3</td><td>3 of 3</td><td class="c">0 of 3</td><td>0 of 3</td></tr>
+  </table>
+  <p><b>Learning:</b> when the test cases were replayed in date order with every decision remembered, EdgeMemory
+  with Hindsight reached a one-click review on <b>8 of 22</b> exception cases, against <b>4 of 22</b> with plain search
+  memory, and gave <b>no</b> false-confidence answers along the way.</p>
+
+  <div class="box note"><span class="t">Where it's weaker</span>
+  Plain search (B) handled the three "after a reviewer override" cases better. EdgeMemory sent two to a person and gave
+  one an empty procedure. That problem has since been fixed and checked on the demo, but the published test numbers are
+  from before the fix and weren't re-run. EdgeMemory also sends a few cases to a person that didn't strictly need it.</div>
+
+  <h3>Free-tier limits</h3>
+  <ul>
+    <li>The main AI (Groq, free tier) allows about <b>200,000 tokens a day</b>, refilling gradually. The full demo uses about 16,000.</li>
+    <li>The backup models (Gemini, free tier) allow <b>20 requests a day each</b>.</li>
+    <li>The Demo page shows what's left. If it runs out, cases are sent to a person with "Memory unavailable" instead of a guess.</li>
+  </ul>
+
+  <h3>Good to know</h3>
+  <ul>
+    <li>All data is synthetic, and there is one domain (procurement) and a small sample of cases.</li>
+    <li>Time savings shown on the benchmark page are estimates from stated assumptions, not measurements.</li>
+    <li>The test answers were written by an AI labeller working blind, not checked by a person.</li>
+  </ul>
+</section>
+
+<!-- 8. TROUBLE -->
+<section class="section">
+  <div class="eyebrow"><b>08</b> Troubleshooting</div>
+  <h2>When something <em class="s">goes wrong</em></h2>
+  <table>
+    <tr><th style="width:62mm">What you see</th><th>What to do</th></tr>
+    <tr><td>The website won't open at localhost:3000</td><td>Check the website window is still running (<code>npm run dev</code>). Start it again if it stopped.</td></tr>
+    <tr><td>Pages load but show "Couldn't load…" errors</td><td>The API isn't running. Start it in its own window (step 5 of setup) and refresh.</td></tr>
+    <tr><td>Every case says "Memory unavailable, escalating to a human"</td><td>The memory service or the AI can't be reached. Check the internet connection and the keys in <code>.env</code>, then look at the API window for errors.</td></tr>
+    <tr><td>A step is stuck on "Running…" for more than a minute</td><td>The free AI quota is probably used up for now. Check the quota on the Demo page; it refills gradually.</td></tr>
+    <tr><td>A case cites itself, or the demo looks different from this guide</td><td>A step was run twice without resetting. Click <b>Reset</b> then <b>Seed</b> on the Demo page and run the steps in order.</td></tr>
+    <tr><td>A page shows an error after the computer was busy for a long time</td><td>Stop the website window (Ctrl+C) and start it again with <code>npm run dev</code>.</td></tr>
+    <tr><td>The animations are distracting</td><td>Turn on "reduce motion" in your computer's settings; the app switches its animations off.</td></tr>
+  </table>
+  <div class="box tip"><span class="t">Check the engine itself</span>
+  <code>.venv\Scripts\python -m pytest -q</code> runs 170 automated tests offline in a few seconds. They should all pass.</div>
+</section>
+
+<!-- 9. GLOSSARY -->
+<section class="section">
+  <div class="eyebrow"><b>09</b> Glossary</div>
+  <h2>The words, <em class="s">explained</em></h2>
+  <table>
+    <tr><th style="width:44mm">Word</th><th>Meaning</th></tr>
+    <tr><td>Purchase request (PR)</td><td>A request to buy something. The six checks run on it.</td></tr>
+    <tr><td>Purchase order (PO)</td><td>The document that commits the company to buy. "Hold PO" means don't issue it yet.</td></tr>
+    <tr><td>Exception</td><td>A request that failed at least one check and needs a person's attention.</td></tr>
+    <tr><td>Precedent</td><td>A past case where people resolved the same kind of problem. Every recommended step cites one.</td></tr>
+    <tr><td>Lesson</td><td>What memory has learned from several precedents, in plain words.</td></tr>
+    <tr><td>Tentative / established</td><td>A lesson from one case is tentative (check each step); one backed by several agreeing cases is established (one click).</td></tr>
+    <tr><td>Override</td><td>A reviewer rejected or changed what a lesson said for a specific situation. Later similar cases follow the reviewer.</td></tr>
+    <tr><td>Interaction</td><td>Two or more problems happening together, where the right fix differs from doing each fix separately.</td></tr>
+    <tr><td>Safety floor</td><td>Steps no lesson can remove, such as holding payment until a changed bank account is confirmed by phone.</td></tr>
+    <tr><td>False confidence</td><td>Giving a confident procedure for a problem with no real precedent. The target is zero.</td></tr>
+    <tr><td>Escalate</td><td>Send the case to a person to decide.</td></tr>
+    <tr><td>Cost centre</td><td>A department's budget line (for example CC-MACH, machining).</td></tr>
+    <tr><td>Delegate</td><td>The person allowed to approve while the usual approver is away, up to a set amount.</td></tr>
+    <tr><td>Line down</td><td>A production line has stopped, which makes the request urgent.</td></tr>
+    <tr><td>Sole source</td><td>Only one approved vendor can supply the item, so the usual three quotes aren't possible.</td></tr>
+    <tr><td>GST</td><td>India's Goods and Services Tax. A cancelled GST registration is a serious vendor problem.</td></tr>
+    <tr><td>Lakh (L)</td><td>Indian unit: 1 lakh = ₹1,00,000. So ₹4.8L = ₹4,80,000.</td></tr>
+    <tr><td>Hindsight</td><td>The memory service (by Vectorize) that stores cases, merges them into lessons, and tracks where each lesson came from.</td></tr>
+    <tr><td>Synthetic data</td><td>Made-up data. Kaveri Precision Components and everything about it is fictional.</td></tr>
+  </table>
+  <p class="muted" style="margin-top:8mm; font-size:9pt">EdgeMemory recommends; a human always decides. It never releases a payment.
+  Built for HackwithHyderabad 3.0 with Hindsight memory. All data in this guide is synthetic.</p>
+</section>
+
+</body>
+</html>

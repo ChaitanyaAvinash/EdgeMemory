@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-012",
+  "submitted_at": "2026-10-15T09:10:00",
+  "requester_id": "E-407",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Uppal Gear Drives Pvt Ltd",
+  "amount_raw": "3.2 lakh",
+  "quotes_attached": 3,
+  "justification": "The press‑shop conveyor needs a new worm gearbox as part of the scheduled November maintenance. Uppal Gear Drives offers the lowest price among the three quotes, so the purchase request is prepared.",
+  "email_thread": "From: Ravi Kumar (Purchase)\nSubject: Purchase request for gearbox replacement\nPls note planned replacement of the worm gearbox on press‑shop conveyor in Nov maintenance window. Need 3.2 lakh to Uppal Gear Drives Pvt Ltd, cost centre CC-MAINT. Three quotes attached, Uppal is lowest. Let me know if ok.\n---\nFrom: Anita Singh (Finance)\nRe: Purchase request for gearbox replacement\nRavi, got the request. Check the three quotes and ensure tax is applied. Once approved, I will raise PO.\n---\nFrom: Ravi Kumar (Purchase)\nRe: Purchase request for gearbox replacement\nAll set, Anita. Sending final approval. Please process the 3.2 lakh payment.\n",
+  "attachment_text": ""
+}

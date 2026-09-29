@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-015",
+  "submitted_at": "2026-10-15T12:55:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Sultanpur Precision Castings",
+  "amount_raw": "₹3,30,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for ₹3,30,000 to acquire investment-cast pump housings from the only approved source. Sultanpur Precision Castings holds a clean quality record and the recertification audit is done, ensuring compliance with IATF 16949 standards.",
+  "email_thread": "From: Rajesh Kumar (Purchasing) <rajesh.kumar@kaveriprecision.com>\nSent: 2026-10-15 09:12 AM\nSubject: Request for PO to Sultanpur Precision Castings\n\nPlease raise PO for ₹3,30,000 to Sultanpur Precision Castings, cost centre CC-ASSY. They are only approved source for this casting. Attach the quote.\n---\nFrom: Meena Singh (Finance) <meena.singh@kaveriprecision.com>\nSent: 2026-10-15 10:05 AM\nSubject: Re: Request for PO to Sultanpur Precision Castings\n\nGot it. Check that the IATF 16949 certificate is valid. Their old one expired 6 Oct but recertification audit is done, new cert due next week. All good.\n---\nFrom: Arjun Rao (Shop Floor) <arjun.rao@kaveriprecision.com>\nSent: 2026-10-15 10:45 AM\nSubject: Re: Request for PO to Sultanpur Precision Castings\n\nThanks, Rajesh. Let’s get this moving, need the housings soon. Sultanpur ka quality record badiya hai, so no issue.",
+  "attachment_text": ""
+}

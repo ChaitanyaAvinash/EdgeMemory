@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-014",
+  "submitted_at": "2026-10-14T11:20:00",
+  "requester_id": "E-403",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Himayatnagar Test Instruments",
+  "amount_raw": "Rs 1,90,000",
+  "quotes_attached": 1,
+  "justification": "We need to purchase a Rockwell hardness tester for the QA lab to increase testing capacity for heat-treated parts. The equipment will be capitalised as a fixed asset under cost centre CC-QA.",
+  "email_thread": "From: purchase@kaveriprecision.com\nSubject: Request for approval - hardness tester\n\nPlease approve Rs 1,90,000 to Himayatnagar Test Instruments for the new hardness tester. It will be capitalised under CC-QA. Quote attached.\n---\nFrom: manager.qa@kaveriprecision.com\nSubject: Re: Request for approval - hardness tester\n\nApproved. Go ahead with Himayatnagar Test Instruments. Ensure the asset is capitalised correctly.",
+  "attachment_text": ""
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-006",
+  "submitted_at": "2026-10-06T06:55:00",
+  "requester_id": "E-408",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Uppal Gear Drives",
+  "amount_raw": "1.35L",
+  "quotes_attached": 1,
+  "justification": "The transfer machine gearbox has failed as per the maintenance log. Line 4 is down and a replacement gearbox is needed for the cost centre CC-MACH. A quote for 1.35L has been attached and was submitted on 2026-10-06.",
+  "email_thread": "From: Rajesh Kumar (Shop Floor Supervisor)\nSubject: Gearbox failure on line 4\nMessage: Sir, line 4 is down since night shift. Main gearbox of transfer machine failed. Maintenance log confirms. Please approve purchase request for 1.35L to Uppal Gear Drives, cost centre CC-MACH.\n---\nFrom: Anita Verma (Purchasing Officer)\nSubject: Re: Gearbox failure on line 4\nMessage: Got it, Rajesh. I will raise the PO. Quote attached, 1.35L. Let me know if any extra details needed. Thanks.\n---\nFrom: Suresh Patel (Finance Lead)\nSubject: Re: Gearbox failure on line 4\nMessage: Approved from budget side, though CC-MACH is used up. Proceed with the order. Keep me posted.",
+  "attachment_text": ""
+}

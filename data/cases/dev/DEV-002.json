@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-002",
+  "submitted_at": "2026-09-25T10:40:00",
+  "requester_id": "E-411",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "M/s Miyapur Bearings & Seals",
+  "amount_raw": "Rs 76,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for spare bearings and oil seals needed for regular maintenance stores. Miyapur Bearings & Seals is a long‑standing vendor with a good delivery record, and their ISO 9001 renewal audit is done, with a new certificate expected soon.",
+  "email_thread": "From: Ramesh Kumar <ramesh.kumar@kaveriprecision.com>\nDate: 2026-09-25 09:15\nSubject: Purchase request for bearings & seals\n\nPlease raise Rs 76,000 to M/s Miyapur Bearings & Seals, cost centre CC-MAINT. Attach the quote we received. The vendor has a good delivery record.\n---\nFrom: Priya Nair <priya.nair@kaveriprecision.com>\nDate: 2026-09-25 10:40\nSubject: Re: Purchase request for bearings & seals\n\nChecked the vendor file. Their ISO 9001 certificate expired on 21 Sep; renewal audit is done and the new certificate will be issued next week. No issues from our side.\n---\nFrom: Arun Patel <arun.patel@kaveriprecision.com>\nDate: 2026-09-25 12:05\nSubject: Approval\n\nAll set. Cost centre head is on leave till 2 Oct but we can proceed as it is a regular item. Please process.\n",
+  "attachment_text": "   ISO 9OO1   \n   Certificate of Renewal \n   Miyapur Bearings & Seals \n   Renewal audit is done \n   Valid from 28 Sep 2026 \n   This certiﬁcate confirms compliance with ISO 9001 standards."
+}

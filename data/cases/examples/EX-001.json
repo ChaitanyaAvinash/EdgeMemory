@@ -1,0 +1,12 @@
+{
+  "request_id": "EX-001",
+  "submitted_at": "2026-09-29T08:10:00",
+  "requester_id": "E-402",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Nizam Pumps",
+  "amount_raw": "4.8L",
+  "quotes_attached": 3,
+  "justification": "The purchase request is for 4.8L pump assemblies for Nizam Pumps under cost centre CC-MACH. Three vendor quotes are attached and the request was submitted on 2026-09-29.",
+  "email_thread": "From: Rajesh Kumar (Purchase Officer)\nSent: 2026-09-28\nSubject: Request for 4.8L pump assemblies\n\nPlease arrange 4.8L pump assemblies for Nizam Pumps. line 3 is down and we need the parts soon.\n---\nFrom: Anita Rao (Finance)\nSent: 2026-09-28\nSubject: Re: Request for 4.8L pump assemblies\n\nNoted. The cost centre is over budget, so please ensure we use the attached quotes.\n---\nFrom: Vendor Support (Kaveri Precision)\nSent: 2026-09-29\nSubject: Re: Request for 4.8L pump assemblies\n\nWe have updated our details. Please refer to the new bank account for any future PO processing.",
+  "attachment_text": ""
+}

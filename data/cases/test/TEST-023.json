@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-023",
+  "submitted_at": "2026-10-27T13:20:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Kazipet Die Castings",
+  "amount_raw": "₹1,18,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for the second shipment of die‑cast housings, confirming the balance quantity and noting that Kazipet has no invoice issues.",
+  "email_thread": "From: Anil Kumar (Purchasing)\nDate: 2026-10-27\nSubject: PR-2026-0947 - Second shipment request\n\nPlease raise ₹1,18,000 to Kazipet Die Castings, cost centre CC-ASSY. This is for the second shipment of the die‑cast housing order raised on 5 Oct. Kazipet is delivering the balance quantity now. The housings are fitted to customer assemblies. Kazipet has had no invoice issues with Kaveri.\n---\nFrom: Sushma Reddy (Finance)\nDate: 2026-10-27\nSubject: Re: PR-2026-0947 - Second shipment request\n\nAcknowledged. We'll process the payment. Ensure the quote is attached with the PR.\n",
+  "attachment_text": ""
+}

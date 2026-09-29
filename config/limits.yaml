@@ -1,0 +1,42 @@
+# Free-tier limits copied by the user: Gemini from https://aistudio.google.com/rate-limit,
+# Groq from https://console.groq.com/settings/limits.
+# They apply per PROJECT (not per key) and are listed per model. NEVER guess these values:
+# null means "not supplied yet". llm.py does not throttle on a null limit (it only counts requests),
+# and scripts/estimate_budget.py refuses to compute quota-days until every rpd is filled in.
+# Daily quotas reset at midnight Pacific (12:30 PM IST until early Nov, 1:30 PM IST after).
+
+recorded_on: 2026-09-28   # AI Studio "Rate limits by model" screenshot supplied by the user
+models:
+  # Groq console → Settings → Limits (screenshot supplied by the user, 28 Sep 2026).
+  openai/gpt-oss-120b:
+    rpm: 30
+    rpd: 1000
+    tpm: 8000
+    tpd: 200000            # tokens per day (Groq only)
+    # Groq refills daily limits continuously (headers: x-ratelimit-reset-requests 1m26.4s after one
+    # request = 86,400 s / 1,000), so llm.py models a bucket refilling at limit/86,400 per second over the
+    # logged calls (not a Pacific calendar day, and not a 24 h sliding sum).
+    daily_window: rolling_24h
+  gemini-3.8-flash:
+    rpm: 5                 # requests per minute
+    tpm: 250000            # tokens per minute
+    rpd: 20                # requests per day
+  gemini-3.7-flash:
+    rpm: 5
+    tpm: 250000
+    rpd: 20
+
+# Does the fallback model have its own daily quota, separate from the primary's? (check in AI Studio)
+fallback_has_own_quota: true   # AI Studio shows a separate usage counter per model (3.7: 10/20, 3.8: 19/20)
+
+# Requests per model per day held back as a safety margin. Development and rehearsals are already an
+# allowance line in the budget plan, so this is not a second allowance.
+reserve_requests_per_day: 0
+
+# Hindsight Cloud prices (USD), from https://vectorize.io/pricing, read 2026-09-28. Credit, not Gemini quota.
+hindsight_cloud:
+  promo_credit_usd: 50
+  retain_per_million_input_tokens: 10.00
+  recall_per_million_tokens: 0.75
+  reflect_per_call: 0.05
+  # Consolidation is not priced separately on the pricing page; treated as included (unverified).

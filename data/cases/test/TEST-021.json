@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-021",
+  "submitted_at": "2026-10-23T10:10:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Bhongir Forgings",
+  "amount_raw": "12.4 L",
+  "quotes_attached": 3,
+  "justification": "The quarterly order for forged flange blanks is being placed as per the Q3 schedule. Three quotes were received and the lowest price is from Bhongir Forgings. The standard four‑week delivery term applies.",
+  "email_thread": "From: purchase@kaveriprecision.com\nSubject: Request for order - forged flange blanks\nDate: 2026-10-23\n\nPlease raise PO for 12.4 L of forged flange blanks to Bhongir Forgings. Cost centre CC-ASSY. Attach three quotes.\n---\nFrom: bhongir.forgings@example.com\nSubject: Re: Request for order - forged flange blanks\nDate: 2026-10-24\n\nWe confirm availability and price. Lowest among three quotes.\n---\nFrom: purchase@kaveriprecision.com\nSubject: Re: Request for order - forged flange blanks\nDate: 2026-10-25\n\nThanks, we will process the PO. Delivery in four weeks as usual.",
+  "attachment_text": ""
+}

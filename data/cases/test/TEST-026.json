@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-026",
+  "submitted_at": "2026-11-02T14:50:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Kazipet Die Castings",
+  "amount_raw": "85,000/-",
+  "quotes_attached": 1,
+  "justification": "The request is for a purchase of 85,000/- to Kazipet Die Castings for a small batch of end covers used in customer assemblies, with cost centre CC-ASSY and one quote attached. The email thread discusses delivery date and packing instructions.",
+  "email_thread": "From: Rajesh Kumar (Purchasing) <r.kumar@kaveriprecision.com>\nSent: 2026-11-02 09:15 AM\nSubject: PO for end covers - Kazipet Die Castings\n\nPlease see attached PO for 85,000/- to Kazipet Die Castings. Cost centre CC-ASSY. One quote attached.\n---\nFrom: Sunita Reddy (Vendor) <sunita@kazipetdie.com>\nSent: 2026-11-02 10:02 AM\nSubject: Re: PO for end covers - Kazipet Die Castings\n\nThanks Rajesh. Can you confirm the expected delivery date? Need to schedule the line.\n---\nFrom: Rajesh Kumar <r.kumar@kaveriprecision.com>\nSent: 2026-11-02 10:45 AM\nSubject: Re: PO for end covers - Kazipet Die Castings\n\nWe aim for delivery by 15th Dec. Please pack the end covers in sturdy cardboard, 20 pcs per box.\n---\nFrom: Sunita Reddy <sunita@kazipetdie.com>\nSent: 2026-11-02 11:10 AM\nSubject: Re: PO for end covers - Kazipet Die Castings\n\nGot it. We'll use double‑wall boxes and label each with part no and quantity. Anything else?\n---\nFrom: Rajesh Kumar <r.kumar@kaveriprecision.com>\nSent: 2026-11-02 11:30 AM\nSubject: Re: PO for end covers - Kazipet Die Castings\n\nJust ensure the boxes are sealed with tape and include a packing slip inside. Thanks.",
+  "attachment_text": ""
+}

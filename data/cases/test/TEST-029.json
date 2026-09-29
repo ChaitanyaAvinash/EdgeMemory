@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-029",
+  "submitted_at": "2026-11-05T11:40:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Shankarpally Forge",
+  "amount_raw": "3.1 lakh",
+  "quotes_attached": 3,
+  "justification": "We need to raise a purchase request of 3.1 lakh for forged connecting-rod blanks from Shankarpally Forge for the December build plan. Three quotes are attached and Shankarpally offers the lowest price. Their IATF 16949 certification has been renewed after the recertification audit is done and they have a good delivery record.",
+  "email_thread": "From: Aravind Kumar <aravind.kumar@kaveri.com>\nSent: Mon, 4 Nov 2026 09:15 AM\nSubject: RFQ for connecting‑rod blanks\n\nPlease find three quotes attached for Shankarpally Forge. Need to process 3.1 lakh to cost centre CC-ASSY.\n---\nFrom: Meena Rao <meena.rao@kaveri.com>\nSent: Mon, 4 Nov 2026 10:00 AM\nSubject: Re: RFQ for connecting‑rod blanks\n\nChecked the quotes, Shankarpally is cheapest. Their IATF 16949 certificate expired on 1 Nov but the recertification audit is done, expecting new cert soon. Also they have a good delivery record.\n---\nFrom: Sandeep Joshi <sandeep.joshi@kaveri.com>\nSent: Mon, 4 Nov 2026 10:30 AM\nSubject: Approval\n\nApproved. Proceed with purchase order to Shankarpally Forge for 3.1 lakh.",
+  "attachment_text": "IATF 1 6 9 4 9   Certification\nCertificate No: 2025/SHK/001\nIssue Date: 02-10-2025   Expiry Date: 01-11-2026\nStatus: Recertified   recertification audit is done\n"
+}

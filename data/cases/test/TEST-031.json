@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-031",
+  "submitted_at": "2026-11-09T07:25:00",
+  "requester_id": "E-408",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Shamshabad Hydraulics",
+  "amount_raw": "1.24L",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for the remaining hydraulic cylinders needed to complete the order after the first shipment. The cost centre budget is already allocated and past invoices have been clean, so the request proceeds on standard terms.",
+  "email_thread": "From: Rajesh Kumar <rkumar@kaveriprecision.com>\nSubject: PR-2026-1012 - 1.24L to Shamshabad Hydraulics\nDate: 2026-11-09\n\nHi Team,\n\nPlease raise PO for 1.24L to Shamshabad Hydraulics, cost centre CC-MACH. This is the second shipment of the order raised on 30 Oct (PR-2026-1012). The balance quantity is arriving now. line 1 is down and we need this to get it running again.\n\nThanks,\nRajesh\n---\nFrom: Anjali Singh <asingh@kaveriprecision.com>\nSubject: Re: PR-2026-1012 - 1.24L to Shamshabad Hydraulics\nDate: 2026-11-09\n\nRajesh,\n\nGot it. maintenance log confirms the breakdown on line 1 is down. Budget CC-MACH is already used up but we have the funds earmarked.\n\nWill forward to procurement.\n\nAnjali\n---\nFrom: Sunil Patel <spatel@kaveriprecision.com>\nSubject: Re: PR-2026-1012 - 1.24L to Shamshabad Hydraulics\nDate: 2026-11-09\n\nTeam,\n\nNo invoice issues with Shamshabad so far. Please attach the quote (1 quote attached) and process.\n\nRegards,\nSunil",
+  "attachment_text": ""
+}

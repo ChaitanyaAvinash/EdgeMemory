@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-037",
+  "submitted_at": "2026-11-19T11:30:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Siddipet Sheet Metal",
+  "amount_raw": "1.35 lakh",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for laser‑cut sheet‑metal guards needed for customer assemblies. The vendor's ISO 9001 certificate has lapsed but the renewal audit is done, so we can proceed. Siddipet Sheet Metal has a reliable delivery record.",
+  "email_thread": "From: Ramesh Kumar <ramesh.kumar@kaveri.com>\nDate: 2026-11-18\nSubject: PR for Siddipet Sheet Metal\n\nPlease raise 1.35 lakh to Siddipet Sheet Metal, cost centre CC-ASSY. Attach the quote. Thanks.\n---\nFrom: Anjali Patel <anjali.patel@kaveri.com>\nDate: 2026-11-18\nSubject: Re: PR for Siddipet Sheet Metal\n\nGot the quote. Vendor says ISO 9001 certificate lapsed on 14 Nov but renewal audit is done. It's just paperwork delay.\n---\nFrom: Suresh Iyer <suresh.iyer@kaveri.com>\nDate: 2026-11-19\nSubject: Re: PR for Siddipet Sheet Metal\n\nSiddipet has good delivery record. Approve and forward to finance.\n",
+  "attachment_text": "   ISO 9001\n   Certificate of\n   Conformity\n   No: 12-3456-78\n   Issued: 01-Oct-2024\n   Expiry : 13-Nov-2026\n   Renewal audit is done\n   (OCR misread: R3newal)\n"
+}

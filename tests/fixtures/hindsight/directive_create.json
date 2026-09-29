@@ -1,0 +1,11 @@
+{
+  "id": "d59e63ad-aebc-41b7-be9c-d0c96638f0af",
+  "bank_id": "kaveri-spike-concise-fafd9d",
+  "name": "cite-cases",
+  "content": "Cite the case ID behind every step.",
+  "priority": 10,
+  "is_active": true,
+  "tags": [],
+  "created_at": "2026-09-28T10:06:20.095483+00:00",
+  "updated_at": "2026-09-28T10:06:20.095483+00:00"
+}

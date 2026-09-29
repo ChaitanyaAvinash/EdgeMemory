@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-007",
+  "submitted_at": "2026-10-06T11:45:00",
+  "requester_id": "E-409",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Kukatpally Calibration Labs",
+  "amount_raw": "48,000",
+  "quotes_attached": 1,
+  "justification": "Half-yearly calibration of 40 vernier calipers and micrometers is needed for the QA lab. The work will be done by an accredited external lab with ISO/IEC 17025 certification. This ensures measurement accuracy and compliance with internal standards.",
+  "email_thread": "From: Ravi Kumar <ravi.kumar@kaveriprecision.com>\nSubject: Request for calibration quote\nDate: 2026-10-03\n\nHi Team,\n\nPlease send a quote to Kukatpally Calibration Labs for half‑yearly calibration of 40 vernier calipers and micrometers. Use cost centre CC‑QA. Attach the accreditation certificate (calibration | ISO/IEC 17025). Thanks.\n---\nFrom: Anjali Rao <anjali.rao@kaveriprecision.com>\nSubject: Re: Request for calibration quote\nDate: 2026-10-04\n\nRavi,\n\nGot the quote. 48,000 INR total. Certificate attached. All set for the planned activity. No rush.\n",
+  "attachment_text": "KUKATPALLY CALIBRATION LABS\nISO/IEC 17025:2021 ACCREDITED\nCertificate No: KCL‑2025‑001\nValid till: 31 Mar 2027\n\nThis certiﬁcate confirms that the lab meets the requirements of ISO/IEC 17025 for calibration services.\n"
+}

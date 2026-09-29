@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-039",
+  "submitted_at": "2026-11-25T11:05:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Himayatnagar Test Instruments",
+  "amount_raw": "1,85,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for a torque-testing station to be capitalised as a fixed asset for the assembly area. The cost centre head is unavailable until early December, so the request is recorded now.",
+  "email_thread": "From: purchase@kaveriprecision.com\nTo: himayatnagar@instrument.com\nSubject: New purchase request - torque-testing station\nDate: 2026-11-25\n\nPlease raise PO for 1,85,000 for a torque-testing station. Cost centre CC-ASSY. Quote attached.\n---\nFrom: himayatnagar@instrument.com\nTo: purchase@kaveriprecision.com\nSubject: Re: New purchase request - torque-testing station\nDate: 2026-11-26\n\nThanks. We have received the request. Will send the pro‑forma shortly.\n---\nFrom: purchase@kaveriprecision.com\nTo: himayatnagar@instrument.com\nSubject: Re: New purchase request - torque-testing station\nDate: 2026-11-27\n\nPlease confirm delivery lead time. Asset will be capitalised in our books.",
+  "attachment_text": ""
+}

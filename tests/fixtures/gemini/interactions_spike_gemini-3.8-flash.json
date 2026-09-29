@@ -1,0 +1,23 @@
+{
+  "raw": "{\n  \"verdicts\": [\n    {\n      \"candidate_id\": \"C1\",\n      \"verdict\": \"partial\",\n      \"differences\": [\n        \"Procurement category difference: indirect MRO vs. direct material\"\n      ],\n      \"reason\": \"Both cases share the same failed check (vendor), cause (cert_expired), condition (vendor in good standing, ISO 9001 expired 6 days ago), and amount band (up to 2L), but the category differs (indirect MRO vs direct material).\"\n    },\n    {\n      \"candidate_id\": \"C2\",\n      \"verdict\": \"no\",\n      \"differences\": [\n        \"Different failed check and cause: bank details changed vs. cert_expired\"\n      ],\n      \"reason\": \"The candidate addresses a completely different failure cause (bank details change rather than certificate expiration).\"\n    }\n  ]\n}",
+  "parsed": {
+    "verdicts": [
+      {
+        "candidate_id": "C1",
+        "verdict": "partial",
+        "differences": [
+          "Procurement category difference: indirect MRO vs. direct material"
+        ],
+        "reason": "Both cases share the same failed check (vendor), cause (cert_expired), condition (vendor in good standing, ISO 9001 expired 6 days ago), and amount band (up to 2L), but the category differs (indirect MRO vs direct material)."
+      },
+      {
+        "candidate_id": "C2",
+        "verdict": "no",
+        "differences": [
+          "Different failed check and cause: bank details changed vs. cert_expired"
+        ],
+        "reason": "The candidate addresses a completely different failure cause (bank details change rather than certificate expiration)."
+      }
+    ]
+  }
+}

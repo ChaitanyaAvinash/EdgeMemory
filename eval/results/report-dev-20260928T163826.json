@@ -1,0 +1,276 @@
+{
+  "split": "dev",
+  "arms": {
+    "C": {
+      "M1_false_confidence": {
+        "x": 1,
+        "n": 4,
+        "cases": [
+          "DEV-020"
+        ],
+        "text": "1 of 4"
+      },
+      "M2_floor_violations": {
+        "x": 0,
+        "n": 8,
+        "cases": [],
+        "text": "0 of 8"
+      },
+      "M3_classification": {
+        "matrix": {
+          "normal": {
+            "normal": 4,
+            "known": 0,
+            "generalized": 0,
+            "composed": 0,
+            "unknown": 0
+          },
+          "known": {
+            "normal": 0,
+            "known": 5,
+            "generalized": 0,
+            "composed": 0,
+            "unknown": 0
+          },
+          "generalized": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 2,
+            "composed": 0,
+            "unknown": 0
+          },
+          "composed": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 0,
+            "composed": 5,
+            "unknown": 0
+          },
+          "unknown": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 0,
+            "composed": 1,
+            "unknown": 3
+          }
+        },
+        "correct": {
+          "x": 19,
+          "n": 20,
+          "cases": [
+            "DEV-020"
+          ],
+          "text": "19 of 20"
+        }
+      },
+      "M4_procedure_f1": {
+        "normal": 0.0,
+        "known": 0.9,
+        "generalized": 0.5,
+        "composed": 0.931,
+        "unknown": 0.614,
+        "macro": 0.589
+      },
+      "M5_interaction": {
+        "exact_match": {
+          "x": 0,
+          "n": 0,
+          "cases": [],
+          "text": "0 of 0"
+        },
+        "mean_f1": null,
+        "novel_flagged": {
+          "x": 0,
+          "n": 0,
+          "cases": [],
+          "text": "0 of 0"
+        }
+      },
+      "M6_outdated_lesson_use": {
+        "x": 0,
+        "n": 0,
+        "cases": [],
+        "text": "0 of 0"
+      },
+      "M7_post_override_correctness": {
+        "x": 0,
+        "n": 0,
+        "cases": [],
+        "text": "0 of 0"
+      },
+      "M8_review_effort": {
+        "per_10_cases": 26.5,
+        "escalations": 3,
+        "edits": 11,
+        "confirmations": 39,
+        "cases": 20
+      },
+      "M9_minutes": {
+        "per_10_exception_cases": 123.1,
+        "baseline_per_10": 400,
+        "exception_cases": 16,
+        "assumptions": {
+          "research_unfamiliar_exception_min": 40,
+          "step_by_step_review_min": 6,
+          "one_click_review_min": 1,
+          "edit_min": 2,
+          "escalation_min": 40
+        }
+      },
+      "M10_unnecessary_escalations": {
+        "x": 0,
+        "n": 12,
+        "cases": [],
+        "text": "0 of 12"
+      },
+      "M11_cost_latency": {
+        "cases": 20,
+        "tokens_per_case": 3073,
+        "p50_s": 20.7,
+        "p95_s": 53.6,
+        "models_used": [
+          "openai/gpt-oss-120b"
+        ]
+      }
+    },
+    "E": {
+      "M1_false_confidence": {
+        "x": 1,
+        "n": 4,
+        "cases": [
+          "DEV-020"
+        ],
+        "text": "1 of 4"
+      },
+      "M2_floor_violations": {
+        "x": 0,
+        "n": 8,
+        "cases": [],
+        "text": "0 of 8"
+      },
+      "M3_classification": {
+        "matrix": {
+          "normal": {
+            "normal": 4,
+            "known": 0,
+            "generalized": 0,
+            "composed": 0,
+            "unknown": 0
+          },
+          "known": {
+            "normal": 0,
+            "known": 5,
+            "generalized": 0,
+            "composed": 0,
+            "unknown": 0
+          },
+          "generalized": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 2,
+            "composed": 0,
+            "unknown": 0
+          },
+          "composed": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 0,
+            "composed": 5,
+            "unknown": 0
+          },
+          "unknown": {
+            "normal": 0,
+            "known": 0,
+            "generalized": 0,
+            "composed": 1,
+            "unknown": 3
+          }
+        },
+        "correct": {
+          "x": 19,
+          "n": 20,
+          "cases": [
+            "DEV-020"
+          ],
+          "text": "19 of 20"
+        }
+      },
+      "M4_procedure_f1": {
+        "normal": 0.0,
+        "known": 1.0,
+        "generalized": 1.0,
+        "composed": 1.0,
+        "unknown": 0.65,
+        "macro": 0.73
+      },
+      "M5_interaction": {
+        "exact_match": {
+          "x": 0,
+          "n": 0,
+          "cases": [],
+          "text": "0 of 0"
+        },
+        "mean_f1": null,
+        "novel_flagged": {
+          "x": 0,
+          "n": 0,
+          "cases": [],
+          "text": "0 of 0"
+        }
+      },
+      "M6_outdated_lesson_use": {
+        "x": 0,
+        "n": 0,
+        "cases": [],
+        "text": "0 of 0"
+      },
+      "M7_post_override_correctness": {
+        "x": 0,
+        "n": 0,
+        "cases": [],
+        "text": "0 of 0"
+      },
+      "M8_review_effort": {
+        "per_10_cases": 26.0,
+        "escalations": 3,
+        "edits": 4,
+        "confirmations": 45,
+        "cases": 20
+      },
+      "M9_minutes": {
+        "per_10_exception_cases": 123.8,
+        "baseline_per_10": 400,
+        "exception_cases": 16,
+        "assumptions": {
+          "research_unfamiliar_exception_min": 40,
+          "step_by_step_review_min": 6,
+          "one_click_review_min": 1,
+          "edit_min": 2,
+          "escalation_min": 40
+        }
+      },
+      "M10_unnecessary_escalations": {
+        "x": 0,
+        "n": 12,
+        "cases": [],
+        "text": "0 of 12"
+      },
+      "M11_cost_latency": {
+        "cases": 20,
+        "tokens_per_case": 0,
+        "p50_s": 20.7,
+        "p95_s": 53.6,
+        "models_used": [
+          "openai/gpt-oss-120b"
+        ]
+      }
+    }
+  },
+  "assumptions": {
+    "research_unfamiliar_exception_min": 40,
+    "step_by_step_review_min": 6,
+    "one_click_review_min": 1,
+    "edit_min": 2,
+    "escalation_min": 40
+  }
+}

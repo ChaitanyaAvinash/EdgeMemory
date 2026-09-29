@@ -1,0 +1,175 @@
+{
+  "results": [
+    {
+      "id": "43a07082-1ae2-4605-8f63-4d2b9408a335",
+      "text": "When a bank change coincides with a line-down budget overrun, the standard procurement process is overridden to allow immediate PO release (EXPEDITE_PO) while holding payment (HOLD_PAYMENT) until bank callback (VERIFY_BANK_CALLBACK) and controller sign-off (ADD_CONTROLLER_SIGNOFF) are completed, supported by line-down evidence (ATTACH_LINE_DOWN_EVIDENCE) and an allowed budget variance (ALLOW_BUDGET_OVERRUN). This procedure was applied in case PR-2026-0312.",
+      "type": "observation",
+      "occurred_start": "2026-03-11T06:30:00+00:00",
+      "occurred_end": "2026-03-12T18:29:59.030000+00:00",
+      "mentioned_at": "2026-03-11T06:30:00.040000+00:00",
+      "metadata": {},
+      "tags": [
+        "interaction"
+      ],
+      "source_fact_ids": [
+        "08a07221-09fa-46cb-82e7-a31c29cd8207",
+        "1b695ab4-0853-4c10-a1c4-a4199fbfb3d0",
+        "1b1111db-95cf-4ba9-a2f7-08302b8429be",
+        "0d3f00a4-288e-4407-95d9-6d10af2b4a5c",
+        "2e9590d2-ecce-4aa4-a976-741a8e536c31"
+      ],
+      "scores": {
+        "final": 0.9812458307077626,
+        "reranker": 0.9868787,
+        "semantic": 0.6971349716186523,
+        "keyword": 1.2000000476837158
+      },
+      "entities": null,
+      "context": null,
+      "document_id": null,
+      "chunk_id": null,
+      "attachments": null
+    }
+  ],
+  "source_facts": {
+    "08a07221-09fa-46cb-82e7-a31c29cd8207": {
+      "id": "08a07221-09fa-46cb-82e7-a31c29cd8207",
+      "text": "Case PR-2026-0312 involved a procurement exception for ₹4,10,000 for coolant pump assemblies from vendor V-031 due to a recent bank change and a 7% budget overrun in cost centre CC-MACH. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | Line 3 was stopped due to a lack of parts.",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-03-11T06:30:00+00:00",
+      "occurred_end": "2026-03-11T06:30:00+00:00",
+      "mentioned_at": "2026-03-11T06:30:00+00:00",
+      "document_id": "PR-2026-0312",
+      "metadata": {
+        "kind": "interaction",
+        "combo": "bank+budget",
+        "case_id": "PR-2026-0312",
+        "outcome": "line restarted; payment released after callback",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0312_0",
+      "tags": [
+        "combo:bank+budget",
+        "interaction"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "1b695ab4-0853-4c10-a1c4-a4199fbfb3d0": {
+      "id": "1b695ab4-0853-4c10-a1c4-a4199fbfb3d0",
+      "text": "The standard process was bypassed because holding the PO for a bank callback would have kept line 3 down, and a PO is not a payment. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops)",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-03-11T06:30:00.010000+00:00",
+      "occurred_end": "2026-03-11T06:30:00.010000+00:00",
+      "mentioned_at": "2026-03-11T06:30:00.010000+00:00",
+      "document_id": "PR-2026-0312",
+      "metadata": {
+        "kind": "interaction",
+        "combo": "bank+budget",
+        "case_id": "PR-2026-0312",
+        "outcome": "line restarted; payment released after callback",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0312_0",
+      "tags": [
+        "combo:bank+budget",
+        "interaction"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "1b1111db-95cf-4ba9-a2f7-08302b8429be": {
+      "id": "1b1111db-95cf-4ba9-a2f7-08302b8429be",
+      "text": "R. Menon approved the following step codes: EXPEDITE_PO, VERIFY_BANK_CALLBACK, HOLD_PAYMENT, ALLOW_BUDGET_OVERRUN, ATTACH_LINE_DOWN_EVIDENCE, and ADD_CONTROLLER_SIGNOFF, while removing HOLD_PO. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | To release the PO immediately while keeping the payment held until the bank callback.",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-03-11T06:30:00.020000+00:00",
+      "occurred_end": "2026-03-11T06:30:00.020000+00:00",
+      "mentioned_at": "2026-03-11T06:30:00.020000+00:00",
+      "document_id": "PR-2026-0312",
+      "metadata": {
+        "kind": "interaction",
+        "combo": "bank+budget",
+        "case_id": "PR-2026-0312",
+        "outcome": "line restarted; payment released after callback",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0312_0",
+      "tags": [
+        "combo:bank+budget",
+        "interaction"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "0d3f00a4-288e-4407-95d9-6d10af2b4a5c": {
+      "id": "0d3f00a4-288e-4407-95d9-6d10af2b4a5c",
+      "text": "The line restarted after parts arrived on March 12, 2026, and payment was released following the bank callback and controller sign-off. | When: 2026-03-12",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "occurred_start": "2026-03-11T18:30:00.030000+00:00",
+      "occurred_end": "2026-03-12T18:29:59.030000+00:00",
+      "mentioned_at": "2026-03-11T06:30:00.030000+00:00",
+      "document_id": "PR-2026-0312",
+      "metadata": {
+        "kind": "interaction",
+        "combo": "bank+budget",
+        "case_id": "PR-2026-0312",
+        "outcome": "line restarted; payment released after callback",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0312_0",
+      "tags": [
+        "combo:bank+budget",
+        "interaction"
+      ],
+      "entities": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    },
+    "2e9590d2-ecce-4aa4-a976-741a8e536c31": {
+      "id": "2e9590d2-ecce-4aa4-a976-741a8e536c31",
+      "text": "The lesson learned is that when a bank change coincides with a line-down budget overrun, the PO should be released while the payment is held until the callback is confirmed.",
+      "type": "world",
+      "context": "procurement exception resolution",
+      "mentioned_at": "2026-03-11T06:30:00.040000+00:00",
+      "document_id": "PR-2026-0312",
+      "metadata": {
+        "kind": "interaction",
+        "combo": "bank+budget",
+        "case_id": "PR-2026-0312",
+        "outcome": "line restarted; payment released after callback",
+        "reviewer": "R. Menon",
+        "overrides": ""
+      },
+      "chunk_id": "kaveri-spike-concise-fafd9d_PR-2026-0312_0",
+      "tags": [
+        "combo:bank+budget",
+        "interaction"
+      ],
+      "entities": null,
+      "occurred_start": null,
+      "occurred_end": null,
+      "source_fact_ids": null,
+      "scores": null,
+      "attachments": null
+    }
+  },
+  "source_facts_truncated": false,
+  "trace": null,
+  "entities": null,
+  "chunks": null
+}

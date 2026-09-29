@@ -1,0 +1,64 @@
+{
+  "run_id": "smoke1",
+  "arm": "A",
+  "dataset": "gate1",
+  "split": "gate1",
+  "rows": [
+    {
+      "run_id": "smoke1",
+      "arm": "A",
+      "split": "gate1",
+      "case_id": "GATE-K1",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "REQUEST_RENEWED_CERT",
+        "HOLD_PO"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1955,
+      "latency_ms": 10495,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "smoke1",
+      "arm": "A",
+      "split": "gate1",
+      "case_id": "GATE-C2",
+      "predicted_class": "unknown",
+      "predicted_steps": [
+        "VERIFY_BANK_CALLBACK",
+        "REQUEST_MORE_INFO"
+      ],
+      "review_mode": "escalate",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2014,
+      "latency_ms": 16331,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    },
+    {
+      "run_id": "smoke1",
+      "arm": "A",
+      "split": "gate1",
+      "case_id": "GATE-U2",
+      "predicted_class": "known",
+      "predicted_steps": [
+        "DECLARE_CONFLICT_OF_INTEREST"
+      ],
+      "review_mode": "",
+      "flags": [],
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1972,
+      "latency_ms": 16280,
+      "models": [
+        "openai/gpt-oss-120b"
+      ]
+    }
+  ]
+}

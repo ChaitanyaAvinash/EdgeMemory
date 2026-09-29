@@ -1,0 +1,67 @@
+{
+  "_note": "SYNTHETIC DATA for Gate G1 (SPEC §17 Phase 1). Kaveri Precision Components is fictional.",
+  "vendors": [
+    {"id": "V-101", "name": "Deccan Bearings", "gstin": "36AADCD4521K1Z3", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2026-09-18", "bank_changed_at": null, "sole_source": false, "category": "direct_material"},
+    {"id": "V-102", "name": "Srinivasa Castings", "gstin": "36AAECS7731M1Z8", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-05-31", "bank_changed_at": "2026-09-12", "sole_source": false, "category": "direct_material"},
+    {"id": "V-103", "name": "Hyderabad Tooling Works", "gstin": "36AAFCH2290Q1Z4", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-02-28", "bank_changed_at": null, "sole_source": false, "category": "indirect_mro"},
+    {"id": "V-104", "name": "Godavari Coolants", "gstin": "36AAGCG5512B1Z6", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-03-31", "bank_changed_at": null, "sole_source": false, "category": "direct_material"},
+    {"id": "V-105", "name": "Precision Gauges Hyderabad", "gstin": "36AAHCP8840D1Z2", "gst_status": "active", "status": "active", "cert_name": "ISO/IEC 17025", "cert_expiry": "2027-06-30", "bank_changed_at": null, "sole_source": true, "category": "direct_material"},
+    {"id": "V-106", "name": "Kakatiya Motors", "gstin": "36AAJCK3307F1Z9", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-01-31", "bank_changed_at": null, "sole_source": false, "category": "direct_material"},
+    {"id": "V-107", "name": "Nizam Pumps", "gstin": "36AAKCN6618G1Z1", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-04-30", "bank_changed_at": "2026-09-15", "sole_source": false, "category": "direct_material"},
+    {"id": "V-108", "name": "Charminar Fasteners", "gstin": "36AALCC9021H1Z5", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2026-09-19", "bank_changed_at": null, "sole_source": false, "category": "indirect_mro"},
+    {"id": "V-109", "name": "Banjara Alloys", "gstin": "36AAMCB1147J1Z7", "gst_status": "active", "status": "active", "cert_name": "IATF 16949", "cert_expiry": "2027-08-31", "bank_changed_at": null, "sole_source": true, "category": "direct_material"},
+    {"id": "V-052", "name": "Musi Packaging", "gstin": "36AANCM4476L1Z3", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-02-28", "bank_changed_at": null, "sole_source": false, "category": "indirect_mro"},
+    {"id": "V-110", "name": "Telangana Fab Works", "gstin": "36AAPCT7703N1Z8", "gst_status": "cancelled", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-01-31", "bank_changed_at": null, "sole_source": false, "category": "direct_material"},
+    {"id": "V-111", "name": "Warangal Wires", "gstin": "36AAQCW2258P1Z4", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-03-31", "bank_changed_at": null, "sole_source": false, "category": "services"},
+    {"id": "V-112", "name": "Secunderabad Steel Traders", "gstin": "36AARCS5589R1Z6", "gst_status": "active", "status": "blacklisted", "cert_name": "ISO 9001", "cert_expiry": "2027-05-31", "bank_changed_at": null, "sole_source": false, "category": "indirect_mro"},
+    {"id": "V-113", "name": "Golconda Electricals", "gstin": "36AASCG8812S1Z2", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-02-28", "bank_changed_at": null, "sole_source": false, "category": "direct_material"},
+    {"id": "V-114", "name": "Ramoji Facility Services", "gstin": "36AATCR3365T1Z9", "gst_status": "active", "status": "active", "cert_name": "ISO 9001", "cert_expiry": "2027-04-30", "bank_changed_at": null, "sole_source": false, "category": "services"}
+  ],
+  "employees": [
+    {"id": "E-104", "name": "K. Raghavan", "role": "cc_head", "cost_centre": "CC-MACH", "leave_from": "2026-09-14", "leave_to": "2026-09-18"},
+    {"id": "E-107", "name": "S. Fathima", "role": "cc_head", "cost_centre": "CC-MAINT", "leave_from": "2026-09-21", "leave_to": "2026-10-02"},
+    {"id": "E-110", "name": "P. Reddy", "role": "cc_head", "cost_centre": "CC-ASSY", "leave_from": null, "leave_to": null},
+    {"id": "E-111", "name": "M. Joshi", "role": "cc_head", "cost_centre": "CC-QA", "leave_from": null, "leave_to": null},
+    {"id": "E-113", "name": "A. Varma", "role": "cc_head", "cost_centre": "CC-ADMIN", "leave_from": null, "leave_to": null},
+    {"id": "E-112", "name": "T. Naidu", "role": "delegate", "cost_centre": "CC-MACH", "leave_from": null, "leave_to": null},
+    {"id": "E-115", "name": "R. Kulkarni", "role": "delegate", "cost_centre": "CC-MAINT", "leave_from": null, "leave_to": null},
+    {"id": "E-201", "name": "V. Iyer", "role": "plant_head", "cost_centre": "PLANT", "leave_from": null, "leave_to": null},
+    {"id": "E-301", "name": "N. Chandra", "role": "cfo", "cost_centre": "CORP", "leave_from": null, "leave_to": null},
+    {"id": "E-401", "name": "Ananya Rao", "role": "analyst", "cost_centre": "CC-ASSY", "leave_from": null, "leave_to": null},
+    {"id": "E-402", "name": "D. Prasad", "role": "requester", "cost_centre": "CC-MACH", "leave_from": null, "leave_to": null},
+    {"id": "E-403", "name": "G. Rao", "role": "requester", "cost_centre": "CC-QA", "leave_from": null, "leave_to": null},
+    {"id": "E-404", "name": "L. Menon", "role": "requester", "cost_centre": "CC-MAINT", "leave_from": null, "leave_to": null},
+    {"id": "E-405", "name": "B. Shetty", "role": "requester", "cost_centre": "CC-ADMIN", "leave_from": null, "leave_to": null}
+  ],
+  "approval_limits": [
+    {"cost_centre": "CC-MACH", "max_amount": 200000, "approver_id": "E-104"},
+    {"cost_centre": "CC-MAINT", "max_amount": 200000, "approver_id": "E-107"},
+    {"cost_centre": "CC-ASSY", "max_amount": 200000, "approver_id": "E-110"},
+    {"cost_centre": "CC-QA", "max_amount": 200000, "approver_id": "E-111"},
+    {"cost_centre": "CC-ADMIN", "max_amount": 200000, "approver_id": "E-113"},
+    {"cost_centre": "CC-MACH", "max_amount": 1000000, "approver_id": "E-201"},
+    {"cost_centre": "CC-MAINT", "max_amount": 1000000, "approver_id": "E-201"},
+    {"cost_centre": "CC-ASSY", "max_amount": 1000000, "approver_id": "E-201"},
+    {"cost_centre": "CC-QA", "max_amount": 1000000, "approver_id": "E-201"},
+    {"cost_centre": "CC-ADMIN", "max_amount": 1000000, "approver_id": "E-201"},
+    {"cost_centre": "CC-MACH", "max_amount": 100000000, "approver_id": "E-301"},
+    {"cost_centre": "CC-MAINT", "max_amount": 100000000, "approver_id": "E-301"},
+    {"cost_centre": "CC-ASSY", "max_amount": 100000000, "approver_id": "E-301"},
+    {"cost_centre": "CC-QA", "max_amount": 100000000, "approver_id": "E-301"},
+    {"cost_centre": "CC-ADMIN", "max_amount": 100000000, "approver_id": "E-301"}
+  ],
+  "delegations": [
+    {"approver_id": "E-104", "delegate_id": "E-112", "max_amount": 200000, "valid_from": "2026-04-01", "valid_to": "2027-03-31"},
+    {"approver_id": "E-107", "delegate_id": "E-115", "max_amount": 200000, "valid_from": "2026-04-01", "valid_to": "2027-03-31"}
+  ],
+  "budgets": [
+    {"cost_centre": "CC-MACH", "fiscal_year": "2026-27", "allocated": 2000000, "spent": 1950000},
+    {"cost_centre": "CC-ASSY", "fiscal_year": "2026-27", "allocated": 8000000, "spent": 3000000},
+    {"cost_centre": "CC-MAINT", "fiscal_year": "2026-27", "allocated": 4000000, "spent": 1500000},
+    {"cost_centre": "CC-QA", "fiscal_year": "2026-27", "allocated": 2500000, "spent": 800000},
+    {"cost_centre": "CC-ADMIN", "fiscal_year": "2026-27", "allocated": 400000, "spent": 390000}
+  ],
+  "prior_requests": [
+    {"id": "PR-2026-0801", "vendor_id": "V-052", "amount": 80000, "submitted_on": "2026-09-10", "cost_centre": "CC-MAINT"}
+  ]
+}

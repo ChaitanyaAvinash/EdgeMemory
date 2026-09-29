@@ -1,0 +1,6 @@
+# ASSUMPTIONS, not measurements. Shown next to M9 everywhere it appears (SPEC §10).
+research_unfamiliar_exception_min: 40
+step_by_step_review_min: 6
+one_click_review_min: 1
+edit_min: 2
+escalation_min: 40

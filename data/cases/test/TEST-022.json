@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-022",
+  "submitted_at": "2026-10-27T13:00:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Telangana Fab Works",
+  "amount_raw": "₹1,10,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for welded fixture bases needed for a customer tooling order. The quote from Telangana Fab Works includes the GSTIN and standard rates, and the cost centre is CC-ASSY.",
+  "email_thread": "From: purchase@kaveriprecision.com\nSubject: PR for Welded Fixture Bases\nDate: 2026-10-27\n\nPlease raise PO for ₹1,10,000 to Telangana Fab Works, cost centre CC-ASSY. Quote attached shows GSTIN and normal rates.\n---\nFrom: finance@kaveriprecision.com\nSubject: Re: PR for Welded Fixture Bases\nDate: 2026-10-27\n\nAcknowledged. We will process the payment as per the quoted GSTIN details.",
+  "attachment_text": ""
+}

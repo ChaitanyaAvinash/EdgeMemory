@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-003",
+  "submitted_at": "2026-09-28T06:45:00",
+  "requester_id": "E-402",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Golconda Electricals",
+  "amount_raw": "₹6,20,000",
+  "quotes_attached": 3,
+  "justification": "The request is for ₹6,20,000 to purchase a replacement servo drive and spindle motor from Golconda Electricals. The cost centre CC-MACH has exhausted its budget, and the maintenance log confirms the breakdown. Three quotes were obtained and Golconda is the lowest. Plant head approval is pending until his return.",
+  "email_thread": "From: Rajesh Kumar (Shop Floor Engineer)\nSubject: Request for purchase - Golconda Electricals\nline 2 is down. Need replacement servo drive and spindle motor. Budget CC-MACH used up.\n---\nFrom: Priya Singh (Purchasing Officer)\nRe: Request for purchase - Golconda Electricals\nGot three quotes, Golconda lowest. Will forward for approval.\n---\nFrom: Suresh Patel (Maintenance Supervisor)\nRe: Request for purchase - Golconda Electricals\nmaintenance log confirms the burnt out drive and motor. No other options.\n---\nFrom: Anil Reddy (Plant Head - on leave)\nRe: Request for purchase - Golconda Electricals\nWill sign off on ₹6,20,000 after I return on 2 Oct.",
+  "attachment_text": ""
+}

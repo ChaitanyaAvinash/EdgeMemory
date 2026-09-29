@@ -1,0 +1,3 @@
+{
+  "raw": "{\"verdicts\":[{\"candidate_id\":\"C1\",\"verdict\":\"partial\",\"differences\":[\"amount band differs (new: up to 2L, precedent: 2-10L)\",\"category differs (new: indirect MRO, precedent: direct material)\"],\"reason\":\"Same cause (cert_expired) but different amount band and category.\"},{\"candidate_id\":\"C2\",\"verdict\":\"no\",\"differences\":[],\"reason\":\"Different cause (bank details changed) does not match the failed check (cert_expired).\"}]}"
+}

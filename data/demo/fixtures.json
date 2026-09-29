@@ -1,0 +1,142 @@
+{
+  "_note": "SYNTHETIC DATA. The SPEC §18 demo script as ordered beats: each sets the demo clock and submits one request. 'decision' pre-fills the resolution form or the rejection in demo mode. Run `make reset && make seed` before every rehearsal.",
+  "beats": [
+    {
+      "key": "hook",
+      "title": "Hook: ₹4.8L, line 3 down, 6% over budget, approver on leave, bank changed 12 Sep",
+      "claim": "C1, C2",
+      "clock": "2026-09-24",
+      "request": {
+        "request_id": "PR-DEMO-HOOK",
+        "requester_id": "E-402",
+        "cost_centre": "CC-MACH",
+        "vendor_name": "Srinivasa Castings",
+        "amount_raw": "4.8L",
+        "quotes_attached": 3,
+        "justification": "Line 3 band hai since 2 am. Need replacement spindle housings for the line 3 machining centre today. 3 quotes attached, Srinivasa is L1. Cost centre is over budget but line cannot stay down.",
+        "email_thread": "From: maintenance@kaveri\nLine 3 stopped at 02:05, maintenance log MNT-5541. Housings cracked, no spares in stock.\n---\nFrom: purchase@kaveri\nIyer sir is on leave till 2 Oct. Raising the PR anyway.",
+        "attachment_text": ""
+      }
+    },
+    {
+      "key": "e1_first",
+      "title": "First exception: ₹60,000, vendor certificate expired 6 days ago (no precedent yet)",
+      "claim": "C4 → C3",
+      "clock": "2026-09-24",
+      "request": {
+        "request_id": "PR-DEMO-E1-01",
+        "requester_id": "E-401",
+        "cost_centre": "CC-ASSY",
+        "vendor_name": "Deccan Bearings",
+        "amount_raw": "Rs 60,000",
+        "quotes_attached": 1,
+        "justification": "Bearing housings for the assembly line, regular item. Deccan has supplied for 2 yrs, never late.",
+        "email_thread": "From: sales@deccanbearings\nOur ISO 9001 renewal audit is done; the new certificate will reach you next week.",
+        "attachment_text": "ISO 9001:2015 ... Deccan Bearings ... Valid until: 18-09-2026"
+      },
+      "decision": {
+        "action": "resolve",
+        "final_steps": [
+          "REQUEST_RENEWED_CERT",
+          "KEEP_VENDOR_ACTIVE",
+          "HOLD_PO"
+        ],
+        "rationale": "A recently expired certificate is a hold, not a rejection, when the vendor is otherwise in good standing: the renewal audit is done and the delivery record is clean.",
+        "outcome": "Hold the PO until the renewed certificate arrives; keep the vendor active."
+      }
+    },
+    {
+      "key": "e1_second",
+      "title": "One week later: a different vendor, the same problem (tentative, 1 precedent)",
+      "claim": "C3",
+      "clock": "2026-10-01",
+      "request": {
+        "request_id": "PR-DEMO-E1-02",
+        "requester_id": "E-401",
+        "cost_centre": "CC-ASSY",
+        "vendor_name": "Charminar Fasteners",
+        "amount_raw": "95,000",
+        "quotes_attached": 1,
+        "justification": "Stainless fasteners that go into the pump housings we ship to customers. Charminar is our regular vendor, good quality.",
+        "email_thread": "From: charminar.fasteners\nOur ISO certificate renewal is in process; the surveillance audit was completed last week.",
+        "attachment_text": "ISO 9001 ... Charminar Fasteners ... Expiry: 19/09/2026"
+      }
+    },
+    {
+      "key": "replay",
+      "title": "Replay 3 weeks: two more certificate cases resolved the same way",
+      "claim": "C3",
+      "replay_weeks": 3
+    },
+    {
+      "key": "e1_third",
+      "title": "The next certificate case: established (3 cases), one click",
+      "claim": "C3",
+      "request": {
+        "request_id": "PR-DEMO-E1-03",
+        "requester_id": "E-401",
+        "cost_centre": "CC-ASSY",
+        "vendor_name": "Kondapur Precision Tools",
+        "amount_raw": "Rs 64,000",
+        "quotes_attached": 1,
+        "justification": "Carbide drills for the assembly fixtures, regular supplier, always on time.",
+        "email_thread": "From: kondapur.tools\nOur ISO 9001 surveillance audit is done; the renewed certificate will reach you this week.",
+        "attachment_text": "ISO 9001:2015 Kondapur Precision Tools ... Valid until 10-10-2026"
+      }
+    },
+    {
+      "key": "split_1",
+      "title": "Split shipment from a vendor with a past duplicate-invoice incident: the reviewer rejects",
+      "claim": "C3",
+      "request": {
+        "request_id": "PR-DEMO-E4-01",
+        "requester_id": "E-404",
+        "cost_centre": "CC-MAINT",
+        "vendor_name": "Hitec City Crates",
+        "amount_raw": "Rs 92,000",
+        "quotes_attached": 1,
+        "justification": "Second shipment of the crate order from 6 Oct (PR-2026-0950). Vendor is sending the balance separately.",
+        "email_thread": "From: dispatch@hiteccrates\nBalance crates dispatched today as a separate shipment against the same order."
+      },
+      "decision": {
+        "action": "reject",
+        "final_steps": [
+          "REJECT_REQUEST",
+          "ESCALATE_AUDIT"
+        ],
+        "rationale": "Hitec City Crates had a duplicate-invoice incident in 2025; a split-shipment claim from this vendor can't be accepted on trust.",
+        "outcome": "Rejected and sent to internal audit."
+      }
+    },
+    {
+      "key": "split_2",
+      "title": "A similar case follows the revised lesson",
+      "claim": "C3",
+      "request": {
+        "request_id": "PR-DEMO-E4-02",
+        "requester_id": "E-404",
+        "cost_centre": "CC-MAINT",
+        "vendor_name": "Hitec City Crates",
+        "amount_raw": "Rs 91,000",
+        "quotes_attached": 1,
+        "justification": "Third lot of the same crate order, split delivery again per vendor.",
+        "email_thread": "From: dispatch@hiteccrates\nRemaining crates sent as a separate shipment, same order."
+      }
+    },
+    {
+      "key": "related_party",
+      "title": "Honest limit: the vendor's owner is the requester's brother-in-law",
+      "claim": "C4",
+      "request": {
+        "request_id": "PR-DEMO-U1-01",
+        "requester_id": "E-403",
+        "cost_centre": "CC-QA",
+        "vendor_name": "Warangal Wires",
+        "amount_raw": "1.4 lakh",
+        "quotes_attached": 1,
+        "justification": "Wire harness testing service for the QA lab, 3 month contract.",
+        "email_thread": "From: owner@warangalwires\nHi Gopal, as discussed at the family function, sending our rates. Regards, Srikanth (your brother-in-law)\n---\nFrom: g.rao@kaveri\nThanks, raising the request."
+      }
+    }
+  ]
+}

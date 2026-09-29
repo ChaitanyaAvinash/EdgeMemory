@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-040",
+  "submitted_at": "2026-11-26T09:45:00",
+  "requester_id": "E-403",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Kukatpally Calibration Labs",
+  "amount_raw": "₹1,25,000",
+  "quotes_attached": 1,
+  "justification": "Calibration of the QA lab's surface plates and dial gauges is a routine activity. The cost is within the approved budget for the QA cost centre. No special approvals are needed beyond the standard request.",
+  "email_thread": "From: Rajesh Kumar (Accounts)\nSubject: Re: Calibration request for QA lab\nPlease note we have a new bank account for all vendor payments. Kindly update your records before processing the payment.\n---\nFrom: Meera Nair (Procurement)\nSubject: Re: Calibration request for QA lab\nNoted. I will forward the new bank account details to finance and update the vendor master.\n---\nFrom: Suresh Patel (Shop Floor)\nSubject: Calibration request for QA lab\nRequesting ₹1,25,000 to Kukatpally Calibration Labs, cost centre CC-QA. One quote attached. Submitted 2026-11-26.",
+  "attachment_text": ""
+}

@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "file": "data/ground_truth/dev.json",
+    "sha256": "df6bb542eccc252d046b4a2e1d45a5530d9ac2104577396d6d4af3d88d549636",
+    "frozen_at": "2026-09-28T16:11:43+00:00",
+    "note": "Gate G2 freeze. eval/report.py refuses to score if the file's hash changes."
+  },
+  "test": {
+    "file": "data/ground_truth/test.json",
+    "sha256": "8a9ae646b7ba2ac12a53722ea48c9145b4c5ed555b6f028af88792e007aced54",
+    "frozen_at": "2026-09-28T20:19:49+00:00",
+    "note": "Frozen before any test prediction was scored or shown. Labels the 24 reduced-set cases (data/cases/test_reduced.json); the other 16 are blank. eval/report.py refuses a changed file."
+  }
+}

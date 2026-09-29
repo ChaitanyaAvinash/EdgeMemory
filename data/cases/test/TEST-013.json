@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-013",
+  "submitted_at": "2026-10-13T07:30:00",
+  "requester_id": "E-402",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Kakatiya Motors",
+  "amount_raw": "1.7 lakh",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for a spare spindle motor needed for line 2. The maintenance supervisor’s log entry contradicts the claim that line 2 is down, prompting a review of the request.",
+  "email_thread": "From: Ramesh Patel <r.patel@kavprecision.com>\nSubject: Request for spare spindle motor – 1.7 lakh\n\nLine 2 is down. Need 1.7 lakh for spare spindle motor for line 2. Cost centre CC-MACH. Please approve urgent emergency order.\n---\nFrom: Sunita Rao <s.rao@kavprecision.com>\nSubject: Re: Request for spare spindle motor – 1.7 lakh\n\nRamesh, maintenance log shows line 2 running. Only a planned changeover last night, no breakdown recorded.\n---\nFrom: Ramesh Patel <r.patel@kavprecision.com>\nSubject: Re: Request for spare spindle motor – 1.7 lakh\n\nOkay, I will double‑check with floor. Still think we need the motor, but will wait for final confirmation.\n---\nFrom: Anil Kumar <a.kumar@kavprecision.com>\nSubject: Re: Request for spare spindle motor – 1.7 lakh\n\nPlease attach the quote. Once we have the doc we can close this.\n---",
+  "attachment_text": ""
+}

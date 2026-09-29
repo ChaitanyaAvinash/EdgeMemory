@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-025",
+  "submitted_at": "2026-10-30T12:20:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Boduppal Engineering Works",
+  "amount_raw": "4.6 lakh",
+  "quotes_attached": 3,
+  "justification": "The purchase of machined mounting plates is a routine requirement for a customer order. Three vendor quotes were received and Boduppal Engineering Works offered the lowest price, making it the preferred supplier.",
+  "email_thread": "From: Arjun Patel <arjun.patel@kaveriprecision.com>\nSent: 2026-10-28 09:15\nSubject: Re: Purchase request for mounting plates\n\nPlease raise PO for 4.6 lakh to Boduppal Engineering Works, cost centre CC-ASSY. Three quotes attached, Boduppal is lowest.\n---\nFrom: Sunita Reddy <sunita.reddy@kaveriprecision.com>\nSent: 2026-10-28 10:05\nSubject: RE: Purchase request for mounting plates\n\nGot it. Will forward to finance.\n---\nFrom: Finance Dept <finance@kaveriprecision.com>\nSent: 2026-10-28 11:30\nSubject: PO creation\n\nPO generated. Sending to Boduppal.\n---\nFrom: Vendor Accounts <accounts@boduppaleng.com>\nSent: 2026-10-29 08:45\nSubject: Bank details update\n\nPlease note we have moved to a new bank account for all future payments.\n---\nFrom: Arjun Patel <arjun.patel@kaveriprecision.com>\nSent: 2026-10-29 09:10\nSubject: Re: Bank details update\n\nThanks for info. No action needed from our side now.\n",
+  "attachment_text": ""
+}

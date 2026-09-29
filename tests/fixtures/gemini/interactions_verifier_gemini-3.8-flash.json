@@ -1,0 +1,23 @@
+{
+  "raw": "{\n  \"verdicts\": [\n    {\n      \"candidate_id\": \"C1\",\n      \"verdict\": \"partial\",\n      \"differences\": [\n        \"Category differs: direct material in precedent vs. indirect MRO in new request\"\n      ],\n      \"reason\": \"Shares the same failed check (vendor), cause (cert_expired), condition (vendor in good standing), and amount band (up to 2L), but differs in procurement category.\"\n    },\n    {\n      \"candidate_id\": \"C2\",\n      \"verdict\": \"no\",\n      \"differences\": [\n        \"Different failure cause: bank details changed vs. certificate expired\"\n      ],\n      \"reason\": \"Precedent involves a bank detail change rather than an expired vendor certificate.\"\n    }\n  ]\n}",
+  "parsed": {
+    "verdicts": [
+      {
+        "candidate_id": "C1",
+        "verdict": "partial",
+        "differences": [
+          "Category differs: direct material in precedent vs. indirect MRO in new request"
+        ],
+        "reason": "Shares the same failed check (vendor), cause (cert_expired), condition (vendor in good standing), and amount band (up to 2L), but differs in procurement category."
+      },
+      {
+        "candidate_id": "C2",
+        "verdict": "no",
+        "differences": [
+          "Different failure cause: bank details changed vs. certificate expired"
+        ],
+        "reason": "Precedent involves a bank detail change rather than an expired vendor certificate."
+      }
+    ]
+  }
+}

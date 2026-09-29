@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-017",
+  "submitted_at": "2026-10-30T11:15:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Shankarpally Forge",
+  "amount_raw": "Rs. 3.6 lakhs",
+  "quotes_attached": 3,
+  "justification": "The purchase request is for Rs. 3.6 lakhs to Shankarpally Forge for crankshaft blanks needed for the November build plan. Three quotes were reviewed and Shankarpally Forge offered the lowest price, so we are proceeding with the routine order.",
+  "email_thread": "From: Arjun Patel <arjun.patel@kaveriprecision.com>\nSent: 30 Oct 2026 09:15 AM\nSubject: Re: Purchase request for crankshaft blanks\n\nPlease raise the PO for Rs. 3.6 lakhs to Shankarpally Forge. Cost centre CC-ASSY. Three quotes attached, theirs is the lowest. Thanks.\n---\nFrom: Meena Rao <meena.rao@kaveriprecision.com>\nSent: 30 Oct 2026 09:45 AM\nSubject: Re: Purchase request for crankshaft blanks\n\nGot it, will process today. Let me know if any change. Regards, Meena.",
+  "attachment_text": ""
+}

@@ -1,0 +1,14 @@
+# SPEC §6.2. Default resolution: higher-priority class wins; within a class, the more conservative step.
+pairs:
+  - [HOLD_PO, EXPEDITE_PO]
+  - [HOLD_PO, CONDITIONAL_PO_WITH_QC]
+  - [ROUTE_DELEGATE, ROUTE_NEXT_LEVEL_APPROVER]
+  - [REJECT_REQUEST, EXPEDITE_PO]
+  - [REJECT_REQUEST, CONDITIONAL_PO_WITH_QC]
+  - [REJECT_REQUEST, LINK_MASTER_PO]
+  - [REJECT_REQUEST, ALLOW_SPLIT_DELIVERY]
+
+# The "more conservative" step for pairs in the same class (SPEC §6.2 doesn't name them; made explicit here).
+conservative_within_class:
+  - {pair: [HOLD_PO, CONDITIONAL_PO_WITH_QC], winner: HOLD_PO}
+  - {pair: [ROUTE_DELEGATE, ROUTE_NEXT_LEVEL_APPROVER], winner: ROUTE_NEXT_LEVEL_APPROVER}

@@ -1,0 +1,158 @@
+{
+  "text": "To resolve this procurement exception, follow the procedure below, which incorporates the lessons learned from the precedents for line-down situations (PR-2026-0312) while maintaining security controls for bank changes (PR-2026-0233).\n\n### Recommended Procedure\n\n1.  **EXPEDITE_PO** (Case PR-2026-0312): This is necessary to address the line-down situation on line 3, as a purchase order is not a payment.\n2.  **VERIFY_BANK_CALLBACK** (Case PR-2026-0233, Case PR-2026-0312): Mandatory due to the vendor's recent bank change, which poses a payment-fraud risk. **HOLD_PAYMENT** is required until this verification is successful.\n3.  **ATTACH_LINE_DOWN_EVIDENCE** (Case PR-2026-0312): Essential to justify the bypass of the standard process for a line-down event.\n4.  **ALLOW_BUDGET_OVERRUN** (Case PR-2026-0312): Necessary to proceed despite the 6% budget overrun in the cost centre.\n5.  **ADD_CONTROLLER_SIGNOFF** (Case PR-2026-0312): Required to authorize the budget variance and the release of payment after the bank callback.\n\n### Steps Removed from Union U\n\n*   **HOLD_PO**: Removed because the line-down urgency requires immediate PO release, as a PO is not a payment. This follows the precedent in case PR-2026-0312.\n\n### Required Actions\n\n*   **VERIFY_BANK_CALLBACK**: Perform a callback to the vendor using the number on file.\n*   **HOLD_PAYMENT**: Do not release any payment until the bank callback is confirmed and controller sign-off is obtained.\n\n*Note: As this involves a recent change to vendor bank details, you must strictly adhere to the **VERIFY_BANK_CALLBACK** and **HOLD_PAYMENT** directives.*",
+  "based_on": {
+    "memories": [
+      {
+        "id": "1b1111db-95cf-4ba9-a2f7-08302b8429be",
+        "text": "R. Menon approved the following step codes: EXPEDITE_PO, VERIFY_BANK_CALLBACK, HOLD_PAYMENT, ALLOW_BUDGET_OVERRUN, ATTACH_LINE_DOWN_EVIDENCE, and ADD_CONTROLLER_SIGNOFF, while removing HOLD_PO. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | To release the PO immediately while keeping the payment held until the bank callback.",
+        "type": "world",
+        "context": "procurement exception resolution",
+        "occurred_start": "2026-03-11T06:30:00.020000+00:00",
+        "occurred_end": "2026-03-11T06:30:00.020000+00:00"
+      },
+      {
+        "id": "1b695ab4-0853-4c10-a1c4-a4199fbfb3d0",
+        "text": "The standard process was bypassed because holding the PO for a bank callback would have kept line 3 down, and a PO is not a payment. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops)",
+        "type": "world",
+        "context": "procurement exception resolution",
+        "occurred_start": "2026-03-11T06:30:00.010000+00:00",
+        "occurred_end": "2026-03-11T06:30:00.010000+00:00"
+      },
+      {
+        "id": "08a07221-09fa-46cb-82e7-a31c29cd8207",
+        "text": "Case PR-2026-0312 involved a procurement exception for ₹4,10,000 for coolant pump assemblies from vendor V-031 due to a recent bank change and a 7% budget overrun in cost centre CC-MACH. | When: 2026-03-11 | Involving: R. Menon (Procurement Ops) | Line 3 was stopped due to a lack of parts.",
+        "type": "world",
+        "context": "procurement exception resolution",
+        "occurred_start": "2026-03-11T06:30:00+00:00",
+        "occurred_end": "2026-03-11T06:30:00+00:00"
+      },
+      {
+        "id": "091b670b-3c6c-4384-b983-025d37112c27",
+        "text": "Case PR-2026-0233 for ₹3,20,000 involving vendor V-031 failed the bank check because the vendor changed their bank account 9 days prior. | When: 2026-02-20 | Involving: R. Menon (Procurement Ops), vendor V-031 | The standard bank check flags account changes as a potential payment-fraud risk without verifying authenticity.",
+        "type": "world",
+        "context": "procurement exception resolution",
+        "occurred_start": "2026-02-20T00:00:00+00:00",
+        "occurred_end": "2026-02-20T00:00:00+00:00"
+      },
+      {
+        "id": "4f0fa95a-5251-4f34-8ab3-14cb432116ef",
+        "text": "R. Menon approved step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO to resolve the procurement exception. | When: 2026-02-20 | Involving: R. Menon",
+        "type": "experience",
+        "context": "procurement exception resolution",
+        "occurred_start": "2026-02-20T00:00:00.010000+00:00",
+        "occurred_end": "2026-02-20T00:00:00.010000+00:00"
+      },
+      {
+        "id": "25ff696d-af9f-4cfa-8bb8-2e62238d9c49",
+        "text": "When a bank change coincides with a line-down budget overrun, the standard procurement process is overridden to allow immediate PO release (EXPEDITE_PO) while holding payment (HOLD_PAYMENT) until bank callback (VERIFY_BANK_CALLBACK) and controller sign-off (ADD_CONTROLLER_SIGNOFF) are completed, supported by line-down evidence (ATTACH_LINE_DOWN_EVIDENCE) and an allowed budget variance (ALLOW_BUDGET_OVERRUN). This procedure was applied in case PR-2026-0312.",
+        "type": "observation",
+        "occurred_start": "2026-03-11T06:30:00+00:00",
+        "occurred_end": "2026-03-12T18:29:59.030000+00:00",
+        "context": null
+      },
+      {
+        "id": "d3e388a3-afcd-48b0-9374-eaa446353d6e",
+        "text": "When a vendor changes their bank account within a short timeframe, the system flags this as a potential payment-fraud risk; the required procedure is to execute step codes VERIFY_BANK_CALLBACK, HOLD_PAYMENT, and HOLD_PO, as demonstrated in case PR-2026-0233.",
+        "type": "observation",
+        "occurred_start": "2026-02-20T00:00:00+00:00",
+        "occurred_end": "2026-02-20T00:00:00.020000+00:00",
+        "context": null
+      }
+    ],
+    "mental_models": [],
+    "directives": [
+      {
+        "id": "d59e63ad-aebc-41b7-be9c-d0c96638f0af",
+        "name": "cite-cases",
+        "content": "Cite the case ID behind every step."
+      },
+      {
+        "id": "bd396468-dff5-4abe-afe1-da6ab2e4d9d5",
+        "name": "no-payment-release",
+        "content": "Never recommend releasing a payment. Propose only steps for a human to approve."
+      },
+      {
+        "id": "2ab65d63-359e-46b2-8aab-740b92f6360f",
+        "name": "bank-change-floor",
+        "content": "Whenever vendor bank details changed recently or are claimed to have changed, include VERIFY_BANK_CALLBACK and HOLD_PAYMENT."
+      },
+      {
+        "id": "baccf954-c0c1-4bbf-8e5d-c91717b9d814",
+        "name": "say-unknown",
+        "content": "If no experience covers a condition, say so explicitly."
+      },
+      {
+        "id": "da4050a8-eff0-4f80-a810-f3bda787c906",
+        "name": "prefer-post-policy",
+        "content": "Prefer lessons dated after any relevant policy change; flag any lesson that predates one."
+      }
+    ]
+  },
+  "structured_output": {
+    "steps": [
+      {
+        "code": "EXPEDITE_PO",
+        "reason": "Necessary to address the line-down situation on line 3, as a purchase order is not a payment.",
+        "cited_case_ids": [
+          "PR-2026-0312"
+        ]
+      },
+      {
+        "code": "VERIFY_BANK_CALLBACK",
+        "reason": "Mandatory due to the vendor's recent bank change, which poses a payment-fraud risk.",
+        "cited_case_ids": [
+          "PR-2026-0233",
+          "PR-2026-0312"
+        ]
+      },
+      {
+        "code": "HOLD_PAYMENT",
+        "reason": "Required until the bank verification is successful.",
+        "cited_case_ids": [
+          "PR-2026-0233",
+          "PR-2026-0312"
+        ]
+      },
+      {
+        "code": "ATTACH_LINE_DOWN_EVIDENCE",
+        "reason": "Essential to justify the bypass of the standard process for a line-down event.",
+        "cited_case_ids": [
+          "PR-2026-0312"
+        ]
+      },
+      {
+        "code": "ALLOW_BUDGET_OVERRUN",
+        "reason": "Necessary to proceed despite the 6% budget overrun in the cost centre.",
+        "cited_case_ids": [
+          "PR-2026-0312"
+        ]
+      },
+      {
+        "code": "ADD_CONTROLLER_SIGNOFF",
+        "reason": "Required to authorize the budget variance and the release of payment after the bank callback.",
+        "cited_case_ids": [
+          "PR-2026-0312"
+        ]
+      }
+    ],
+    "removed_from_union": [
+      {
+        "code": "HOLD_PO",
+        "reason": "Removed because the line-down urgency requires immediate PO release, as a PO is not a payment.",
+        "cited_case_ids": [
+          "PR-2026-0312"
+        ]
+      }
+    ],
+    "open_questions": []
+  },
+  "usage": {
+    "input_tokens": 18560,
+    "output_tokens": 1560,
+    "total_tokens": 20120,
+    "cached_tokens": 0,
+    "thoughts_tokens": 0
+  },
+  "structured_output_error": null,
+  "trace": null
+}

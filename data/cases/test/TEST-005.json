@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-005",
+  "submitted_at": "2026-10-02T06:30:00",
+  "requester_id": "E-408",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Patancheru Electricals",
+  "amount_raw": "1.62L",
+  "quotes_attached": 1,
+  "justification": "The request is for 1.62L of motor starters and contactors to replace the burnt out units on line 3. The maintenance log confirms the breakdown and the purchase needs to be logged under cost centre CC-MACH.",
+  "email_thread": "From: Rajesh Kumar <rkumar@kaveriprecision.com>\nSubject: Request for 1.62L to Patancheru Electricals\nHi Team,\nPlease raise a purchase for 1.62L of motor starters & contactors to Patancheru Electricals. cost centre CC-MACH. line 3 is down. Thanks.\n---\nFrom: Anjali Mehta <amehta@kaveriprecision.com>\nSubject: Re: Request for 1.62L to Patancheru Electricals\nRajesh,\nGot it. I will forward to procurement. maintenance log confirms the issue.\n---\nFrom: Procurement Dept <procurement@kaveriprecision.com>\nSubject: Re: Request for 1.62L to Patancheru Electricals\nAnjali,\nQuote received, attached. Will process under CC-MACH.\n",
+  "attachment_text": ""
+}

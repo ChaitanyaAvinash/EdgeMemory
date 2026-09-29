@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-034",
+  "submitted_at": "2026-11-11T09:25:00",
+  "requester_id": "E-404",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Uppal Gear Drives",
+  "amount_raw": "₹1,95,000",
+  "quotes_attached": 1,
+  "justification": "We need to purchase two spare helical gearboxes for the maintenance stores ahead of the annual overhaul. The total comes to ₹1,95,000 as per the attached quote. Cost centre is CC-MAINT. Requesting approval for this spend.",
+  "email_thread": "",
+  "attachment_text": ""
+}

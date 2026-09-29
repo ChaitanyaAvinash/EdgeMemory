@@ -1,0 +1,384 @@
+{
+  "bank": "kaveri-gate1-7a98a25e",
+  "started": "2026-09-28T12:19:15.347587+00:00",
+  "passed": true,
+  "summary": {
+    "false_confidence": 0,
+    "classes_correct": 4,
+    "cases": 4,
+    "citations_resolved": 16,
+    "citations_total": 16,
+    "checks_exact": 4,
+    "novel_flag_correct": 2,
+    "composed_cases": 2,
+    "tokens": 0
+  },
+  "cases": [
+    {
+      "case": "GATE-K1",
+      "expected": "known",
+      "predicted": "known",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "vendor"
+      ],
+      "checks_found": [
+        "vendor"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "vendor",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0417",
+            "PR-2026-0488"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same cert_expired cause, amount band, category; vendor in good standing",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same cert_expired cause, amount band, category; vendor in good standing",
+          "differences": []
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "normal",
+      "category": "direct_material",
+      "amount": 120000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        519
+      ],
+      "review_mode": "one_click",
+      "maturity": "established",
+      "procedure": [
+        "HOLD_PO[memory]",
+        "REQUEST_RENEWED_CERT[memory]",
+        "KEEP_VENDOR_ACTIVE[memory]"
+      ],
+      "composition_flags": [],
+      "diff": ""
+    },
+    {
+      "case": "GATE-C1",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "approver",
+        "budget"
+      ],
+      "checks_found": [
+        "approver",
+        "budget"
+      ],
+      "checks_match": true,
+      "novel_expected": false,
+      "novel_predicted": false,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same budget overrun cause, amount band, category, urgency; conditions satisfied.",
+          "flags": []
+        },
+        {
+          "check": "approver",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0301",
+            "PR-2026-0391"
+          ],
+          "strength": 2,
+          "differences": [
+            "different category indirect_mro/services",
+            "missing controller signoff requirement"
+          ],
+          "reason": "Check matches but category differs and lacks required controller co‑sign.",
+          "flags": [
+            "predates_policy:POLICY-2026-07-01"
+          ]
+        }
+      ],
+      "interaction": {
+        "status": "yes",
+        "combo": "approver+budget",
+        "cases": [
+          "PR-2026-0360"
+        ],
+        "reason": "Both budget overrun and approver leave match; steps satisfy policy."
+      },
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same budget overrun cause, amount band, category, urgency; conditions satisfied.",
+          "differences": []
+        },
+        "V2-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Check matches but category differs and lacks required controller co‑sign.",
+          "differences": [
+            "different category indirect_mro/services",
+            "missing controller signoff requirement"
+          ]
+        },
+        "V2-C2": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Check matches but category and amount band differ despite required signoff.",
+          "differences": [
+            "different category capex",
+            "different amount band 2‑10L"
+          ]
+        },
+        "I-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Both budget overrun and approver leave match; steps satisfy policy.",
+          "differences": []
+        }
+      },
+      "citations_total": 7,
+      "citations_resolved": 7,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "line_down",
+      "category": "direct_material",
+      "amount": 180000,
+      "flags": [
+        "predates_policy:POLICY-2026-07-01"
+      ],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1484,
+        1007,
+        677
+      ],
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "procedure": [
+        "ATTACH_LINE_DOWN_EVIDENCE[memory]",
+        "ALLOW_BUDGET_OVERRUN[memory]",
+        "ADD_CONTROLLER_SIGNOFF[memory]",
+        "ROUTE_NEXT_LEVEL_APPROVER[memory]",
+        "EXPEDITE_PO[memory]"
+      ],
+      "composition_flags": [],
+      "diff": "Changed from the plain combination: -ROUTE_DELEGATE, +ROUTE_NEXT_LEVEL_APPROVER (ROUTE_DELEGATE: Delegates are not authorized to approve budget overruns; using one would result in a process stall. (PR-2026-0360))"
+    },
+    {
+      "case": "GATE-C2",
+      "expected": "composed",
+      "predicted": "composed",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "bank",
+        "budget"
+      ],
+      "checks_found": [
+        "bank",
+        "budget"
+      ],
+      "checks_match": true,
+      "novel_expected": false,
+      "novel_predicted": false,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same overrun cause, 7% within 10% limit, matching category and urgency",
+          "flags": []
+        },
+        {
+          "check": "bank",
+          "status": "yes",
+          "cases": [
+            "PR-2026-0233",
+            "PR-2026-0455"
+          ],
+          "strength": 2,
+          "differences": [],
+          "reason": "Same bank detail change cause, matching category and amount band",
+          "flags": []
+        }
+      ],
+      "interaction": {
+        "status": "yes",
+        "combo": "bank+budget",
+        "cases": [
+          "PR-2026-0312"
+        ],
+        "reason": "Both budget overrun and bank change match precedent combination"
+      },
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same overrun cause, 7% within 10% limit, matching category and urgency",
+          "differences": []
+        },
+        "V2-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Same bank detail change cause, matching category and amount band",
+          "differences": []
+        },
+        "I-C1": {
+          "verdict": "yes",
+          "guard": "",
+          "reason": "Both budget overrun and bank change match precedent combination",
+          "differences": []
+        }
+      },
+      "citations_total": 5,
+      "citations_resolved": 5,
+      "unresolved": [],
+      "signals": [],
+      "urgency": "line_down",
+      "category": "direct_material",
+      "amount": 190000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1920,
+        2020,
+        1363
+      ],
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "procedure": [
+        "EXPEDITE_PO[memory]",
+        "ALLOW_BUDGET_OVERRUN[memory]",
+        "ATTACH_LINE_DOWN_EVIDENCE[memory]",
+        "ADD_CONTROLLER_SIGNOFF[memory]",
+        "VERIFY_BANK_CALLBACK[memory]",
+        "HOLD_PAYMENT[memory]"
+      ],
+      "composition_flags": [],
+      "diff": "Changed from the plain combination: -HOLD_PO (HOLD_PO: The Purchase Order must be released immediately to restart the production line; retaining it would unnecessarily prolong the line-down event. (PR-2026-0312))"
+    },
+    {
+      "case": "GATE-U4",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "correct": true,
+      "false_confidence": false,
+      "checks_expected": [
+        "budget",
+        "related_party"
+      ],
+      "checks_found": [
+        "budget",
+        "related_party"
+      ],
+      "checks_match": true,
+      "novel_expected": null,
+      "novel_predicted": null,
+      "coverage": [
+        {
+          "check": "budget",
+          "status": "partial",
+          "cases": [
+            "PR-2026-0205",
+            "PR-2026-0344"
+          ],
+          "strength": 2,
+          "differences": [
+            "different category (indirect_mro vs direct_material)",
+            "required procedures not confirmed"
+          ],
+          "reason": "Same budget overrun cause and amount band, but category differs and steps unverified",
+          "flags": []
+        },
+        {
+          "check": "related_party",
+          "status": "no",
+          "cases": [],
+          "strength": 0,
+          "differences": [],
+          "reason": "no precedent recalled for this check",
+          "flags": []
+        }
+      ],
+      "interaction": null,
+      "verdicts": {
+        "V1-C1": {
+          "verdict": "partial",
+          "guard": "",
+          "reason": "Same budget overrun cause and amount band, but category differs and steps unverified",
+          "differences": [
+            "different category (indirect_mro vs direct_material)",
+            "required procedures not confirmed"
+          ]
+        }
+      },
+      "citations_total": 2,
+      "citations_resolved": 2,
+      "unresolved": [],
+      "signals": [
+        "related_party",
+        "related_party"
+      ],
+      "urgency": "line_down",
+      "category": "indirect_mro",
+      "amount": 160000,
+      "flags": [],
+      "escalated": "",
+      "verifier_model": "openai/gpt-oss-120b",
+      "recall_ms": [
+        1847,
+        1421,
+        1312
+      ],
+      "review_mode": "escalate",
+      "maturity": "established",
+      "procedure": [
+        "ALLOW_BUDGET_OVERRUN[memory]",
+        "ATTACH_LINE_DOWN_EVIDENCE[memory]",
+        "ADD_CONTROLLER_SIGNOFF[memory]",
+        "EXPEDITE_PO[memory]",
+        "DECLARE_CONFLICT_OF_INTEREST[floor]"
+      ],
+      "composition_flags": [
+        "dropped_uncited_step:VERIFY_BANK_CALLBACK",
+        "dropped_uncited_step:HOLD_PAYMENT",
+        "F3:no_one_click"
+      ],
+      "diff": ""
+    }
+  ]
+}

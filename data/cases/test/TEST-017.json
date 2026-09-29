@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-017",
+  "submitted_at": "2026-10-19T10:40:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Kompally Fasteners",
+  "amount_raw": "1,06,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request repeats a previously raised order (PR-2026-0934) for high‑tensile fasteners but with a higher quantity for a new customer schedule. It is a fresh order, not a split delivery, and a single quote is attached for reference.",
+  "email_thread": "From: Sandeep Kumar <sandeep.kumar@kavprecision.com>\nDate: Tue, 17 Oct 2026 10:15 AM\nSubject: New PR for Kompally Fasteners\n\nHi Team,\nPlease raise PR for 1,06,000 pcs of the high‑tensile fasteners. Same specs as PR-2026-0934 | new order but qty a bit higher. Cost centre CC-ASSY. Quote attached.\nThanks,\nSandeep\n---\nFrom: Ananya Rao <ananya.rao@kavprecision.com>\nDate: Tue, 17 Oct 2026 10:45 AM\nSubject: Re: New PR for Kompally Fasteners\n\nGot it, Sandeep. Will forward to procurement. Ensure the quote matches the new qty. Let me know if any changes.\nRegards,\nAnanya",
+  "attachment_text": ""
+}

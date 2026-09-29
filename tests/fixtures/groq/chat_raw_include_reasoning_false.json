@@ -1,0 +1,51 @@
+{
+  "status": 200,
+  "headers": {
+    "x-groq-region": "bom",
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-remaining-tokens": "6655",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-reset-tokens": "10.087s"
+  },
+  "body": {
+    "id": "chatcmpl-f0a1e78d-f6b2-4fb4-835a-1b1fd1260ef2",
+    "object": "chat.completion",
+    "created": 1790591766,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"verdicts\": [\n    {\n      \"candidate_id\": \"C1\",\n      \"verdict\": \"partial\",\n      \"differences\": [\n        \"Amount band: candidate 2-10L vs request up to 2L\",\n        \"Procurement type: direct material vs indirect MRO\",\n        \"Category: material vs MRO\"\n      ],\n      \"reason\": \"Same failure cause (ISO 9001 certificate expired) but differs in amount band, procurement type, and category.\"\n    },\n    {\n      \"candidate_id\": \"C2\",\n      \"verdict\": \"no\",\n      \"differences\": [\n        \"Failure cause differs (bank details change vs certificate expiration)\"\n      ],\n      \"reason\": \"The candidate failed for a different cause, so the precedent does not apply.\"\n    }\n  ]\n}"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.35367346,
+      "prompt_tokens": 453,
+      "prompt_time": 0.036999124,
+      "completion_tokens": 283,
+      "completion_time": 1.58212491,
+      "total_tokens": 736,
+      "total_time": 1.619124034,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3ksc1npecrtdgh9y4xaxgq4",
+      "seed": 952475345
+    },
+    "service_tier": "on_demand"
+  }
+}

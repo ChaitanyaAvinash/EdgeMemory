@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-030",
+  "submitted_at": "2026-11-06T10:25:00",
+  "requester_id": "E-406",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Isnapur Ring Rollers",
+  "amount_raw": "Rs 6,75,000",
+  "quotes_attached": 1,
+  "justification": "We need to purchase seamless rolled bearing rings from Isnapur Ring Rollers for a customer programme that ships at month end. Isnapur is the only approved source and has a good quality record, so the order is essential for supply.",
+  "email_thread": "From: Rajesh Kumar (Purchasing) <rajesh.kumar@kaveri.com>\nDate: 2026-11-05\nSubject: Request for Rs 6,75,000 to Isnapur Ring Rollers\n\nPlease approve Rs 6,75,000 for Isnapur Ring Rollers. cost centre CC-ASSY. Only approved source. Attached is the quote.\n---\nFrom: Meena Joshi (Finance) <meena.joshi@kaveri.com>\nDate: 2026-11-06\nSubject: Re: Request for Rs 6,75,000 to Isnapur Ring Rollers\n\nChecked the quote. ISO 9001 certificate is expired but renewal audit is done. Can we proceed? No supply if we delay.\n---\nFrom: Suresh Patel (Ops) <suresh.patel@kaveri.com>\nDate: 2026-11-06\nSubject: Re: Request for Rs 6,75,000 to Isnapur Ring Rollers\n\nThe rings are needed for the customer shipment, bhai. Isnapur has good quality record, so let’s move fast.",
+  "attachment_text": "ISO 9001  Certif i cat e   \nNo.:  12345-2024  \nIssu ed: 01 Aug 2024   \nExpir ed : 02 N ov   \nRenewal audit is done   \nValid till: 02 Nov 2026"
+}

@@ -1,0 +1,20 @@
+{
+  "_note": "Gate G1 labels, written from the case specs with the SPEC §5.1 verdict guide. Read ONLY by scripts/gate1.py; never by api/engine or api/memory. These are development-gate labels, not benchmark ground truth (data/ground_truth is P4's).",
+  "cases": {
+    "GATE-K1": {"class": "known", "failed_checks": ["vendor"], "why": "cert_expired 5 days, good standing; PR-2026-0417 same band and category"},
+    "GATE-K2": {"class": "known", "failed_checks": ["bank"], "why": "ledger bank change; PR-2026-0233 same band (2-10L) and category"},
+    "GATE-K3": {"class": "known", "failed_checks": ["approver"], "why": "approver on leave, valid delegate, indirect MRO within limit; PR-2026-0301; policy memo is capex-only"},
+    "GATE-K4": {"class": "known", "failed_checks": ["budget"], "why": "5% overrun, line down; PR-2026-0205 / 0344"},
+    "GATE-K5": {"class": "known", "failed_checks": ["quotes"], "why": "sole source 2-10L direct; PR-2026-0288"},
+    "GATE-C1": {"class": "composed", "failed_checks": ["approver", "budget"], "novel_combination": false, "why": "I1 PR-2026-0360"},
+    "GATE-C2": {"class": "composed", "failed_checks": ["bank", "budget"], "novel_combination": false, "why": "I3 PR-2026-0312"},
+    "GATE-C3": {"class": "composed", "failed_checks": ["approver", "vendor"], "novel_combination": true, "why": "both covered singly; no approver+vendor precedent"},
+    "GATE-C4": {"class": "composed", "failed_checks": ["bank", "quotes"], "novel_combination": true, "why": "bank change claimed only in email; sole source; no combo precedent"},
+    "GATE-C5": {"class": "composed", "failed_checks": ["approver", "duplicate"], "novel_combination": true, "why": "split shipment + approver away"},
+    "GATE-U1": {"class": "unknown", "failed_checks": ["vendor"], "why": "U2: GST cancelled; only cert_expired precedents"},
+    "GATE-U2": {"class": "unknown", "failed_checks": ["related_party"], "why": "U1: related party in email; no precedent"},
+    "GATE-U3": {"class": "unknown", "failed_checks": ["approver", "vendor"], "why": "blacklisted vendor has no precedent; approver covered"},
+    "GATE-U4": {"class": "unknown", "failed_checks": ["budget", "related_party"], "why": "related party uncovered; budget covered"},
+    "GATE-U5": {"class": "unknown", "failed_checks": ["budget"], "why": "25% overrun, not line down: contradicts E2's conditions (up to 10%, line down)"}
+  }
+}

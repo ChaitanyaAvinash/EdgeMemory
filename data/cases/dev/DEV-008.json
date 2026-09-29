@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-008",
+  "submitted_at": "2026-10-08T14:30:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Medak Machined Parts",
+  "amount_raw": "₹1,45,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for ₹1,45,000 to buy turned shafts from Medak Machined Parts for cost centre CC-ASSY. Medak has a solid two‑year record with no quality complaints and the ISO 9001 renewal audit is done, with the new certificate expected within a week.",
+  "email_thread": "From: Rajesh Kumar (Purchasing)\nSent: 2026-10-08\nSubject: PR Request for Medak Machined Parts\n\nPlease raise ₹1,45,000 to Medak Machined Parts, CC-ASSY. Need the turned shafts for upcoming assemblies. ISO 9001 | renewal audit is done | no quality complaints.\n---\nFrom: Ananya Singh (Finance)\nSent: 2026-10-08\nSubject: Re: PR Request for Medak Machined Parts\n\nOk Rajesh, I will load the amount. Please attach the vendor quote.\n---\nFrom: Rajesh Kumar (Purchasing)\nSent: 2026-10-08\nSubject: Re: PR Request for Medak Machined Parts\n\nAttached the quote and a snippet of their ISO 9001 certificate. All good.",
+  "attachment_text": "ISO 9001  Certi ficate\nNo.:  2023/07/15\nValid   from: 04 Oct 2023   to: 03 Oct 2026\nIssued by:   International Standard Org.\n\n[OCR misread: cert1ficate]"
+}

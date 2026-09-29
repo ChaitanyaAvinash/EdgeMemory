@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-016",
+  "submitted_at": "2026-10-15T16:20:00",
+  "requester_id": "E-403",
+  "cost_centre": "CC-QA",
+  "vendor_name": "Kukatpally Calibration Labs",
+  "amount_raw": "1.2L",
+  "quotes_attached": 1,
+  "justification": "The request includes a personal relationship claim ('is my sister') which is prohibited by policy.",
+  "email_thread": "",
+  "attachment_text": ""
+}

@@ -1,0 +1,898 @@
+{
+  "_note": "SYNTHETIC DATA. Master data for the demo, the API and the benchmark (SPEC §13): 40 vendors, 25 employees, the approval matrix, delegations, FY 2026-27 budgets and earlier requests. V-117 to V-139, E-116, E-117, E-302, E-303, E-406 to E-411, the E-110 and E-111 leave windows (November, after the demo dates) and their delegations were added for the 60 benchmark specs in data/cases/specs.json.",
+  "vendors": [
+    {
+      "id": "V-101",
+      "name": "Deccan Bearings",
+      "gstin": "36AADCD4521K1Z3",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-09-18",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-102",
+      "name": "Srinivasa Castings",
+      "gstin": "36AAECS7731M1Z8",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-05-31",
+      "bank_changed_at": "2026-09-12",
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-103",
+      "name": "Hyderabad Tooling Works",
+      "gstin": "36AAFCH2290Q1Z4",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-02-28",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-104",
+      "name": "Godavari Coolants",
+      "gstin": "36AAGCG5512B1Z6",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-03-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-105",
+      "name": "Precision Gauges Hyderabad",
+      "gstin": "36AAHCP8840D1Z2",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO/IEC 17025",
+      "cert_expiry": "2027-06-30",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-106",
+      "name": "Kakatiya Motors",
+      "gstin": "36AAJCK3307F1Z9",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-01-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-107",
+      "name": "Nizam Pumps",
+      "gstin": "36AAKCN6618G1Z1",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-04-30",
+      "bank_changed_at": "2026-09-15",
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-108",
+      "name": "Charminar Fasteners",
+      "gstin": "36AALCC9021H1Z5",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-09-19",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-109",
+      "name": "Banjara Alloys",
+      "gstin": "36AAMCB1147J1Z7",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "IATF 16949",
+      "cert_expiry": "2027-08-31",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-052",
+      "name": "Musi Packaging",
+      "gstin": "36AANCM4476L1Z3",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-02-28",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-110",
+      "name": "Telangana Fab Works",
+      "gstin": "36AAPCT7703N1Z8",
+      "gst_status": "cancelled",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-01-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-111",
+      "name": "Warangal Wires",
+      "gstin": "36AAQCW2258P1Z4",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-03-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "services"
+    },
+    {
+      "id": "V-112",
+      "name": "Secunderabad Steel Traders",
+      "gstin": "36AARCS5589R1Z6",
+      "gst_status": "active",
+      "status": "blacklisted",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-05-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-113",
+      "name": "Golconda Electricals",
+      "gstin": "36AASCG8812S1Z2",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-02-28",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-114",
+      "name": "Ramoji Facility Services",
+      "gstin": "36AATCR3365T1Z9",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-04-30",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "services"
+    },
+    {
+      "id": "V-115",
+      "name": "Kondapur Precision Tools",
+      "gstin": "36AAUCK4410V1Z3",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-10-10",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-116",
+      "name": "Hitec City Crates",
+      "gstin": "36AAVCH7782W1Z6",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-06-30",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-117",
+      "name": "Bhongir Forgings",
+      "gstin": "36AAWCB6124E1ZJ",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-05-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-118",
+      "name": "Kukatpally Calibration Labs",
+      "gstin": "36AAXCK2871M1ZM",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO/IEC 17025",
+      "cert_expiry": "2027-03-15",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "services"
+    },
+    {
+      "id": "V-119",
+      "name": "Medak Machined Parts",
+      "gstin": "36AAYCM5530P1ZJ",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-10-03",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-120",
+      "name": "Uppal Gear Drives",
+      "gstin": "36AAZCU8841R1ZU",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-01-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-121",
+      "name": "Shamshabad Hydraulics",
+      "gstin": "36ABACS3107T1ZY",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-02-28",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-122",
+      "name": "Zaheerabad Special Alloys",
+      "gstin": "36ABBCZ7462C1Z7",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "IATF 16949",
+      "cert_expiry": "2027-06-30",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-123",
+      "name": "Shankarpally Forge",
+      "gstin": "36ABCCS1983F1Z9",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "IATF 16949",
+      "cert_expiry": "2026-11-01",
+      "bank_changed_at": "2026-10-28",
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-124",
+      "name": "Begumpet Metrology Services",
+      "gstin": "36ABDCB4416H1ZV",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO/IEC 17025",
+      "cert_expiry": "2026-10-04",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "services"
+    },
+    {
+      "id": "V-125",
+      "name": "Kazipet Die Castings",
+      "gstin": "36ABECK6058J1Z6",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "IATF 16949",
+      "cert_expiry": "2027-04-30",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-126",
+      "name": "Miyapur Bearings & Seals",
+      "gstin": "36ABFCM2294L1Z1",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-09-21",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-127",
+      "name": "Jeedimetla Packaging",
+      "gstin": "36ABGCJ9735N1ZR",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-03-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-128",
+      "name": "Patancheru Electricals",
+      "gstin": "36ABHCP5617Q1ZP",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-05-31",
+      "bank_changed_at": "2026-09-10",
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-129",
+      "name": "Ghatkesar Aluminium Extrusions",
+      "gstin": "36ABJCG3349S1ZR",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-02-28",
+      "bank_changed_at": "2026-10-24",
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-130",
+      "name": "Boduppal Engineering Works",
+      "gstin": "36ABKCB8172U1ZK",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-01-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-131",
+      "name": "Siddipet Sheet Metal",
+      "gstin": "36ABLCS4625W1Z8",
+      "gst_status": "cancelled",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-11-14",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-132",
+      "name": "Nacharam Gauge Works",
+      "gstin": "36ABMCN7038Y1Z3",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-11-07",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-133",
+      "name": "Kompally Fasteners",
+      "gstin": "36ABNCK1561A1ZQ",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-11-20",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-134",
+      "name": "Himayatnagar Test Instruments",
+      "gstin": "36ABPCH6894D1ZZ",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-06-30",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "capex"
+    },
+    {
+      "id": "V-135",
+      "name": "Balanagar Machine Tools",
+      "gstin": "36ABQCB2407G1ZP",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-03-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "capex"
+    },
+    {
+      "id": "V-136",
+      "name": "Kushaiguda Crate Makers",
+      "gstin": "36ABRCK5730K1ZY",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-01-31",
+      "bank_changed_at": null,
+      "sole_source": false,
+      "category": "indirect_mro"
+    },
+    {
+      "id": "V-137",
+      "name": "Adibatla Leak Test Systems",
+      "gstin": "36ABSCA9253M1ZT",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2027-05-31",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "capex"
+    },
+    {
+      "id": "V-138",
+      "name": "Sultanpur Precision Castings",
+      "gstin": "36ABTCS3786P1Z2",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "IATF 16949",
+      "cert_expiry": "2026-10-06",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "direct_material"
+    },
+    {
+      "id": "V-139",
+      "name": "Isnapur Ring Rollers",
+      "gstin": "36ABUCI7119R1ZG",
+      "gst_status": "active",
+      "status": "active",
+      "cert_name": "ISO 9001",
+      "cert_expiry": "2026-11-02",
+      "bank_changed_at": null,
+      "sole_source": true,
+      "category": "direct_material"
+    }
+  ],
+  "employees": [
+    {
+      "id": "E-104",
+      "name": "K. Raghavan",
+      "role": "cc_head",
+      "cost_centre": "CC-MACH",
+      "leave_from": "2026-09-14",
+      "leave_to": "2026-09-18"
+    },
+    {
+      "id": "E-107",
+      "name": "S. Fathima",
+      "role": "cc_head",
+      "cost_centre": "CC-MAINT",
+      "leave_from": "2026-09-21",
+      "leave_to": "2026-10-02"
+    },
+    {
+      "id": "E-110",
+      "name": "P. Reddy",
+      "role": "cc_head",
+      "cost_centre": "CC-ASSY",
+      "leave_from": "2026-11-23",
+      "leave_to": "2026-12-04"
+    },
+    {
+      "id": "E-111",
+      "name": "M. Joshi",
+      "role": "cc_head",
+      "cost_centre": "CC-QA",
+      "leave_from": "2026-11-09",
+      "leave_to": "2026-11-20"
+    },
+    {
+      "id": "E-113",
+      "name": "A. Varma",
+      "role": "cc_head",
+      "cost_centre": "CC-ADMIN",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-112",
+      "name": "T. Naidu",
+      "role": "delegate",
+      "cost_centre": "CC-MACH",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-115",
+      "name": "R. Kulkarni",
+      "role": "delegate",
+      "cost_centre": "CC-MAINT",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-201",
+      "name": "V. Iyer",
+      "role": "plant_head",
+      "cost_centre": "PLANT",
+      "leave_from": "2026-09-21",
+      "leave_to": "2026-10-02"
+    },
+    {
+      "id": "E-301",
+      "name": "N. Chandra",
+      "role": "cfo",
+      "cost_centre": "CORP",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-401",
+      "name": "Ananya Rao",
+      "role": "analyst",
+      "cost_centre": "CC-ASSY",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-402",
+      "name": "D. Prasad",
+      "role": "requester",
+      "cost_centre": "CC-MACH",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-403",
+      "name": "G. Rao",
+      "role": "requester",
+      "cost_centre": "CC-QA",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-404",
+      "name": "L. Menon",
+      "role": "requester",
+      "cost_centre": "CC-MAINT",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-405",
+      "name": "B. Shetty",
+      "role": "requester",
+      "cost_centre": "CC-ADMIN",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-205",
+      "name": "H. Siddiqui",
+      "role": "delegate",
+      "cost_centre": "PLANT",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-116",
+      "name": "J. Pillai",
+      "role": "delegate",
+      "cost_centre": "CC-QA",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-117",
+      "name": "F. Khan",
+      "role": "delegate",
+      "cost_centre": "CC-ASSY",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-302",
+      "name": "R. Agarwal",
+      "role": "finance_controller",
+      "cost_centre": "CORP",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-303",
+      "name": "P. Bhat",
+      "role": "category_head",
+      "cost_centre": "CORP",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-406",
+      "name": "K. Srinivas",
+      "role": "requester",
+      "cost_centre": "CC-ASSY",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-407",
+      "name": "A. Qureshi",
+      "role": "requester",
+      "cost_centre": "CC-MAINT",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-408",
+      "name": "M. Goud",
+      "role": "requester",
+      "cost_centre": "CC-MACH",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-409",
+      "name": "Y. Lakshmi",
+      "role": "requester",
+      "cost_centre": "CC-QA",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-410",
+      "name": "V. Chary",
+      "role": "requester",
+      "cost_centre": "CC-ASSY",
+      "leave_from": null,
+      "leave_to": null
+    },
+    {
+      "id": "E-411",
+      "name": "N. Yadav",
+      "role": "requester",
+      "cost_centre": "CC-MAINT",
+      "leave_from": null,
+      "leave_to": null
+    }
+  ],
+  "approval_limits": [
+    {
+      "cost_centre": "CC-MACH",
+      "max_amount": 200000,
+      "approver_id": "E-104"
+    },
+    {
+      "cost_centre": "CC-MAINT",
+      "max_amount": 200000,
+      "approver_id": "E-107"
+    },
+    {
+      "cost_centre": "CC-ASSY",
+      "max_amount": 200000,
+      "approver_id": "E-110"
+    },
+    {
+      "cost_centre": "CC-QA",
+      "max_amount": 200000,
+      "approver_id": "E-111"
+    },
+    {
+      "cost_centre": "CC-ADMIN",
+      "max_amount": 200000,
+      "approver_id": "E-113"
+    },
+    {
+      "cost_centre": "CC-MACH",
+      "max_amount": 1000000,
+      "approver_id": "E-201"
+    },
+    {
+      "cost_centre": "CC-MAINT",
+      "max_amount": 1000000,
+      "approver_id": "E-201"
+    },
+    {
+      "cost_centre": "CC-ASSY",
+      "max_amount": 1000000,
+      "approver_id": "E-201"
+    },
+    {
+      "cost_centre": "CC-QA",
+      "max_amount": 1000000,
+      "approver_id": "E-201"
+    },
+    {
+      "cost_centre": "CC-ADMIN",
+      "max_amount": 1000000,
+      "approver_id": "E-201"
+    },
+    {
+      "cost_centre": "CC-MACH",
+      "max_amount": 100000000,
+      "approver_id": "E-301"
+    },
+    {
+      "cost_centre": "CC-MAINT",
+      "max_amount": 100000000,
+      "approver_id": "E-301"
+    },
+    {
+      "cost_centre": "CC-ASSY",
+      "max_amount": 100000000,
+      "approver_id": "E-301"
+    },
+    {
+      "cost_centre": "CC-QA",
+      "max_amount": 100000000,
+      "approver_id": "E-301"
+    },
+    {
+      "cost_centre": "CC-ADMIN",
+      "max_amount": 100000000,
+      "approver_id": "E-301"
+    }
+  ],
+  "delegations": [
+    {
+      "approver_id": "E-104",
+      "delegate_id": "E-112",
+      "max_amount": 200000,
+      "valid_from": "2026-04-01",
+      "valid_to": "2027-03-31"
+    },
+    {
+      "approver_id": "E-107",
+      "delegate_id": "E-115",
+      "max_amount": 200000,
+      "valid_from": "2026-04-01",
+      "valid_to": "2027-03-31"
+    },
+    {
+      "approver_id": "E-201",
+      "delegate_id": "E-205",
+      "max_amount": 1000000,
+      "valid_from": "2026-04-01",
+      "valid_to": "2027-03-31"
+    },
+    {
+      "approver_id": "E-110",
+      "delegate_id": "E-117",
+      "max_amount": 200000,
+      "valid_from": "2026-11-23",
+      "valid_to": "2026-12-04"
+    },
+    {
+      "approver_id": "E-111",
+      "delegate_id": "E-116",
+      "max_amount": 100000,
+      "valid_from": "2026-11-09",
+      "valid_to": "2026-11-20"
+    }
+  ],
+  "budgets": [
+    {
+      "cost_centre": "CC-MACH",
+      "fiscal_year": "2026-27",
+      "allocated": 8000000,
+      "spent": 8000000
+    },
+    {
+      "cost_centre": "CC-ASSY",
+      "fiscal_year": "2026-27",
+      "allocated": 8000000,
+      "spent": 3000000
+    },
+    {
+      "cost_centre": "CC-MAINT",
+      "fiscal_year": "2026-27",
+      "allocated": 4000000,
+      "spent": 1500000
+    },
+    {
+      "cost_centre": "CC-QA",
+      "fiscal_year": "2026-27",
+      "allocated": 2500000,
+      "spent": 800000
+    },
+    {
+      "cost_centre": "CC-ADMIN",
+      "fiscal_year": "2026-27",
+      "allocated": 400000,
+      "spent": 390000
+    }
+  ],
+  "prior_requests": [
+    {
+      "id": "PR-2026-0801",
+      "vendor_id": "V-052",
+      "amount": 80000,
+      "submitted_on": "2026-09-10",
+      "cost_centre": "CC-MAINT"
+    },
+    {
+      "id": "PR-2026-0950",
+      "vendor_id": "V-116",
+      "amount": 90000,
+      "submitted_on": "2026-10-06",
+      "cost_centre": "CC-MAINT"
+    },
+    {
+      "id": "PR-2026-0812",
+      "vendor_id": "V-127",
+      "amount": 62000,
+      "submitted_on": "2026-09-08",
+      "cost_centre": "CC-MAINT"
+    },
+    {
+      "id": "PR-2026-0846",
+      "vendor_id": "V-119",
+      "amount": 98000,
+      "submitted_on": "2026-09-22",
+      "cost_centre": "CC-ASSY"
+    },
+    {
+      "id": "PR-2026-0934",
+      "vendor_id": "V-133",
+      "amount": 100000,
+      "submitted_on": "2026-10-01",
+      "cost_centre": "CC-ASSY"
+    },
+    {
+      "id": "PR-2026-0947",
+      "vendor_id": "V-125",
+      "amount": 115000,
+      "submitted_on": "2026-10-05",
+      "cost_centre": "CC-ASSY"
+    },
+    {
+      "id": "PR-2026-0953",
+      "vendor_id": "V-136",
+      "amount": 94000,
+      "submitted_on": "2026-10-06",
+      "cost_centre": "CC-MAINT"
+    },
+    {
+      "id": "PR-2026-0988",
+      "vendor_id": "V-129",
+      "amount": 140000,
+      "submitted_on": "2026-10-20",
+      "cost_centre": "CC-ASSY"
+    },
+    {
+      "id": "PR-2026-1012",
+      "vendor_id": "V-121",
+      "amount": 120000,
+      "submitted_on": "2026-10-30",
+      "cost_centre": "CC-MACH"
+    }
+  ]
+}

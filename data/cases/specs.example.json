@@ -1,0 +1,43 @@
+{
+  "_note": "SYNTHETIC DATA. Two example specs showing the format for scripts/generate_cases.py. The 60 benchmark specs (20 dev, 40 test, SPEC §13) are written by the data owner; ground truth is written blind from them. must_mention holds each answer-deciding fact in full (e.g. 'line 3 is down', not 'line 3').",
+  "specs": [
+    {
+      "case_id": "EX-001",
+      "split": "examples",
+      "submitted_at": "2026-09-29T08:10:00",
+      "requester_id": "E-402",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Nizam Pumps",
+      "amount_raw": "4.8L",
+      "quotes_attached": 3,
+      "story": "Line 3 stopped overnight because the coolant pump failed. The requester needs replacement pump assemblies today. The cost centre has run over its budget. The vendor's accounts team emailed new bank account details last week.",
+      "must_mention": [
+        "line 3 is down",
+        "over budget",
+        "new bank account"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "family": "I3"
+    },
+    {
+      "case_id": "EX-002",
+      "split": "examples",
+      "submitted_at": "2026-09-29T11:30:00",
+      "requester_id": "E-401",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Deccan Bearings",
+      "amount_raw": "Rs 1,35,000",
+      "quotes_attached": 1,
+      "story": "Routine order of bearing housings from a long-standing vendor with a good delivery record. The vendor's ISO 9001 certificate expired last week; the renewal audit is done and the new certificate is awaited.",
+      "must_mention": [
+        "ISO 9001"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "family": "E1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_note": "SYNTHETIC DATA. Scripted resolutions for POST /demo/replay ('replay 3 weeks', SPEC §18 beat 3). Dates are days after the demo clock. They mature the E1 lesson learned live from tentative to established.",
+  "records": [
+    {"case_id": "PR-DEMO-R001", "kind": "confirmation", "days_after": 9, "checks": ["vendor"], "causes": {"vendor": "cert_expired"},
+     "reviewer": "Ananya Rao", "vendor_id": "V-108", "approver_id": "E-107", "amount": 88000, "category": "indirect_mro", "urgency": "normal",
+     "request": "anchor bolts for the press shop", "what_happened": "ISO 9001 certificate expired 5 days before the request; surveillance audit already done; vendor in good standing.",
+     "why": "the vendor check blocks the vendor outright, but the lapse was administrative and the vendor was otherwise in good standing.",
+     "steps": ["REQUEST_RENEWED_CERT", "KEEP_VENDOR_ACTIVE", "HOLD_PO"], "outcome": "renewed certificate received in 4 days; PO released.",
+     "lesson": "a recently expired certificate is a hold, not a rejection, when the vendor is otherwise in good standing."},
+    {"case_id": "PR-DEMO-R002", "kind": "confirmation", "days_after": 16, "checks": ["vendor"], "causes": {"vendor": "cert_expired"},
+     "reviewer": "Ananya Rao", "vendor_id": "V-104", "approver_id": "E-104", "amount": 72000, "category": "indirect_mro", "urgency": "normal",
+     "request": "coolant concentrate", "what_happened": "ISO 9001 certificate lapsed 3 days before the request; renewal certificate in the post.",
+     "why": "switching coolant suppliers mid-quarter would have needed requalification for a paperwork lapse.",
+     "steps": ["REQUEST_RENEWED_CERT", "KEEP_VENDOR_ACTIVE", "HOLD_PO"], "outcome": "renewed certificate arrived in 2 days; PO released.",
+     "lesson": "a recently expired certificate is a hold, not a rejection, when the vendor is otherwise in good standing."}
+  ]
+}

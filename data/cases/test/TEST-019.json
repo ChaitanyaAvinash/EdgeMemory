@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-019",
+  "submitted_at": "2026-10-21T07:20:00",
+  "requester_id": "E-402",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Hyderabad Tooling Works",
+  "amount_raw": "3.9 lakh",
+  "quotes_attached": 3,
+  "justification": "The purchase request is for Rs. 3.9 lakh to replace the broken gang‑milling cutter set for line 3, with three vendor quotes attached and the cost centre budget allocated.",
+  "email_thread": "From: akhilesh.patel@kaveri.com\nSubject: Re: Purchase request for cutter set\n\nline 3 is down. need new cutter set asap. attached 3 quotes.\n---\nFrom: vendor.accounts@hyderabadtooling.com\nSubject: Re: RE: Purchase request for cutter set\n\nWe have a new bank account. Please remit payment to the updated details.\n---\nFrom: rina.sharma@kaveri.com\nSubject: Re: RE: Purchase request for cutter set\n\nmaintenance log confirms the breakdown. ok, will process payment to new account.\n---\nFrom: akhilesh.patel@kaveri.com\nSubject: Re: RE: Purchase request for cutter set\n\ncost centre CC-MACH budget is used up, but we have approval. proceeding with Hyderabad Tooling Works.",
+  "attachment_text": ""
+}

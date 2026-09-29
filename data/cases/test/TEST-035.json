@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-035",
+  "submitted_at": "2026-11-12T07:10:00",
+  "requester_id": "E-402",
+  "cost_centre": "CC-MACH",
+  "vendor_name": "Bhongir Forgings",
+  "amount_raw": "Rs 1,45,000",
+  "quotes_attached": 1,
+  "justification": "The request is for Rs 1,45,000 to purchase forged blanks from Bhongir Forgings for cost centre CC-MACH. The blanks are needed to resume machining on line 5 after the regular supplier failed to deliver.",
+  "email_thread": "From: Rajesh Kumar (Shop Floor Manager)\nSubject: Request for forged blanks\nline 5 is down, need urgent blanks from Bhongir Forgings. Please approve.\n---\nFrom: Ananya Iyer (Purchase Officer)\nSubject: Re: Request for forged blanks\nGot it, will raise PO for Rs 1,45,000. Cost centre CC-MACH, will attach the quote.\n---\nFrom: Suresh Nair (Finance)\nSubject: Re: Request for forged blanks\nApproved. production log confirms line 5 is down since morning. Proceed with purchase.",
+  "attachment_text": ""
+}

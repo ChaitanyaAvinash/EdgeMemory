@@ -1,0 +1,2059 @@
+{
+  "_note": "SYNTHETIC DATA. The 60 benchmark case specs of SPEC §13 (20 dev, 40 test), input to scripts/generate_cases.py. Only the form fields, story, must_mention and style flags reach the LLM; family, vendor_id, amount, category, urgency, text_signals, scenario_checks and ledger never do. scenario_checks is how each scenario was built (checked against data/master/master.json by scripts/check_specs.py); it is not a ground-truth label. Class, uncovered checks and steps are the data owner's to write, blind, in data/ground_truth/ (docs/ground_truth_format.md).",
+  "specs": [
+    {
+      "case_id": "DEV-001",
+      "split": "dev",
+      "family": "E5+E3",
+      "submitted_at": "2026-09-22T09:50:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Patancheru Electricals",
+      "vendor_id": "V-128",
+      "amount": 110000,
+      "amount_raw": "1.1 lakh",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Motor starters, contactors and cable for the maintenance stores; a routine restock. The cost-centre head is on leave until 2 Oct.",
+      "must_mention": [
+        "motor starters"
+      ],
+      "email_messages": 0,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-128 Patancheru Electricals: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details changed 2026-09-10 (12 days before the request); not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,10,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-002",
+      "split": "dev",
+      "family": "E1+E3",
+      "submitted_at": "2026-09-25T10:40:00",
+      "requester_id": "E-411",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "M/s Miyapur Bearings & Seals",
+      "vendor_id": "V-126",
+      "amount": 76000,
+      "amount_raw": "Rs 76,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Spare bearings and oil seals for the maintenance stores, a regular item. Miyapur's ISO 9001 certificate expired on 21 Sep; their renewal audit is done and the new certificate is due next week. They are a long-standing vendor with a good delivery record. The cost-centre head is on leave until 2 Oct.",
+      "must_mention": [
+        "ISO 9001",
+        "renewal audit is done",
+        "good delivery record"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-126 Miyapur Bearings & Seals: active; GST registration active; ISO 9001 certificate expired 2026-09-21 (4 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹76,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-003",
+      "split": "dev",
+      "family": "E3",
+      "submitted_at": "2026-09-29T09:30:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kazipet Die Castings",
+      "vendor_id": "V-125",
+      "amount": 420000,
+      "amount_raw": "₹4,20,000",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Aluminium die-cast housings for the October assembly plan; three quotes are attached and Kazipet is the lowest. The plant head, who approves orders of this size, is on leave until 2 Oct, and the requester asks whether it can go to the delegate.",
+      "must_mention": [
+        "die-cast housings",
+        "on leave"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-125 Kazipet Die Castings: active; GST registration active; IATF 16949 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹4,20,000 in CC-ASSY: E-201 (V. Iyer, plant_head), on leave 2026-09-21 to 2026-10-02; delegate E-205 (H. Siddiqui) up to ₹10,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-004",
+      "split": "dev",
+      "family": "E3",
+      "submitted_at": "2026-09-29T10:05:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Shamshabad Hydraulics",
+      "vendor_id": "V-121",
+      "amount": 85000,
+      "amount_raw": "85,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Hydraulic seals and hoses to restock the maintenance stores; stock is low but nothing has failed. The cost-centre head, S. Fathima, is on leave until 2 Oct, and the requester asks who can approve in the meantime.",
+      "must_mention": [
+        "hydraulic seals and hoses"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-121 Shamshabad Hydraulics: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹85,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-005",
+      "split": "dev",
+      "family": "E4+E3",
+      "submitted_at": "2026-09-30T14:10:00",
+      "requester_id": "E-407",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Jeedimetla Packaging",
+      "vendor_id": "V-127",
+      "amount": 64000,
+      "amount_raw": "64,000/-",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Second shipment of the wooden crate order raised on 8 Sep (PR-2026-0812); the vendor is delivering the balance quantity separately. Jeedimetla has had no invoice issues with Kaveri. The cost-centre head is on leave until 2 Oct.",
+      "must_mention": [
+        "second shipment",
+        "balance quantity",
+        "PR-2026-0812",
+        "no invoice issues"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "duplicate": "possible_duplicate",
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-127 Jeedimetla Packaging: active; GST registration active; ISO 9001 certificate valid until 2027-03-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹64,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Earlier request PR-2026-0812 to this vendor on 2026-09-08 for ₹62,000 (+3.2% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-006",
+      "split": "dev",
+      "family": "normal",
+      "submitted_at": "2026-10-05T10:20:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Bhongir Forgings",
+      "vendor_id": "V-117",
+      "amount": 120000,
+      "amount_raw": "Rs 1,20,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Routine monthly order of forged steel flange blanks that are machined into customer parts. Bhongir Forgings has supplied these for three years with no quality issues. Standard delivery in two weeks is fine.",
+      "must_mention": [
+        "forged steel flange blanks"
+      ],
+      "email_messages": 0,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-117 Bhongir Forgings: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,20,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-007",
+      "split": "dev",
+      "family": "normal",
+      "submitted_at": "2026-10-06T11:45:00",
+      "requester_id": "E-409",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Kukatpally Calibration Labs",
+      "vendor_id": "V-118",
+      "amount": 48000,
+      "amount_raw": "48,000",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Half-yearly calibration of 40 vernier calipers and micrometers from the QA lab by an accredited outside lab. The lab's ISO/IEC 17025 accreditation is valid until March 2027. A planned activity with no time pressure.",
+      "must_mention": [
+        "calibration",
+        "ISO/IEC 17025"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-118 Kukatpally Calibration Labs: active; GST registration active; ISO/IEC 17025 certificate valid until 2027-03-15; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹48,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-008",
+      "split": "dev",
+      "family": "E1",
+      "submitted_at": "2026-10-08T14:30:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Medak Machined Parts",
+      "vendor_id": "V-119",
+      "amount": 145000,
+      "amount_raw": "₹1,45,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Order of turned shafts that are fitted into the precision assemblies Kaveri ships to customers. The vendor's ISO 9001 certificate expired on 3 Oct; the renewal audit is done and the new certificate is expected in about a week. Medak has two years of on-time deliveries and no quality complaints.",
+      "must_mention": [
+        "ISO 9001",
+        "renewal audit is done",
+        "no quality complaints"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired"
+      },
+      "ledger": [
+        "Vendor V-119 Medak Machined Parts: active; GST registration active; ISO 9001 certificate expired 2026-10-03 (5 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,45,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0846 to this vendor on 2026-09-22 for ₹98,000 (+48.0% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-009",
+      "split": "dev",
+      "family": "E1",
+      "submitted_at": "2026-10-09T12:00:00",
+      "requester_id": "E-403",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Begumpet Metrology Services",
+      "vendor_id": "V-124",
+      "amount": 72000,
+      "amount_raw": "72000",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Annual calibration of the QA lab's height gauges and slip-gauge sets by an outside lab. The lab's ISO/IEC 17025 accreditation expired on 4 Oct; the reassessment visit is done and the renewed certificate is awaited. The lab has done this work for Kaveri for four years without problems.",
+      "must_mention": [
+        "ISO/IEC 17025",
+        "reassessment visit is done",
+        "without problems"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired"
+      },
+      "ledger": [
+        "Vendor V-124 Begumpet Metrology Services: active; GST registration active; ISO/IEC 17025 certificate expired 2026-10-04 (5 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹72,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-010",
+      "split": "dev",
+      "family": "U1",
+      "submitted_at": "2026-10-12T13:35:00",
+      "requester_id": "E-411",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Kakatiya Motors",
+      "vendor_id": "V-106",
+      "amount": 90000,
+      "amount_raw": "90k",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Rewinding spares and two spare motors for the maintenance stores; Kakatiya Motors quoted the best rate. In the email thread, a partner at Kakatiya Motors signs off by writing that the requester is my cousin and promising the best service.",
+      "must_mention": [
+        "is my cousin"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [
+        {
+          "name": "related_party",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "related_party": "related_party"
+      },
+      "ledger": [
+        "Vendor V-106 Kakatiya Motors: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹90,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-011",
+      "split": "dev",
+      "family": "U2",
+      "submitted_at": "2026-10-13T15:20:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Siddipet Sheet Metal",
+      "vendor_id": "V-131",
+      "amount": 98000,
+      "amount_raw": "98,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Laser-cut sheet-metal covers that are fitted to the assemblies Kaveri ships. Siddipet Sheet Metal is a regular vendor and quoted the usual rate. A routine order.",
+      "must_mention": [
+        "sheet-metal covers"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "gst_cancelled"
+      },
+      "ledger": [
+        "Vendor V-131 Siddipet Sheet Metal: active; GST registration cancelled; ISO 9001 certificate valid until 2026-11-14; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹98,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-012",
+      "split": "dev",
+      "family": "normal",
+      "submitted_at": "2026-10-15T09:10:00",
+      "requester_id": "E-407",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Uppal Gear Drives Pvt Ltd",
+      "vendor_id": "V-120",
+      "amount": 320000,
+      "amount_raw": "3.2 lakh",
+      "quotes_attached": 3,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Planned replacement of the worm gearbox on the press-shop conveyor during the scheduled maintenance window in November. The old gearbox is noisy but still working. Three quotes are attached and Uppal Gear Drives is the lowest.",
+      "must_mention": [
+        "planned replacement",
+        "three quotes"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-120 Uppal Gear Drives: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹3,20,000 in CC-MAINT: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-013",
+      "split": "dev",
+      "family": "adversarial",
+      "submitted_at": "2026-10-16T09:15:00",
+      "requester_id": "E-407",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Godavari Coolants",
+      "vendor_id": "V-104",
+      "amount": 68000,
+      "amount_raw": "68,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Coolant concentrate drums for the maintenance stores; a routine restock, and the requester's justification is ordinary. Only the last message in the email thread, from the vendor's accounts person, says they have moved to a new bank account and asks Kaveri to update it for payment. Nobody at Kaveri comments on it.",
+      "must_mention": [
+        "new bank account"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-104 Godavari Coolants: active; GST registration active; ISO 9001 certificate valid until 2027-03-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹68,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-014",
+      "split": "dev",
+      "family": "E5+E6",
+      "submitted_at": "2026-10-19T16:05:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Zaheerabad Special Alloys",
+      "vendor_id": "V-122",
+      "amount": 280000,
+      "amount_raw": "2.8L",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Titanium grade 5 bar for a medical-device part. The customer's drawing names Zaheerabad Special Alloys as the only approved source, so there is one quote. In the email thread, the vendor's accounts team writes that they have a new bank account and asks Kaveri to pay the next invoice there. The requester's own note does not mention the bank.",
+      "must_mention": [
+        "only approved source",
+        "new bank account"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "bank": "bank_details_changed",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-122 Zaheerabad Special Alloys: active; GST registration active; IATF 16949 certificate valid until 2027-06-30; bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹2,80,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-015",
+      "split": "dev",
+      "family": "E6",
+      "submitted_at": "2026-10-20T15:40:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Banjara Alloys",
+      "vendor_id": "V-109",
+      "amount": 540000,
+      "amount_raw": "5.4L",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Inconel 718 bar for an aerospace bracket order. The customer's drawing names Banjara Alloys as the only approved source for this material, so only one quote is attached. Normal delivery.",
+      "must_mention": [
+        "Inconel 718",
+        "only approved source"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-109 Banjara Alloys: active; GST registration active; IATF 16949 certificate valid until 2027-08-31; bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹5,40,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-016",
+      "split": "dev",
+      "family": "adversarial",
+      "submitted_at": "2026-10-22T12:30:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kompally Fasteners",
+      "vendor_id": "V-133",
+      "amount": 110000,
+      "amount_raw": "₹1,10,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "High-tensile fasteners that go into customer assemblies; a routine monthly order. Kompally's ISO 9001 certificate expires on 20 Nov 2026, next month, and their renewal audit is booked for early November. Kompally has a good delivery record.",
+      "must_mention": [
+        "ISO 9001",
+        "20 Nov 2026"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-133 Kompally Fasteners: active; GST registration active; ISO 9001 certificate valid until 2026-11-20; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,10,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0934 to this vendor on 2026-10-01 for ₹1,00,000 (+10.0% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-017",
+      "split": "dev",
+      "family": "E5",
+      "submitted_at": "2026-10-30T11:15:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Shankarpally Forge",
+      "vendor_id": "V-123",
+      "amount": 360000,
+      "amount_raw": "Rs. 3.6 lakhs",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Forged crankshaft blanks for the November build plan. Three quotes are attached and Shankarpally Forge is the lowest. A routine order with normal delivery.",
+      "must_mention": [
+        "crankshaft blanks"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-123 Shankarpally Forge: active; GST registration active; IATF 16949 certificate valid until 2026-11-01; bank details changed 2026-10-28 (2 days before the request); not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹3,60,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-018",
+      "split": "dev",
+      "family": "E5+E4",
+      "submitted_at": "2026-11-03T11:25:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Ghatkesar Aluminium Extrusions",
+      "vendor_id": "V-129",
+      "amount": 144000,
+      "amount_raw": "₹1,44,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Second shipment of the aluminium extrusion order raised on 20 Oct (PR-2026-0988); the vendor is sending the balance quantity now. The extrusions are machined into customer parts. Ghatkesar has had no invoice issues with Kaveri.",
+      "must_mention": [
+        "second shipment",
+        "balance quantity",
+        "no invoice issues"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "duplicate": "possible_duplicate",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-129 Ghatkesar Aluminium Extrusions: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details changed 2026-10-24 (10 days before the request); not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,44,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0988 to this vendor on 2026-10-20 for ₹1,40,000 (+2.9% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-019",
+      "split": "dev",
+      "family": "U1",
+      "submitted_at": "2026-11-05T10:00:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Boduppal Engineering Works",
+      "vendor_id": "V-130",
+      "amount": 130000,
+      "amount_raw": "Rs 1,30,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Machined brackets that go into customer assemblies; one quote is attached. The requester writes openly in the justification that Boduppal Engineering Works is run by my brother and that the rate is the best available.",
+      "must_mention": [
+        "my brother"
+      ],
+      "email_messages": 0,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [
+        {
+          "name": "related_party",
+          "source": "justification"
+        }
+      ],
+      "scenario_checks": {
+        "related_party": "related_party"
+      },
+      "ledger": [
+        "Vendor V-130 Boduppal Engineering Works: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,30,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "DEV-020",
+      "split": "dev",
+      "family": "E1+approver-over-delegate-limit",
+      "submitted_at": "2026-11-12T10:45:00",
+      "requester_id": "E-409",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Nacharam Gauge Works",
+      "vendor_id": "V-132",
+      "amount": 160000,
+      "amount_raw": "1.6 lakh",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Thread plug gauges and ring gauges for the QA lab. Nacharam's ISO 9001 certificate expired on 7 Nov; the renewal audit is done and the new certificate is expected shortly. They are a long-standing vendor with no quality complaints. The QA head is on leave until 20 Nov.",
+      "must_mention": [
+        "ISO 9001",
+        "renewal audit is done",
+        "no quality complaints"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "approver": "approver_on_leave_no_valid_delegate"
+      },
+      "ledger": [
+        "Vendor V-132 Nacharam Gauge Works: active; GST registration active; ISO 9001 certificate expired 2026-11-07 (5 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹1,60,000 in CC-QA: E-111 (M. Joshi, cc_head), on leave 2026-11-09 to 2026-11-20; delegate E-116 (J. Pillai) up to ₹1,00,000, valid 2026-11-09 to 2026-11-20.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-001",
+      "split": "test",
+      "family": "I1",
+      "submitted_at": "2026-09-15T07:05:00",
+      "requester_id": "E-408",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Shamshabad Hydraulics",
+      "vendor_id": "V-121",
+      "amount": 155000,
+      "amount_raw": "1.55 lakh",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 1 is down: the hydraulic power pack on the broaching machine failed overnight. The requester needs a replacement pump and valve block today although the cost centre's budget is used up. The maintenance log confirms the breakdown. The cost-centre head, K. Raghavan, is on leave this week.",
+      "must_mention": [
+        "line 1 is down",
+        "maintenance log confirms"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun",
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-121 Shamshabad Hydraulics: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 1.9% over.",
+        "Approver for ₹1,55,000 in CC-MACH: E-104 (K. Raghavan, cc_head), on leave 2026-09-14 to 2026-09-18; delegate E-112 (T. Naidu) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-002",
+      "split": "test",
+      "family": "E3",
+      "submitted_at": "2026-09-23T10:50:00",
+      "requester_id": "E-407",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Balanagar Machine Tools",
+      "vendor_id": "V-135",
+      "amount": 165000,
+      "amount_raw": "1.65L",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new portable hydraulic press for the maintenance workshop; it will be capitalised as a fixed asset. The cost-centre head is on leave until 2 Oct, and the requester asks for it to go to the delegate.",
+      "must_mention": [
+        "hydraulic press",
+        "capitalised"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-135 Balanagar Machine Tools: active; GST registration active; ISO 9001 certificate valid until 2027-03-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,65,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-003",
+      "split": "test",
+      "family": "I1",
+      "submitted_at": "2026-09-28T06:45:00",
+      "requester_id": "E-402",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Golconda Electricals",
+      "vendor_id": "V-113",
+      "amount": 620000,
+      "amount_raw": "₹6,20,000",
+      "quotes_attached": 3,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 2 is down: the servo drive and spindle motor on the main CNC burnt out. Three quotes are attached; Golconda is the lowest and can deliver today. The cost centre's budget is used up. The maintenance log confirms the breakdown. The plant head, who approves this amount, is on leave until 2 Oct.",
+      "must_mention": [
+        "line 2 is down",
+        "maintenance log confirms"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun",
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-113 Golconda Electricals: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 7.8% over.",
+        "Approver for ₹6,20,000 in CC-MACH: E-201 (V. Iyer, plant_head), on leave 2026-09-21 to 2026-10-02; delegate E-205 (H. Siddiqui) up to ₹10,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-004",
+      "split": "test",
+      "family": "E3",
+      "submitted_at": "2026-10-01T15:15:00",
+      "requester_id": "E-411",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Golconda Electricals",
+      "vendor_id": "V-113",
+      "amount": 148000,
+      "amount_raw": "₹1,48,000",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new 30 kVA UPS for the maintenance workshop's test bench, to be capitalised as a fixed asset. The cost-centre head is on leave until 2 Oct.",
+      "must_mention": [
+        "30 kVA",
+        "capitalised"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-113 Golconda Electricals: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,48,000 in CC-MAINT: E-107 (S. Fathima, cc_head), on leave 2026-09-21 to 2026-10-02; delegate E-115 (R. Kulkarni) up to ₹2,00,000, valid 2026-04-01 to 2027-03-31.",
+        "Earlier request TEST-003 to this vendor on 2026-09-28 for ₹6,20,000 (-76.1% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-005",
+      "split": "test",
+      "family": "I3",
+      "submitted_at": "2026-10-02T06:30:00",
+      "requester_id": "E-408",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Patancheru Electricals",
+      "vendor_id": "V-128",
+      "amount": 162000,
+      "amount_raw": "1.62L",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 3 is down: the main control panel's motor starters and contactors burnt out overnight. The requester needs replacements today even though the cost centre's budget is used up. The maintenance log confirms the breakdown.",
+      "must_mention": [
+        "line 3 is down",
+        "maintenance log confirms"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-128 Patancheru Electricals: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details changed 2026-09-10 (22 days before the request); not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 2.0% over.",
+        "Approver for ₹1,62,000 in CC-MACH: E-104 (K. Raghavan, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-006",
+      "split": "test",
+      "family": "E2",
+      "submitted_at": "2026-10-06T06:55:00",
+      "requester_id": "E-408",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Uppal Gear Drives",
+      "vendor_id": "V-120",
+      "amount": 135000,
+      "amount_raw": "1.35L",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 4 is down since the night shift: the main gearbox on the transfer machine failed. The requester needs a replacement gearbox today even though the cost centre's budget is used up. The maintenance log confirms the breakdown.",
+      "must_mention": [
+        "line 4 is down",
+        "maintenance log confirms"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun"
+      },
+      "ledger": [
+        "Vendor V-120 Uppal Gear Drives: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 1.7% over.",
+        "Approver for ₹1,35,000 in CC-MACH: E-104 (K. Raghavan, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-007",
+      "split": "test",
+      "family": "E5",
+      "submitted_at": "2026-10-06T14:25:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Patancheru Electricals Pvt. Ltd.",
+      "vendor_id": "V-128",
+      "amount": 185000,
+      "amount_raw": "1,85,000",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new 5-tonne electric chain hoist for the maintenance bay, to be capitalised as a fixed asset. A routine purchase with one quote.",
+      "must_mention": [
+        "chain hoist",
+        "capitalised"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-128 Patancheru Electricals: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details changed 2026-09-10 (26 days before the request); not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,85,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Earlier request TEST-005 to this vendor on 2026-10-02 for ₹1,62,000 (+14.2% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-008",
+      "split": "test",
+      "family": "E1",
+      "submitted_at": "2026-10-09T10:35:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Medak Machined Parts",
+      "vendor_id": "V-119",
+      "amount": 1450000,
+      "amount_raw": "14.5 L",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "A large order of machined valve bodies for the Q3 customer schedule; three quotes are attached and Medak is the lowest. Medak's ISO 9001 certificate expired on 3 Oct; the renewal audit is done and the new certificate is expected within two weeks. Medak has two years of on-time deliveries and no quality complaints.",
+      "must_mention": [
+        "ISO 9001",
+        "renewal audit is done",
+        "no quality complaints"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired"
+      },
+      "ledger": [
+        "Vendor V-119 Medak Machined Parts: active; GST registration active; ISO 9001 certificate expired 2026-10-03 (6 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹14,50,000 in CC-ASSY: E-301 (N. Chandra, cfo), available.",
+        "Earlier request PR-2026-0846 to this vendor on 2026-09-22 for ₹98,000 (+1379.6% against it).",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-009",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-10-09T15:00:00",
+      "requester_id": "E-405",
+      "cost_centre": "CC-ADMIN",
+      "vendor_name": "Ramoji Facility Services",
+      "vendor_id": "V-114",
+      "amount": 8400,
+      "amount_raw": "₹8,400",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Monthly pest control visit for the admin block and canteen, a standing arrangement. Ramoji Facility Services has done it for two years.",
+      "must_mention": [
+        "pest control"
+      ],
+      "email_messages": 0,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-114 Ramoji Facility Services: active; GST registration active; ISO 9001 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ADMIN FY 2026-27: ₹10,000 left of ₹4,00,000.",
+        "Approver for ₹8,400 in CC-ADMIN: E-113 (A. Varma, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-010",
+      "split": "test",
+      "family": "E6+overrun-over-10pct",
+      "submitted_at": "2026-10-12T07:40:00",
+      "requester_id": "E-408",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Banjara Alloys",
+      "vendor_id": "V-109",
+      "amount": 960000,
+      "amount_raw": "9.6L",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "line_down",
+      "story": "Line 5 is down because the stock of special alloy bar ran out. Banjara Alloys is the only approved source for this grade, so there is one quote. The cost centre's budget is used up. The production log confirms line 5 has been stopped since the morning, and the requester needs the bar today.",
+      "must_mention": [
+        "line 5 is down",
+        "only approved source",
+        "production log confirms"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-109 Banjara Alloys: active; GST registration active; IATF 16949 certificate valid until 2027-08-31; bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 12.0% over.",
+        "Approver for ₹9,60,000 in CC-MACH: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-011",
+      "split": "test",
+      "family": "I2",
+      "submitted_at": "2026-10-12T11:10:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "M/s Sultanpur Precision Castings",
+      "vendor_id": "V-138",
+      "amount": 440000,
+      "amount_raw": "4.4L",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "urgent",
+      "story": "Investment-cast impeller blanks for a customer order due in three weeks, so the request is urgent. The customer's drawing names Sultanpur as the only approved source, so there is one quote and no other supplier can make them. Sultanpur's IATF 16949 certificate expired on 6 Oct; the recertification audit is done and the new certificate is expected in about ten days. Sultanpur has a clean quality record. The requester notes that holding the order would leave Kaveri with no supply for the customer's due date.",
+      "must_mention": [
+        "only approved source",
+        "IATF 16949",
+        "recertification audit is done",
+        "no other supplier"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-138 Sultanpur Precision Castings: active; GST registration active; IATF 16949 certificate expired 2026-10-06 (6 days before the request); bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹4,40,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-012",
+      "split": "test",
+      "family": "E1+E4",
+      "submitted_at": "2026-10-12T14:05:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Medak Machined Parts",
+      "vendor_id": "V-119",
+      "amount": 102000,
+      "amount_raw": "1,02,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Second shipment of the turned-pin order raised on 22 Sep (PR-2026-0846); Medak is delivering the balance quantity now. The pins go into customer assemblies. Medak's ISO 9001 certificate expired on 3 Oct; the renewal audit is done and the new certificate is expected shortly. Medak has a good delivery record and no invoice issues with Kaveri.",
+      "must_mention": [
+        "second shipment",
+        "balance quantity",
+        "ISO 9001",
+        "renewal audit is done",
+        "no invoice issues"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "duplicate": "possible_duplicate"
+      },
+      "ledger": [
+        "Vendor V-119 Medak Machined Parts: active; GST registration active; ISO 9001 certificate expired 2026-10-03 (9 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,02,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0846 to this vendor on 2026-09-22 for ₹98,000 (+4.1% against it).",
+        "Earlier request TEST-008 to this vendor on 2026-10-09 for ₹14,50,000 (-93.0% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-013",
+      "split": "test",
+      "family": "E2-override",
+      "submitted_at": "2026-10-13T07:30:00",
+      "requester_id": "E-402",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Kakatiya Motors",
+      "vendor_id": "V-106",
+      "amount": 170000,
+      "amount_raw": "1.7 lakh",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Spare spindle motor for line 2. The requester says line 2 is down and asks for an urgent emergency order even though the cost centre's budget is used up. In the email thread, the maintenance supervisor replies that the maintenance log shows line 2 running: only a planned changeover happened last night, and there was no breakdown.",
+      "must_mention": [
+        "line 2 is down",
+        "maintenance log shows line 2 running"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun"
+      },
+      "ledger": [
+        "Vendor V-106 Kakatiya Motors: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 2.1% over.",
+        "Approver for ₹1,70,000 in CC-MACH: E-104 (K. Raghavan, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-014",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-10-14T11:20:00",
+      "requester_id": "E-403",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Himayatnagar Test Instruments",
+      "vendor_id": "V-134",
+      "amount": 190000,
+      "amount_raw": "Rs 1,90,000",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new Rockwell hardness tester for the QA lab, to be capitalised as a fixed asset. It adds testing capacity for heat-treated parts. One quote is attached.",
+      "must_mention": [
+        "hardness tester",
+        "capitalised"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-134 Himayatnagar Test Instruments: active; GST registration active; ISO 9001 certificate valid until 2027-06-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹1,90,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-015",
+      "split": "test",
+      "family": "I2",
+      "submitted_at": "2026-10-15T12:55:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Sultanpur Precision Castings",
+      "vendor_id": "V-138",
+      "amount": 330000,
+      "amount_raw": "₹3,30,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "urgent",
+      "story": "Investment-cast pump housings for a customer order that ships in four weeks, so the request is urgent. Sultanpur is the only approved source for this casting, so there is one quote, and no other supplier can make it. Sultanpur's IATF 16949 certificate expired on 6 Oct; the recertification audit is done and the new certificate is due next week. Sultanpur has a clean quality record.",
+      "must_mention": [
+        "only approved source",
+        "IATF 16949",
+        "recertification audit is done"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-138 Sultanpur Precision Castings: active; GST registration active; IATF 16949 certificate expired 2026-10-06 (9 days before the request); bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹3,30,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Earlier request TEST-011 to this vendor on 2026-10-12 for ₹4,40,000 (-25.0% against it).",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-016",
+      "split": "test",
+      "family": "U1",
+      "submitted_at": "2026-10-15T16:20:00",
+      "requester_id": "E-403",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Kukatpally Calibration Labs",
+      "vendor_id": "V-118",
+      "amount": 120000,
+      "amount_raw": "1.2L",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Calibration of the QA lab's torque wrenches and pressure gauges. In the email thread, the lab's managing director writes that the requester is my sister and promises priority service.",
+      "must_mention": [
+        "is my sister"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "related_party",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "related_party": "related_party"
+      },
+      "ledger": [
+        "Vendor V-118 Kukatpally Calibration Labs: active; GST registration active; ISO/IEC 17025 certificate valid until 2027-03-15; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹1,20,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-017",
+      "split": "test",
+      "family": "adversarial",
+      "submitted_at": "2026-10-19T10:40:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kompally Fasteners",
+      "vendor_id": "V-133",
+      "amount": 106000,
+      "amount_raw": "1,06,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Repeat order of the same high-tensile fasteners as the order raised on 1 Oct (PR-2026-0934), with slightly more quantity this time for a new customer schedule. It is a new order, not a split delivery.",
+      "must_mention": [
+        "PR-2026-0934",
+        "new order"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-133 Kompally Fasteners: active; GST registration active; ISO 9001 certificate valid until 2026-11-20; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,06,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0934 to this vendor on 2026-10-01 for ₹1,00,000 (+6.0% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-018",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-10-20T08:40:00",
+      "requester_id": "E-411",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Hyderabad Tooling Works",
+      "vendor_id": "V-103",
+      "amount": 72000,
+      "amount_raw": "72,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "urgent",
+      "story": "Carbide inserts and boring bars for the maintenance tool crib. The requester says it is urgent because they should arrive before the customer audit on 27 Oct, but nothing has failed and every machine is working.",
+      "must_mention": [
+        "carbide inserts",
+        "customer audit"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-103 Hyderabad Tooling Works: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹72,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-019",
+      "split": "test",
+      "family": "I3",
+      "submitted_at": "2026-10-21T07:20:00",
+      "requester_id": "E-402",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Hyderabad Tooling Works",
+      "vendor_id": "V-103",
+      "amount": 390000,
+      "amount_raw": "3.9 lakh",
+      "quotes_attached": 3,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 3 is down: the special gang-milling cutter set broke and there is no spare. Three quotes are attached and Hyderabad Tooling Works can deliver today. The cost centre's budget is used up. The maintenance log confirms the breakdown. In the email thread, the vendor's accounts team says they have a new bank account and asks Kaveri to pay this order there.",
+      "must_mention": [
+        "line 3 is down",
+        "maintenance log confirms",
+        "new bank account"
+      ],
+      "email_messages": 4,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "budget": "overrun",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-103 Hyderabad Tooling Works: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 4.9% over.",
+        "Approver for ₹3,90,000 in CC-MACH: E-201 (V. Iyer, plant_head), available.",
+        "Earlier request TEST-018 to this vendor on 2026-10-20 for ₹72,000 (+441.7% against it).",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-020",
+      "split": "test",
+      "family": "E4-override",
+      "submitted_at": "2026-10-22T12:40:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Kushaiguda Crate Makers",
+      "vendor_id": "V-136",
+      "amount": 96000,
+      "amount_raw": "Rs 96,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "The requester says this is the second shipment of the crate order raised on 6 Oct (PR-2026-0953), with the balance quantity arriving now. In the email thread, Accounts notes that Kushaiguda sent a duplicate invoice for the same crates in 2025, which internal audit caught.",
+      "must_mention": [
+        "second shipment",
+        "duplicate invoice"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "duplicate": "possible_duplicate"
+      },
+      "ledger": [
+        "Vendor V-136 Kushaiguda Crate Makers: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹96,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Earlier request PR-2026-0953 to this vendor on 2026-10-06 for ₹94,000 (+2.1% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-021",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-10-23T10:10:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Bhongir Forgings",
+      "vendor_id": "V-117",
+      "amount": 1240000,
+      "amount_raw": "12.4 L",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Quarterly order of forged flange blanks for the Q3 customer schedule. Three quotes are attached and Bhongir Forgings is the lowest. Normal four-week delivery.",
+      "must_mention": [
+        "forged flange blanks",
+        "three quotes"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-117 Bhongir Forgings: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹12,40,000 in CC-ASSY: E-301 (N. Chandra, cfo), available.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-022",
+      "split": "test",
+      "family": "U2",
+      "submitted_at": "2026-10-27T13:00:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Telangana Fab Works",
+      "vendor_id": "V-110",
+      "amount": 110000,
+      "amount_raw": "₹1,10,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Welded fixture bases that are shipped as part of a customer's tooling order. The attached quote shows Telangana Fab Works' GSTIN and the usual rates. A routine order.",
+      "must_mention": [
+        "GSTIN"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "gst_cancelled"
+      },
+      "ledger": [
+        "Vendor V-110 Telangana Fab Works: active; GST registration cancelled; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,10,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-023",
+      "split": "test",
+      "family": "E4",
+      "submitted_at": "2026-10-27T13:20:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kazipet Die Castings",
+      "vendor_id": "V-125",
+      "amount": 118000,
+      "amount_raw": "₹1,18,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Second shipment of the die-cast housing order raised on 5 Oct (PR-2026-0947); Kazipet is delivering the balance quantity now. The housings are fitted to customer assemblies. Kazipet has had no invoice issues with Kaveri.",
+      "must_mention": [
+        "second shipment",
+        "balance quantity",
+        "no invoice issues"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "duplicate": "possible_duplicate"
+      },
+      "ledger": [
+        "Vendor V-125 Kazipet Die Castings: active; GST registration active; IATF 16949 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,18,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0947 to this vendor on 2026-10-05 for ₹1,15,000 (+2.6% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-024",
+      "split": "test",
+      "family": "E5+blacklisted",
+      "submitted_at": "2026-10-29T14:15:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Secunderabad Steel Traders",
+      "vendor_id": "V-112",
+      "amount": 115000,
+      "amount_raw": "Rs 1,15,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Steel channels and angles for fabricating new machine guards in the maintenance workshop. The requester chose Secunderabad Steel Traders for the lowest rate. In the email thread, the vendor asks Kaveri to pay to their new bank account.",
+      "must_mention": [
+        "new bank account"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "vendor": "blacklisted",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-112 Secunderabad Steel Traders: blacklisted; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,15,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-025",
+      "split": "test",
+      "family": "adversarial",
+      "submitted_at": "2026-10-30T12:20:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Boduppal Engineering Works",
+      "vendor_id": "V-130",
+      "amount": 460000,
+      "amount_raw": "4.6 lakh",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Machined mounting plates for a customer order; three quotes are attached and Boduppal is the lowest, and the justification is routine. Only a short message deep in the email thread, from the vendor's accounts person, says they have moved to a new bank account for all future payments. Nobody at Kaveri replies to it.",
+      "must_mention": [
+        "new bank account"
+      ],
+      "email_messages": 5,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-130 Boduppal Engineering Works: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹4,60,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-026",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-11-02T14:50:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kazipet Die Castings",
+      "vendor_id": "V-125",
+      "amount": 85000,
+      "amount_raw": "85,000/-",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "A small batch of die-cast end covers that are fitted to customer assemblies. The email thread is about the delivery date and the packing instructions.",
+      "must_mention": [
+        "end covers"
+      ],
+      "email_messages": 5,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-125 Kazipet Die Castings: active; GST registration active; IATF 16949 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹85,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Earlier request PR-2026-0947 to this vendor on 2026-10-05 for ₹1,15,000 (-26.1% against it).",
+        "Earlier request TEST-023 to this vendor on 2026-10-27 for ₹1,18,000 (-28.0% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-027",
+      "split": "test",
+      "family": "E6-override",
+      "submitted_at": "2026-11-04T10:15:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Bhongir Forgings",
+      "vendor_id": "V-117",
+      "amount": 340000,
+      "amount_raw": "3.4 lakh",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Forged EN19 flanges for a customer order. The requester attaches one quote and calls Bhongir Forgings the only source. In the email thread, the purchase team points out that the approved vendor list has a second approved vendor for this EN19 grade.",
+      "must_mention": [
+        "only source",
+        "second approved vendor"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-117 Bhongir Forgings: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹3,40,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Earlier request TEST-021 to this vendor on 2026-10-23 for ₹12,40,000 (-72.6% against it).",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-028",
+      "split": "test",
+      "family": "adversarial",
+      "submitted_at": "2026-11-04T15:30:00",
+      "requester_id": "E-409",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Ramoji Facility Services",
+      "vendor_id": "V-114",
+      "amount": 60000,
+      "amount_raw": "60k",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Quarterly deep cleaning of the QA lab and its air-handling ducts. In the email thread, the vendor's accounts team confirms that their bank details remain unchanged and asks Kaveri to pay to the same account as before.",
+      "must_mention": [
+        "bank details remain unchanged"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-114 Ramoji Facility Services: active; GST registration active; ISO 9001 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹60,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Earlier request TEST-009 to this vendor on 2026-10-09 for ₹8,400 (+614.3% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-029",
+      "split": "test",
+      "family": "E5+E1",
+      "submitted_at": "2026-11-05T11:40:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Shankarpally Forge",
+      "vendor_id": "V-123",
+      "amount": 310000,
+      "amount_raw": "3.1 lakh",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Forged connecting-rod blanks for the December build plan; three quotes are attached and Shankarpally is the lowest. Shankarpally's IATF 16949 certificate expired on 1 Nov; the recertification audit is done and the new certificate is expected shortly. Shankarpally has a good delivery record.",
+      "must_mention": [
+        "IATF 16949",
+        "recertification audit is done",
+        "good delivery record"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-123 Shankarpally Forge: active; GST registration active; IATF 16949 certificate expired 2026-11-01 (4 days before the request); bank details changed 2026-10-28 (8 days before the request); not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹3,10,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-030",
+      "split": "test",
+      "family": "I2",
+      "submitted_at": "2026-11-06T10:25:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Isnapur Ring Rollers",
+      "vendor_id": "V-139",
+      "amount": 675000,
+      "amount_raw": "Rs 6,75,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "urgent",
+      "story": "Seamless rolled bearing rings for a customer programme that must ship at the end of the month, so the request is urgent. Isnapur is the only approved source for this ring size, so one quote is attached. Isnapur's ISO 9001 certificate expired on 2 Nov; the renewal audit is done and the new certificate is awaited. Isnapur has a good quality record. Without this order there is no supply for the customer shipment.",
+      "must_mention": [
+        "only approved source",
+        "ISO 9001",
+        "renewal audit is done",
+        "no supply"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-139 Isnapur Ring Rollers: active; GST registration active; ISO 9001 certificate expired 2026-11-02 (4 days before the request); bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹6,75,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-031",
+      "split": "test",
+      "family": "E2+E4",
+      "submitted_at": "2026-11-09T07:25:00",
+      "requester_id": "E-408",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Shamshabad Hydraulics",
+      "vendor_id": "V-121",
+      "amount": 124000,
+      "amount_raw": "1.24L",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "line_down",
+      "story": "Line 1 is down, and it stays stopped until the rest of the hydraulic cylinder order arrives. This is the second shipment of the order raised on 30 Oct (PR-2026-1012), with the balance quantity arriving now. The cost centre's budget is used up. The maintenance log confirms the breakdown. Shamshabad has had no invoice issues with Kaveri.",
+      "must_mention": [
+        "line 1 is down",
+        "second shipment",
+        "balance quantity",
+        "maintenance log confirms",
+        "no invoice issues"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun",
+        "duplicate": "possible_duplicate"
+      },
+      "ledger": [
+        "Vendor V-121 Shamshabad Hydraulics: active; GST registration active; ISO 9001 certificate valid until 2027-02-28; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 1.6% over.",
+        "Approver for ₹1,24,000 in CC-MACH: E-104 (K. Raghavan, cc_head), available.",
+        "Earlier request PR-2026-1012 to this vendor on 2026-10-30 for ₹1,20,000 (+3.3% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-032",
+      "split": "test",
+      "family": "I2",
+      "submitted_at": "2026-11-09T15:45:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Isnapur Ring Rollers",
+      "vendor_id": "V-139",
+      "amount": 260000,
+      "amount_raw": "2.6 lakh",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "urgent",
+      "story": "Seamless rolled flange rings, a second part number from the same vendor, needed urgently for a customer shipment in three weeks. Isnapur is the only approved source for these rings, so there is one quote. Isnapur's ISO 9001 certificate expired on 2 Nov; the renewal audit is done and the new certificate is awaited. Isnapur has a good quality record.",
+      "must_mention": [
+        "only approved source",
+        "ISO 9001",
+        "renewal audit is done"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "cert_expired",
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-139 Isnapur Ring Rollers: active; GST registration active; ISO 9001 certificate expired 2026-11-02 (7 days before the request); bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹2,60,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Earlier request TEST-030 to this vendor on 2026-11-06 for ₹6,75,000 (-61.5% against it).",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-033",
+      "split": "test",
+      "family": "E6",
+      "submitted_at": "2026-11-10T11:50:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Adibatla Leak Test Systems",
+      "vendor_id": "V-137",
+      "amount": 860000,
+      "amount_raw": "8.6L",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new helium leak-test machine for valve-body testing, to be capitalised as a fixed asset. The customer has approved only Adibatla's machine design for this test, so Adibatla is the only approved source and there is one quote.",
+      "must_mention": [
+        "leak-test machine",
+        "only approved source",
+        "capitalised"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "quotes": "insufficient_quotes"
+      },
+      "ledger": [
+        "Vendor V-137 Adibatla Leak Test Systems: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹8,60,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Quotes: 1 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-034",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-11-11T09:25:00",
+      "requester_id": "E-404",
+      "cost_centre": "CC-MAINT",
+      "vendor_name": "Uppal Gear Drives",
+      "vendor_id": "V-120",
+      "amount": 195000,
+      "amount_raw": "₹1,95,000",
+      "quotes_attached": 1,
+      "category": "indirect_mro",
+      "urgency": "normal",
+      "story": "Two spare helical gearboxes for the maintenance stores, bought ahead of the annual overhaul. One quote is attached; the amount is just under ₹2,00,000.",
+      "must_mention": [
+        "spare helical gearboxes"
+      ],
+      "email_messages": 0,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-120 Uppal Gear Drives: active; GST registration active; ISO 9001 certificate valid until 2027-01-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MAINT FY 2026-27: ₹25,00,000 left of ₹40,00,000.",
+        "Approver for ₹1,95,000 in CC-MAINT: E-107 (S. Fathima, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-035",
+      "split": "test",
+      "family": "E2",
+      "submitted_at": "2026-11-12T07:10:00",
+      "requester_id": "E-402",
+      "cost_centre": "CC-MACH",
+      "vendor_name": "Bhongir Forgings",
+      "vendor_id": "V-117",
+      "amount": 145000,
+      "amount_raw": "Rs 1,45,000",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "line_down",
+      "story": "Line 5 is down because forged blanks ran out after the regular supplier's delivery failed. The requester is buying a small emergency lot of forged blanks from Bhongir Forgings; the blanks are machined into customer parts. The cost centre's budget is used up. The production log confirms line 5 has been stopped since the morning.",
+      "must_mention": [
+        "line 5 is down",
+        "production log confirms"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": true,
+      "text_signals": [],
+      "scenario_checks": {
+        "budget": "overrun"
+      },
+      "ledger": [
+        "Vendor V-117 Bhongir Forgings: active; GST registration active; ISO 9001 certificate valid until 2027-05-31; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-MACH FY 2026-27: ₹0 left of ₹80,00,000; this request would take it 1.8% over.",
+        "Approver for ₹1,45,000 in CC-MACH: E-104 (K. Raghavan, cc_head), available.",
+        "Earlier request TEST-021 to this vendor on 2026-10-23 for ₹12,40,000 (-88.3% against it).",
+        "Earlier request TEST-027 to this vendor on 2026-11-04 for ₹3,40,000 (-57.4% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-036",
+      "split": "test",
+      "family": "U1",
+      "submitted_at": "2026-11-17T10:55:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Kazipet Die Castings Pvt. Ltd.",
+      "vendor_id": "V-125",
+      "amount": 470000,
+      "amount_raw": "Rs 4,70,000",
+      "quotes_attached": 3,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Die-cast gearbox covers for a customer order; three quotes are attached and Kazipet is the lowest. In the justification the requester mentions being a sleeping partner in Kazipet Die Castings through a family investment.",
+      "must_mention": [
+        "sleeping partner"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "related_party",
+          "source": "justification"
+        }
+      ],
+      "scenario_checks": {
+        "related_party": "related_party"
+      },
+      "ledger": [
+        "Vendor V-125 Kazipet Die Castings: active; GST registration active; IATF 16949 certificate valid until 2027-04-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹4,70,000 in CC-ASSY: E-201 (V. Iyer, plant_head), available.",
+        "Earlier request TEST-023 to this vendor on 2026-10-27 for ₹1,18,000 (+298.3% against it).",
+        "Earlier request TEST-026 to this vendor on 2026-11-02 for ₹85,000 (+452.9% against it).",
+        "Quotes: 3 attached; 3 needed above ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-037",
+      "split": "test",
+      "family": "U2",
+      "submitted_at": "2026-11-19T11:30:00",
+      "requester_id": "E-410",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Siddipet Sheet Metal",
+      "vendor_id": "V-131",
+      "amount": 135000,
+      "amount_raw": "1.35 lakh",
+      "quotes_attached": 1,
+      "category": "direct_material",
+      "urgency": "normal",
+      "story": "Laser-cut sheet-metal guards that are fitted to customer assemblies. The vendor writes that their ISO 9001 certificate lapsed on 14 Nov and the renewal audit is done; the requester thinks it is only a paperwork delay. Siddipet has a good delivery record.",
+      "must_mention": [
+        "ISO 9001",
+        "renewal audit is done"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": true,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "vendor": "gst_cancelled"
+      },
+      "ledger": [
+        "Vendor V-131 Siddipet Sheet Metal: active; GST registration cancelled; ISO 9001 certificate expired 2026-11-14 (5 days before the request); bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,35,000 in CC-ASSY: E-110 (P. Reddy, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-038",
+      "split": "test",
+      "family": "normal",
+      "submitted_at": "2026-11-24T10:30:00",
+      "requester_id": "E-409",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Kukatpally Calibration Labs",
+      "vendor_id": "V-118",
+      "amount": 150000,
+      "amount_raw": "1.5 lakh",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Annual maintenance contract for the QA lab's coordinate measuring machine, renewed every year with the same lab. The lab's accreditation is valid until March 2027.",
+      "must_mention": [
+        "annual maintenance contract"
+      ],
+      "email_messages": 2,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {},
+      "ledger": [
+        "Vendor V-118 Kukatpally Calibration Labs: active; GST registration active; ISO/IEC 17025 certificate valid until 2027-03-15; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹1,50,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-039",
+      "split": "test",
+      "family": "E3",
+      "submitted_at": "2026-11-25T11:05:00",
+      "requester_id": "E-406",
+      "cost_centre": "CC-ASSY",
+      "vendor_name": "Himayatnagar Test Instruments",
+      "vendor_id": "V-134",
+      "amount": 185000,
+      "amount_raw": "1,85,000",
+      "quotes_attached": 1,
+      "category": "capex",
+      "urgency": "normal",
+      "story": "A new torque-testing station for the assembly area, to be capitalised as a fixed asset. The cost-centre head is on leave until 4 Dec.",
+      "must_mention": [
+        "torque-testing station",
+        "capitalised"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [],
+      "scenario_checks": {
+        "approver": "approver_on_leave"
+      },
+      "ledger": [
+        "Vendor V-134 Himayatnagar Test Instruments: active; GST registration active; ISO 9001 certificate valid until 2027-06-30; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-ASSY FY 2026-27: ₹50,00,000 left of ₹80,00,000.",
+        "Approver for ₹1,85,000 in CC-ASSY: E-110 (P. Reddy, cc_head), on leave 2026-11-23 to 2026-12-04; delegate E-117 (F. Khan) up to ₹2,00,000, valid 2026-11-23 to 2026-12-04.",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    },
+    {
+      "case_id": "TEST-040",
+      "split": "test",
+      "family": "adversarial",
+      "submitted_at": "2026-11-26T09:45:00",
+      "requester_id": "E-403",
+      "cost_centre": "CC-QA",
+      "vendor_name": "Kukatpally Calibration Labs",
+      "vendor_id": "V-118",
+      "amount": 125000,
+      "amount_raw": "₹1,25,000",
+      "quotes_attached": 1,
+      "category": "services",
+      "urgency": "normal",
+      "story": "Calibration of the QA lab's surface plates and dial gauges, a routine job, and the requester's justification is ordinary. In the email thread, the lab's accounts team mentions they now use a new bank account and asks Kaveri to update it before paying.",
+      "must_mention": [
+        "new bank account"
+      ],
+      "email_messages": 3,
+      "certificate_snippet": false,
+      "hinglish": false,
+      "text_signals": [
+        {
+          "name": "bank_change_claimed",
+          "source": "email_thread"
+        }
+      ],
+      "scenario_checks": {
+        "bank": "bank_details_changed"
+      },
+      "ledger": [
+        "Vendor V-118 Kukatpally Calibration Labs: active; GST registration active; ISO/IEC 17025 certificate valid until 2027-03-15; bank details not changed in the 30 days before the request; not flagged sole-source.",
+        "Budget CC-QA FY 2026-27: ₹17,00,000 left of ₹25,00,000.",
+        "Approver for ₹1,25,000 in CC-QA: E-111 (M. Joshi, cc_head), available.",
+        "Earlier request TEST-038 to this vendor on 2026-11-24 for ₹1,50,000 (-16.7% against it).",
+        "Quotes: 1 attached; not required at or below ₹2,00,000."
+      ]
+    }
+  ]
+}

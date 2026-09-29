@@ -1,0 +1,12 @@
+{
+  "request_id": "DEV-011",
+  "submitted_at": "2026-10-13T15:20:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Siddipet Sheet Metal",
+  "amount_raw": "98,000",
+  "quotes_attached": 1,
+  "justification": "The purchase request is for 98,000 rupees to Siddipet Sheet Metal for sheet-metal covers needed for Kaveri Precision Components assemblies. It is a routine order with the vendor's standard rate and one quote attached.",
+  "email_thread": "From: Rajesh Kumar (Purchase Dept)\nPlease process 98,000 for Siddipet Sheet Metal. Need sheet-metal covers for our assemblies. Cost centre CC-ASSY. Quote attached.\n---\nFrom: Anjali Singh (Finance)\nGot it, Rajesh. I will book the amount against CC-ASSY. Let me know if any changes.",
+  "attachment_text": ""
+}

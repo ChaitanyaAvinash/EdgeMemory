@@ -1,0 +1,20 @@
+// Plain-language explanations for procurement terms, shown as tooltips on first use (CLAUDE.md, SPEC §15.2).
+export const GLOSSARY: Record<string, string> = {
+  GSTIN: "Goods and Services Tax Identification Number: a vendor's 15-character tax registration in India. A cancelled GSTIN means the vendor can't legally invoice with GST.",
+  "delegation matrix": "The register of who may approve on an approver's behalf while they are away, up to what amount and for which dates.",
+  "line-down": "A production line has stopped. Every hour it stays down costs output, so fixes are urgent.",
+  "sole-source": "Only one approved vendor can supply the item, so the usual three quotes are impossible.",
+  PO: "Purchase order: the document that commits Kaveri to buy. Issuing a PO is not the same as paying; payment happens later, against an invoice.",
+  lakh: "Indian unit: 1 lakh = ₹1,00,000. So ₹4.8L = ₹4,80,000.",
+  capex: "Capital expenditure: buying a machine or equipment that is recorded as an asset.",
+  controller: "The Finance Controller, who signs off budget overruns and, since 1 Jul 2026, capex approved by a delegate.",
+  "cost centre": "A department's budget line (for example CC-MACH, machining). Every purchase is charged to one.",
+  MRO: "Maintenance, repair and operations: spares, tools and consumables for Kaveri's own machines, not parts sold to customers.",
+  precedent: "A past case where people resolved the same kind of problem. EdgeMemory cites it for every step.",
+  "safety floor": "Rules no learned lesson can go below, such as holding payment until a changed bank account is confirmed.",
+  "false confidence": "Giving a confident procedure for a problem nobody has resolved before, instead of sending it to a human. The target is zero.",
+  interaction: "Several checks failing together, where the right fix is not simply the fixes for each one added up.",
+  override: "A reviewer rejected what a past lesson said in a specific situation. Later cases in that situation should follow the reviewer.",
+  "one-click review": "The recommendation matches well-established lessons, so the reviewer can approve it in one step instead of checking each step.",
+  "learning curve": "The past cases replayed in date order, remembering each human decision, to see how quickly the system needs less help.",
+};

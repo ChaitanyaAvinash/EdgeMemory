@@ -1,0 +1,29 @@
+# SPEC §6.1. Classes in priority order, highest first. No code releases a payment.
+classes: [risk_control, compliance, approval_routing, convenience, outcome]
+
+steps:
+  VERIFY_BANK_CALLBACK:          {class: risk_control, description: "Call the vendor on a number already on file to confirm the bank details"}
+  HOLD_PAYMENT:                  {class: risk_control, description: "Block payment until the hold is cleared by a human"}
+  ESCALATE_AUDIT:                {class: risk_control, description: "Refer the request to internal audit"}
+  DECLARE_CONFLICT_OF_INTEREST:  {class: risk_control, description: "Requester files a conflict-of-interest declaration"}
+  HOLD_PO:                       {class: compliance, description: "Do not issue the purchase order yet"}
+  REQUEST_RENEWED_CERT:          {class: compliance, description: "Ask the vendor for the renewed certificate"}
+  VERIFY_GST_STATUS:             {class: compliance, description: "Check the vendor's GST registration on the GST portal"}
+  SOLE_SOURCE_FORM:              {class: compliance, description: "File the sole-source justification form"}
+  COLLECT_QUOTES:                {class: compliance, description: "Collect at least three quotes"}
+  CONDITIONAL_PO_WITH_QC:        {class: compliance, description: "Issue the PO conditional on quality inspection"}
+  INCOMING_QC_INSPECTION:        {class: compliance, description: "Inspect the goods on receipt"}
+  ATTACH_LINE_DOWN_EVIDENCE:     {class: compliance, description: "Attach evidence that the production line is down"}
+  STANDARD_APPROVAL:             {class: approval_routing, description: "Route to the usual approver"}
+  ROUTE_DELEGATE:                {class: approval_routing, description: "Route to the approver's registered delegate"}
+  ROUTE_NEXT_LEVEL_APPROVER:     {class: approval_routing, description: "Route to the next approver up"}
+  ADD_CONTROLLER_SIGNOFF:        {class: approval_routing, description: "Add the Finance Controller's sign-off"}
+  CATEGORY_HEAD_SIGNOFF:         {class: approval_routing, description: "Add the category head's sign-off"}
+  ADD_CFO_SIGNOFF:               {class: approval_routing, description: "Add the CFO's sign-off"}
+  ALLOW_BUDGET_OVERRUN:          {class: convenience, description: "Allow the cost centre to exceed its budget"}
+  EXPEDITE_PO:                   {class: convenience, description: "Issue the PO on priority"}
+  LINK_MASTER_PO:                {class: convenience, description: "Link the request to an existing master PO"}
+  ALLOW_SPLIT_DELIVERY:          {class: convenience, description: "Accept delivery in several shipments"}
+  KEEP_VENDOR_ACTIVE:            {class: convenience, description: "Keep the vendor active while the issue is fixed"}
+  REQUEST_MORE_INFO:             {class: outcome, description: "Send the request back for more information"}
+  REJECT_REQUEST:                {class: outcome, description: "Reject the request"}

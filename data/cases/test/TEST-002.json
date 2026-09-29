@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-002",
+  "submitted_at": "2026-09-23T10:50:00",
+  "requester_id": "E-407",
+  "cost_centre": "CC-MAINT",
+  "vendor_name": "Balanagar Machine Tools",
+  "amount_raw": "1.65L",
+  "quotes_attached": 1,
+  "justification": "We need to procure a new portable hydraulic press for the maintenance workshop. The asset will be capitalised as a fixed asset and charged to cost centre CC-MAINT. The cost centre head is on leave, so the request is routed to the delegate.",
+  "email_thread": "From: Rajesh Kumar (Purchase Dept)\nDate: 23-Sep-2026\nSubject: Request for 1.65L hydraulic press for Balanagar Machine Tools\n\nPlease arrange purchase of 1.65L hydraulic press for Balanagar Machine Tools. Cost centre CC-MAINT. Quote attached. Thanks.\n---\nFrom: Meena Rao (Cost Centre Delegate)\nDate: 24-Sep-2026\nSubject: Re: Request for 1.65L hydraulic press for Balanagar Machine Tools\n\nGot it. Forwarding to finance for approval. Ensure asset is capitalised as per policy.\n---\nFrom: Finance Team\nDate: 25-Sep-2026\nSubject: Re: Request for 1.65L hydraulic press for Balanagar Machine Tools\n\nFinance approves. Please proceed with purchase and asset registration.",
+  "attachment_text": ""
+}

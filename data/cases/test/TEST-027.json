@@ -1,0 +1,12 @@
+{
+  "request_id": "TEST-027",
+  "submitted_at": "2026-11-04T10:15:00",
+  "requester_id": "E-410",
+  "cost_centre": "CC-ASSY",
+  "vendor_name": "Bhongir Forgings",
+  "amount_raw": "3.4 lakh",
+  "quotes_attached": 1,
+  "justification": "We need to procure forged EN19 flanges for a customer order. The request cites Bhongir Forgings as the only source but the purchase team notes there is a second approved vendor in the AV list.",
+  "email_thread": "From: Rajesh Kumar (Purchase Officer)\nSubject: Request for EN19 Flanges\nDate: 2026-11-04\n\nPlease process 3.4 lakh to Bhongir Forgings, cost centre CC-ASSY. 1 quote(s) attached. Bhongir is the only source.\n---\nFrom: Meena Joshi (Purchasing Manager)\nSubject: Re: Request for EN19 Flanges\nDate: 2026-11-04\n\nRajesh, noted. However the approved vendor list shows a second approved vendor for EN19 grade. Please verify if we can use them.\n---\nFrom: Rajesh Kumar (Purchase Officer)\nSubject: Re: Request for EN19 Flanges\nDate: 2026-11-04\n\nWill check with quality team and get back. Thanks.",
+  "attachment_text": ""
+}

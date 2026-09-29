@@ -1,0 +1,112 @@
+[
+  {
+    "id": "7f645f8d-641e-407a-9e66-e017daefefec",
+    "task_type": "consolidation",
+    "items_count": 0,
+    "created_at": "2026-09-28T10:06:48.103329+00:00",
+    "updated_at": "2026-09-28T10:06:50.575107+00:00",
+    "status": "completed",
+    "retry_count": 0,
+    "progress": {
+      "stage": "refreshing_mental_models",
+      "at": "2026-09-28T10:06:50.549893+00:00",
+      "processed": 5,
+      "total": 5,
+      "detail": null
+    },
+    "document_id": null,
+    "filename": null,
+    "mental_model_id": null,
+    "details": null,
+    "error_message": null,
+    "next_retry_at": null
+  },
+  {
+    "id": "0ac648b6-629b-4855-bd96-e9ade30da6e3",
+    "task_type": "consolidation",
+    "items_count": 0,
+    "created_at": "2026-09-28T10:06:44.619279+00:00",
+    "updated_at": "2026-09-28T10:06:46.556218+00:00",
+    "status": "completed",
+    "retry_count": 0,
+    "progress": {
+      "stage": "refreshing_mental_models",
+      "at": "2026-09-28T10:06:46.531788+00:00",
+      "processed": 4,
+      "total": 4,
+      "detail": null
+    },
+    "document_id": null,
+    "filename": null,
+    "mental_model_id": null,
+    "details": null,
+    "error_message": null,
+    "next_retry_at": null
+  },
+  {
+    "id": "486968ab-712f-47f4-9591-213f42dfaa36",
+    "task_type": "consolidation",
+    "items_count": 0,
+    "created_at": "2026-09-28T10:06:39.612286+00:00",
+    "updated_at": "2026-09-28T10:06:43.842102+00:00",
+    "status": "completed",
+    "retry_count": 0,
+    "progress": {
+      "stage": "refreshing_mental_models",
+      "at": "2026-09-28T10:06:43.823107+00:00",
+      "processed": 5,
+      "total": 5,
+      "detail": null
+    },
+    "document_id": null,
+    "filename": null,
+    "mental_model_id": null,
+    "details": null,
+    "error_message": null,
+    "next_retry_at": null
+  },
+  {
+    "id": "d961f1fe-0022-4cbd-bf8e-84ee9d2d60a3",
+    "task_type": "consolidation",
+    "items_count": 0,
+    "created_at": "2026-09-28T10:06:35.549930+00:00",
+    "updated_at": "2026-09-28T10:06:37.705952+00:00",
+    "status": "completed",
+    "retry_count": 0,
+    "progress": {
+      "stage": "refreshing_mental_models",
+      "at": "2026-09-28T10:06:37.682145+00:00",
+      "processed": 3,
+      "total": 3,
+      "detail": null
+    },
+    "document_id": null,
+    "filename": null,
+    "mental_model_id": null,
+    "details": null,
+    "error_message": null,
+    "next_retry_at": null
+  },
+  {
+    "id": "fe6891b8-a6bb-402a-b136-c0243afe12c5",
+    "task_type": "consolidation",
+    "items_count": 0,
+    "created_at": "2026-09-28T10:06:32.436808+00:00",
+    "updated_at": "2026-09-28T10:06:34.627971+00:00",
+    "status": "completed",
+    "retry_count": 0,
+    "progress": {
+      "stage": "refreshing_mental_models",
+      "at": "2026-09-28T10:06:34.601310+00:00",
+      "processed": 4,
+      "total": 4,
+      "detail": null
+    },
+    "document_id": null,
+    "filename": null,
+    "mental_model_id": null,
+    "details": null,
+    "error_message": null,
+    "next_retry_at": null
+  }
+]

@@ -1,0 +1,15 @@
+# Secrets: real API keys live only in .env, which is never committed (public repo). Copy .env.example to .env.
+.env
+.env.*
+!.env.example
+
+# Installed or generated files; reinstall with the setup steps (README, docs/EdgeMemory-Guide.pdf).
+# Everything else is committed, including the SQLite databases (synthetic data only).
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+web/node_modules/
+web/.next/
+web/.env*

@@ -1,0 +1,42 @@
+# Model per role (CLAUDE.md "Models"). Change a model only on measured dev-set results.
+# 28 Sep 2026: the user moved the primary to Groq gpt-oss-120b because Gemini's free tier is 20 RPD per model
+# (docs/api-notes.md "Quota"). The Gemini models stay as fallbacks with their own daily quotas.
+
+providers:
+  openai/gpt-oss-120b: groq
+  gemini-3.8-flash: gemini
+  gemini-3.7-flash: gemini
+
+# Tried in order after the role's model fails: 1 + retries attempts on the role's model, then one each here.
+fallbacks: [gemini-3.8-flash, gemini-3.7-flash]
+retries: 2
+
+# Gemini call style: "interactions" (chosen in Phase 0 on measured reliability) or "generate_content".
+gemini_call_style: interactions
+# Gemini: caps thinking + output together; never set it low.
+max_output_tokens: 8192
+# Gemini free-tier calls took 93 s and 291 s (single requests) in testing; past this, fail over / escalate.
+gemini_timeout_s: 90
+
+groq:
+  # Includes reasoning tokens. A 9,000 cap was accepted despite the 8,000 TPM (Phase 0), so it isn't
+  # reserved up front; a per-case verifier used ~2,500 completion tokens at medium effort.
+  max_completion_tokens: 8192
+  timeout_s: 120
+  # Drops the reasoning text from the response (reasoning tokens are still used and billed).
+  extra_body: {include_reasoning: false}
+
+# Output + reasoning allowance reserved against TPM/TPD before a call; trued up to the actual count after.
+est_output_tokens: 1500
+
+# effort: Groq reasoning_effort (low | medium | high) or Gemini thinking_level for the fallbacks.
+roles:
+  extractor:   {model: openai/gpt-oss-120b, effort: low}
+  verifier:    {model: openai/gpt-oss-120b, effort: medium}   # moves to low only if G1 holds on dev
+  composer_d:  {model: openai/gpt-oss-120b, effort: medium}
+  arm_a:       {model: openai/gpt-oss-120b, effort: medium}
+  arm_b:       {model: openai/gpt-oss-120b, effort: medium}
+  narrative:   {model: openai/gpt-oss-120b, effort: low}
+  spike:       {model: openai/gpt-oss-120b, effort: low}
+
+verifier_batching: per_case   # switch to per_violation only if dev accuracy drops (SPEC §5.2)

@@ -1,0 +1,904 @@
+{
+  "backend": "vector",
+  "bank": "kaveri-replay-vector-test1",
+  "run_id": "test1",
+  "rows": [
+    {
+      "case_id": "TEST-001",
+      "date": "2026-09-15",
+      "family": "I1",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 5
+    },
+    {
+      "case_id": "TEST-002",
+      "date": "2026-09-23",
+      "family": "E3",
+      "gt_class": "known",
+      "predicted_class": "generalized",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 2
+    },
+    {
+      "case_id": "TEST-003",
+      "date": "2026-09-28",
+      "family": "I1",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 5
+    },
+    {
+      "case_id": "TEST-004",
+      "date": "2026-10-01",
+      "family": "E3",
+      "gt_class": "known",
+      "predicted_class": "known",
+      "review_mode": "one_click",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 2
+    },
+    {
+      "case_id": "TEST-005",
+      "date": "2026-10-02",
+      "family": "I3",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 8
+    },
+    {
+      "case_id": "TEST-007",
+      "date": "2026-10-06",
+      "family": "E5",
+      "gt_class": "generalized",
+      "predicted_class": "generalized",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 3
+    },
+    {
+      "case_id": "TEST-009",
+      "date": "2026-10-09",
+      "family": "normal",
+      "gt_class": "normal",
+      "predicted_class": "normal",
+      "review_mode": "one_click",
+      "maturity": "",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-011",
+      "date": "2026-10-12",
+      "family": "I2",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 8
+    },
+    {
+      "case_id": "TEST-012",
+      "date": "2026-10-12",
+      "family": "E1+E4",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 5
+    },
+    {
+      "case_id": "TEST-013",
+      "date": "2026-10-13",
+      "family": "E2-override",
+      "gt_class": "known",
+      "predicted_class": "generalized",
+      "review_mode": "step_by_step",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 9
+    },
+    {
+      "case_id": "TEST-015",
+      "date": "2026-10-15",
+      "family": "I2",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 6
+    },
+    {
+      "case_id": "TEST-016",
+      "date": "2026-10-15",
+      "family": "U1",
+      "gt_class": "unknown",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "",
+      "uncovered_in_replay": [
+        "related_party"
+      ],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-019",
+      "date": "2026-10-21",
+      "family": "I3",
+      "gt_class": "composed",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-020",
+      "date": "2026-10-22",
+      "family": "E4-override",
+      "gt_class": "known",
+      "predicted_class": "known",
+      "review_mode": "one_click",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 5
+    },
+    {
+      "case_id": "TEST-022",
+      "date": "2026-10-27",
+      "family": "U2",
+      "gt_class": "unknown",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "",
+      "uncovered_in_replay": [
+        "vendor"
+      ],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-024",
+      "date": "2026-10-29",
+      "family": "E5+blacklisted",
+      "gt_class": "unknown",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "established",
+      "uncovered_in_replay": [
+        "vendor"
+      ],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-025",
+      "date": "2026-10-30",
+      "family": "adversarial",
+      "gt_class": "known",
+      "predicted_class": "known",
+      "review_mode": "one_click",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-027",
+      "date": "2026-11-04",
+      "family": "E6-override",
+      "gt_class": "known",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-028",
+      "date": "2026-11-04",
+      "family": "adversarial",
+      "gt_class": "normal",
+      "predicted_class": "normal",
+      "review_mode": "one_click",
+      "maturity": "",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-030",
+      "date": "2026-11-06",
+      "family": "I2",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 6
+    },
+    {
+      "case_id": "TEST-032",
+      "date": "2026-11-09",
+      "family": "I2",
+      "gt_class": "composed",
+      "predicted_class": "composed",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 6
+    },
+    {
+      "case_id": "TEST-036",
+      "date": "2026-11-17",
+      "family": "U1",
+      "gt_class": "unknown",
+      "predicted_class": "generalized",
+      "review_mode": "step_by_step",
+      "maturity": "tentative",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 4
+    },
+    {
+      "case_id": "TEST-037",
+      "date": "2026-11-19",
+      "family": "U2",
+      "gt_class": "unknown",
+      "predicted_class": "unknown",
+      "review_mode": "escalate",
+      "maturity": "",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 1
+    },
+    {
+      "case_id": "TEST-039",
+      "date": "2026-11-25",
+      "family": "E3",
+      "gt_class": "known",
+      "predicted_class": "known",
+      "review_mode": "one_click",
+      "maturity": "established",
+      "uncovered_in_replay": [],
+      "false_confidence": false,
+      "effort": 2
+    }
+  ],
+  "curves": {
+    "one_click_share": [
+      {
+        "i": 1,
+        "date": "2026-09-15",
+        "share": 0,
+        "of": 1
+      },
+      {
+        "i": 2,
+        "date": "2026-09-23",
+        "share": 0,
+        "of": 2
+      },
+      {
+        "i": 3,
+        "date": "2026-09-28",
+        "share": 0,
+        "of": 3
+      },
+      {
+        "i": 4,
+        "date": "2026-10-01",
+        "share": 1,
+        "of": 4
+      },
+      {
+        "i": 5,
+        "date": "2026-10-02",
+        "share": 1,
+        "of": 5
+      },
+      {
+        "i": 6,
+        "date": "2026-10-06",
+        "share": 1,
+        "of": 6
+      },
+      {
+        "i": 7,
+        "date": "2026-10-12",
+        "share": 1,
+        "of": 7
+      },
+      {
+        "i": 8,
+        "date": "2026-10-12",
+        "share": 1,
+        "of": 8
+      },
+      {
+        "i": 9,
+        "date": "2026-10-13",
+        "share": 1,
+        "of": 9
+      },
+      {
+        "i": 10,
+        "date": "2026-10-15",
+        "share": 1,
+        "of": 10
+      },
+      {
+        "i": 11,
+        "date": "2026-10-15",
+        "share": 1,
+        "of": 10
+      },
+      {
+        "i": 12,
+        "date": "2026-10-21",
+        "share": 1,
+        "of": 10
+      },
+      {
+        "i": 13,
+        "date": "2026-10-22",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 14,
+        "date": "2026-10-27",
+        "share": 1,
+        "of": 10
+      },
+      {
+        "i": 15,
+        "date": "2026-10-29",
+        "share": 1,
+        "of": 10
+      },
+      {
+        "i": 16,
+        "date": "2026-10-30",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 17,
+        "date": "2026-11-04",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 18,
+        "date": "2026-11-06",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 19,
+        "date": "2026-11-09",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 20,
+        "date": "2026-11-17",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 21,
+        "date": "2026-11-19",
+        "share": 2,
+        "of": 10
+      },
+      {
+        "i": 22,
+        "date": "2026-11-25",
+        "share": 3,
+        "of": 10
+      }
+    ],
+    "review_effort": [
+      {
+        "i": 1,
+        "date": "2026-09-15",
+        "per_case": 5.0
+      },
+      {
+        "i": 2,
+        "date": "2026-09-23",
+        "per_case": 3.5
+      },
+      {
+        "i": 3,
+        "date": "2026-09-28",
+        "per_case": 4.0
+      },
+      {
+        "i": 4,
+        "date": "2026-10-01",
+        "per_case": 3.5
+      },
+      {
+        "i": 5,
+        "date": "2026-10-02",
+        "per_case": 4.4
+      },
+      {
+        "i": 6,
+        "date": "2026-10-06",
+        "per_case": 4.17
+      },
+      {
+        "i": 7,
+        "date": "2026-10-12",
+        "per_case": 4.71
+      },
+      {
+        "i": 8,
+        "date": "2026-10-12",
+        "per_case": 4.75
+      },
+      {
+        "i": 9,
+        "date": "2026-10-13",
+        "per_case": 5.22
+      },
+      {
+        "i": 10,
+        "date": "2026-10-15",
+        "per_case": 5.3
+      },
+      {
+        "i": 11,
+        "date": "2026-10-15",
+        "per_case": 4.91
+      },
+      {
+        "i": 12,
+        "date": "2026-10-21",
+        "per_case": 4.58
+      },
+      {
+        "i": 13,
+        "date": "2026-10-22",
+        "per_case": 4.62
+      },
+      {
+        "i": 14,
+        "date": "2026-10-27",
+        "per_case": 4.36
+      },
+      {
+        "i": 15,
+        "date": "2026-10-29",
+        "per_case": 4.13
+      },
+      {
+        "i": 16,
+        "date": "2026-10-30",
+        "per_case": 3.94
+      },
+      {
+        "i": 17,
+        "date": "2026-11-04",
+        "per_case": 3.76
+      },
+      {
+        "i": 18,
+        "date": "2026-11-06",
+        "per_case": 3.89
+      },
+      {
+        "i": 19,
+        "date": "2026-11-09",
+        "per_case": 4.0
+      },
+      {
+        "i": 20,
+        "date": "2026-11-17",
+        "per_case": 4.0
+      },
+      {
+        "i": 21,
+        "date": "2026-11-19",
+        "per_case": 3.86
+      },
+      {
+        "i": 22,
+        "date": "2026-11-25",
+        "per_case": 3.77
+      }
+    ],
+    "false_confidence": [
+      {
+        "i": 1,
+        "date": "2026-09-15",
+        "false_confidence": 0
+      },
+      {
+        "i": 2,
+        "date": "2026-09-23",
+        "false_confidence": 0
+      },
+      {
+        "i": 3,
+        "date": "2026-09-28",
+        "false_confidence": 0
+      },
+      {
+        "i": 4,
+        "date": "2026-10-01",
+        "false_confidence": 0
+      },
+      {
+        "i": 5,
+        "date": "2026-10-02",
+        "false_confidence": 0
+      },
+      {
+        "i": 6,
+        "date": "2026-10-06",
+        "false_confidence": 0
+      },
+      {
+        "i": 7,
+        "date": "2026-10-12",
+        "false_confidence": 0
+      },
+      {
+        "i": 8,
+        "date": "2026-10-12",
+        "false_confidence": 0
+      },
+      {
+        "i": 9,
+        "date": "2026-10-13",
+        "false_confidence": 0
+      },
+      {
+        "i": 10,
+        "date": "2026-10-15",
+        "false_confidence": 0
+      },
+      {
+        "i": 11,
+        "date": "2026-10-15",
+        "false_confidence": 0
+      },
+      {
+        "i": 12,
+        "date": "2026-10-21",
+        "false_confidence": 0
+      },
+      {
+        "i": 13,
+        "date": "2026-10-22",
+        "false_confidence": 0
+      },
+      {
+        "i": 14,
+        "date": "2026-10-27",
+        "false_confidence": 0
+      },
+      {
+        "i": 15,
+        "date": "2026-10-29",
+        "false_confidence": 0
+      },
+      {
+        "i": 16,
+        "date": "2026-10-30",
+        "false_confidence": 0
+      },
+      {
+        "i": 17,
+        "date": "2026-11-04",
+        "false_confidence": 0
+      },
+      {
+        "i": 18,
+        "date": "2026-11-06",
+        "false_confidence": 0
+      },
+      {
+        "i": 19,
+        "date": "2026-11-09",
+        "false_confidence": 0
+      },
+      {
+        "i": 20,
+        "date": "2026-11-17",
+        "false_confidence": 0
+      },
+      {
+        "i": 21,
+        "date": "2026-11-19",
+        "false_confidence": 0
+      },
+      {
+        "i": 22,
+        "date": "2026-11-25",
+        "false_confidence": 0
+      }
+    ],
+    "maturity": [
+      {
+        "i": 1,
+        "date": "2026-09-15",
+        "family": "I1",
+        "maturity": "tentative"
+      },
+      {
+        "i": 2,
+        "date": "2026-09-23",
+        "family": "E3",
+        "maturity": "established"
+      },
+      {
+        "i": 3,
+        "date": "2026-09-28",
+        "family": "I1",
+        "maturity": "tentative"
+      },
+      {
+        "i": 4,
+        "date": "2026-10-01",
+        "family": "E3",
+        "maturity": "established"
+      },
+      {
+        "i": 5,
+        "date": "2026-10-02",
+        "family": "I3",
+        "maturity": "established"
+      },
+      {
+        "i": 6,
+        "date": "2026-10-06",
+        "family": "E5",
+        "maturity": "established"
+      },
+      {
+        "i": 7,
+        "date": "2026-10-12",
+        "family": "I2",
+        "maturity": "established"
+      },
+      {
+        "i": 8,
+        "date": "2026-10-12",
+        "family": "E1+E4",
+        "maturity": "established"
+      },
+      {
+        "i": 9,
+        "date": "2026-10-13",
+        "family": "E2-override",
+        "maturity": "established"
+      },
+      {
+        "i": 10,
+        "date": "2026-10-15",
+        "family": "I2",
+        "maturity": "tentative"
+      },
+      {
+        "i": 11,
+        "date": "2026-10-15",
+        "family": "U1",
+        "maturity": ""
+      },
+      {
+        "i": 12,
+        "date": "2026-10-21",
+        "family": "I3",
+        "maturity": ""
+      },
+      {
+        "i": 13,
+        "date": "2026-10-22",
+        "family": "E4-override",
+        "maturity": "established"
+      },
+      {
+        "i": 14,
+        "date": "2026-10-27",
+        "family": "U2",
+        "maturity": ""
+      },
+      {
+        "i": 15,
+        "date": "2026-10-29",
+        "family": "E5+blacklisted",
+        "maturity": "established"
+      },
+      {
+        "i": 16,
+        "date": "2026-10-30",
+        "family": "adversarial",
+        "maturity": "established"
+      },
+      {
+        "i": 17,
+        "date": "2026-11-04",
+        "family": "E6-override",
+        "maturity": ""
+      },
+      {
+        "i": 18,
+        "date": "2026-11-06",
+        "family": "I2",
+        "maturity": "tentative"
+      },
+      {
+        "i": 19,
+        "date": "2026-11-09",
+        "family": "I2",
+        "maturity": "tentative"
+      },
+      {
+        "i": 20,
+        "date": "2026-11-17",
+        "family": "U1",
+        "maturity": "tentative"
+      },
+      {
+        "i": 21,
+        "date": "2026-11-19",
+        "family": "U2",
+        "maturity": ""
+      },
+      {
+        "i": 22,
+        "date": "2026-11-25",
+        "family": "E3",
+        "maturity": "established"
+      }
+    ]
+  },
+  "done_events": [
+    "seed:PR-2026-0118",
+    "seed:PR-2026-0138",
+    "seed:PR-2026-0205",
+    "seed:PR-2026-0227",
+    "seed:PR-2026-0233",
+    "seed:PR-2026-0266",
+    "seed:PR-2026-0288",
+    "seed:PR-2026-0301",
+    "seed:PR-2026-0309",
+    "seed:PR-2026-0312",
+    "seed:PR-2026-0417",
+    "seed:PR-2026-0344",
+    "seed:PR-2026-0355",
+    "seed:PR-2026-0360",
+    "seed:PR-2026-0379",
+    "seed:PR-2026-0391",
+    "seed:PR-2026-0402",
+    "seed:PR-2026-0421",
+    "seed:PR-2026-0455",
+    "seed:PR-2026-0470",
+    "seed:PR-2026-0460",
+    "seed:PR-2026-0512",
+    "seed:PR-2026-0477",
+    "seed:PR-2026-0484",
+    "seed:PR-2026-0498",
+    "seed:PR-2026-0515",
+    "seed:PR-2026-0533",
+    "seed:PR-2026-0586",
+    "seed:PR-2026-0548",
+    "seed:PR-2026-0561",
+    "seed:PR-2026-0569",
+    "seed:PR-2026-0597",
+    "seed:PR-2026-0611",
+    "seed:PR-2026-0620",
+    "seed:PR-2026-0633",
+    "seed:PR-2026-0648",
+    "seed:PR-2026-0655",
+    "seed:PR-2026-0672",
+    "seed:PR-2026-0690",
+    "seed:POLICY-2026-07-01",
+    "seed:PR-2026-0701",
+    "seed:PR-2026-0720",
+    "seed:PR-2026-0735",
+    "seed:PR-2026-0746",
+    "seed:PR-2026-0758",
+    "case:TEST-001",
+    "case:TEST-002",
+    "case:TEST-003",
+    "case:TEST-004",
+    "case:TEST-005",
+    "case:TEST-007",
+    "case:TEST-009",
+    "case:TEST-011",
+    "case:TEST-012",
+    "case:TEST-013",
+    "case:TEST-015",
+    "case:TEST-016",
+    "case:TEST-019",
+    "case:TEST-020",
+    "case:TEST-022",
+    "case:TEST-024",
+    "case:TEST-025",
+    "case:TEST-027",
+    "case:TEST-028",
+    "case:TEST-030",
+    "case:TEST-032",
+    "case:TEST-036",
+    "case:TEST-037",
+    "case:TEST-039"
+  ],
+  "resolved": [
+    [
+      "approver",
+      "approver_on_leave"
+    ],
+    [
+      "bank",
+      "bank_details_changed"
+    ],
+    [
+      "budget",
+      "overrun"
+    ],
+    [
+      "duplicate",
+      "possible_duplicate"
+    ],
+    [
+      "quotes",
+      "insufficient_quotes"
+    ],
+    [
+      "related_party",
+      "related_party"
+    ],
+    [
+      "vendor",
+      "blacklisted"
+    ],
+    [
+      "vendor",
+      "cert_expired"
+    ],
+    [
+      "vendor",
+      "gst_cancelled"
+    ]
+  ]
+}
